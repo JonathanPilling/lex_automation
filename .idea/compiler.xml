@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lex-domain" />
+        <module name="lex-framework" />
         <module name="lex-page-objects" />
         <module name="lex-regression-tests" />
-        <module name="lex-framework" />
+        <module name="lex-domain" />
       </profile>
     </annotationProcessing>
   </component>
