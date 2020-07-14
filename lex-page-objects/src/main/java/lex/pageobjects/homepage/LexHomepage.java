@@ -10,24 +10,40 @@ public class LexHomepage extends BasePage {
 
     private static String URL = "https://www.lexingtonlaw.com";
 
-    /*Locators*/
+    /* Locators */
     @FindBy(how = How.CSS, using = "title")
     private WebElement pageTitle;
 
+    @FindBy(how = How.CSS, using = "")
+    private WebElement loginButton;
+
     @FindBy(how = How.CSS, using = "a[class='site_nav_sign_up_desktop']")
-    private WebElement navSignUpButton;
+    private WebElement signupButton;
+
+    @FindBy(how = How.CSS, using = "")
+    private WebElement creditRepairButton;
+
+    @FindBy(how = How.CSS, using = "")
+    private WebElement creditHelpButton;
+
+    @FindBy(how = How.CSS, using = "")
+    private WebElement ourFirmButton;
+
+
+
 
     public LexHomepage(WebDriver driver) {
         super(driver);
         driver.get(URL);
     }
 
+    /* Methods */
     public WebElement getPageTitle() {
         return pageTitle;
     }
 
     public void clickSignUp() {
-        navSignUpButton.click();
+        signupButton.click();
     }
 
 

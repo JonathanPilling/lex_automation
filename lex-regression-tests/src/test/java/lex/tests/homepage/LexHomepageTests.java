@@ -8,18 +8,23 @@ import lex.pageobjects.homepage.LexHomepage;
 public class LexHomepageTests extends BaseTest {
 
     @Test
-    public void IsAtHomepage() {
+    public void isAtHomepage() {
         LexHomepage myPage = new LexHomepage(getDriver());
-        System.out.println("Page Title: " + myPage.getPageTitle().getText());
-        Assert.assertTrue(myPage.getPageTitle().getText() == "Lexington Law Firm " +
-                "| Trusted Attorneys Helping to Fix Your Credit");
+        Assert.assertTrue(myPage.getPageTitle().getAttribute("text").contains("Lexington Law Firm " +
+                "| Trusted Attorneys Helping to Fix Your Credit"));
     }
+
     @Test
     public void canClickSignUp() {
         LexHomepage myPage = new LexHomepage(getDriver());
         myPage.clickSignUp();
-        System.out.println("Page Title: " + myPage.getPageTitle().getText());
-        Assert.assertTrue(myPage.getPageTitle().getText() == "Sign Up");
+        // Instatiate signup page object
+        Assert.assertTrue(myPage.getPageTitle().getAttribute("text").contains("Sign Up"));
+    }
+
+    @Test
+    public void canNavigateToCreditRepair() {
+        LexHomepage myPage = new LexHomepage(getDriver());
     }
 }
 
