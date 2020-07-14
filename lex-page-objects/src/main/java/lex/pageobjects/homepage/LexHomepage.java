@@ -39,6 +39,8 @@ public class LexHomepage extends BasePage {
         return pageTitle;
     }
 
+    public void goHome() { this.driver.get(URL); }
+
     public void clickSignUp() {
         signupButton.click();
     }

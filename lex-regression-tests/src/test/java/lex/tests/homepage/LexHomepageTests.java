@@ -19,35 +19,71 @@ public class LexHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canNavigateToSignUp() {
+    public void canNavigateToSignUp() throws InterruptedException {
+        // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
-        myPage.clickSignUp();
         LexSignup signUpObj = new LexSignup(getDriver());
+
+        // act
+        myPage.clickSignUp();
+        Thread.sleep(2000);
+
+        // assert
         Assert.assertTrue(signUpObj.getPageTitle().getAttribute("text").contains("Sign Up"));
+
+        // cleanup
+        myPage.goHome();
     }
 
     @Test
-    public void canNavigateToCreditRepair() {
+    public void canNavigateToCreditRepair() throws InterruptedException {
+        // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
-        myPage.clickCreditRepair();
         LexCreditRepair creditRepairObj = new LexCreditRepair(getDriver());
+
+        // act
+        myPage.clickCreditRepair();
+        Thread.sleep(2000);
+
+        // assert
         Assert.assertTrue(creditRepairObj.getPageTitle().getAttribute("text").contains("Credit Repair Services"));
+
+        // cleanup
+        myPage.goHome();
     }
 
     @Test
-    public void canNavigateToCreditHelp() {
+    public void canNavigateToCreditHelp() throws InterruptedException {
+        // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
-        myPage.clickCreditHelp();
         LexCreditHelp creditHelpObj = new LexCreditHelp(getDriver());
+
+        // act
+        myPage.clickCreditHelp();
+        Thread.sleep(2000);
+
+        // assert
         Assert.assertTrue(creditHelpObj.getPageTitle().getAttribute("text").contains("Credit Help"));
+
+        // cleanup
+        myPage.goHome();
     }
 
     @Test
-    public void canNavigateToOurFirm() {
+    public void canNavigateToOurFirm() throws InterruptedException {
+        // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
-        myPage.clickOurFirm();
         LexOurFirm ourFirmObj = new LexOurFirm(getDriver());
+
+        // act
+        myPage.clickOurFirm();
+        Thread.sleep(2000);
+
+        // assert
         Assert.assertTrue(ourFirmObj.getPageTitle().getAttribute("text").contains("Our Firm"));
+
+        // cleanup
+        myPage.goHome();
     }
 
 }
