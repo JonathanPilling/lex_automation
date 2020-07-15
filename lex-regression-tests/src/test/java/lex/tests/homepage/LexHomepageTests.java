@@ -22,7 +22,7 @@ public class LexHomepageTests extends BaseTest {
     public void canNavigateToSignUp() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
-        LexSignup signUpObj = new LexSignup(getDriver());
+        LexSignup signUpObj = new LexSignup(getDriver(), true);
 
         // act
         myPage.clickSignUp();
