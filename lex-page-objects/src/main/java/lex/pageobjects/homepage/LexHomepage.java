@@ -50,4 +50,9 @@ public class LexHomepage extends BasePage {
     public void clickCreditHelp() { creditHelpButton.click(); }
 
     public void clickOurFirm() { ourFirmButton.click(); }
+
+    public boolean isHome() {
+        return getPageTitle().getAttribute("text").contains("Lexington Law Firm " +
+                "| Trusted Attorneys Helping to Fix Your Credit");
+    }
 }

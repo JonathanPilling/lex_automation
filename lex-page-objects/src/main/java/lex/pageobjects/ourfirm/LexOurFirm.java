@@ -21,5 +21,9 @@ public class LexOurFirm extends BasePage {
         return pageTitle;
     }
 
+    public boolean isHome() {
+        return getPageTitle().getAttribute("text").contains("Our Firm");
+    }
+
 }
 

@@ -14,8 +14,7 @@ public class LexHomepageTests extends BaseTest {
     @Test
     public void isAtHomepage() {
         LexHomepage myPage = new LexHomepage(getDriver());
-        Assert.assertTrue(myPage.getPageTitle().getAttribute("text").contains("Lexington Law Firm " +
-                "| Trusted Attorneys Helping to Fix Your Credit"));
+        Assert.assertTrue(myPage.isHome());
     }
 
     @Test
@@ -29,7 +28,7 @@ public class LexHomepageTests extends BaseTest {
         Thread.sleep(2000);
 
         // assert
-        Assert.assertTrue(signUpObj.getPageTitle().getAttribute("text").contains("Sign Up"));
+        Assert.assertTrue(signUpObj.isHome());
 
         // cleanup
         myPage.goHome();
@@ -46,7 +45,7 @@ public class LexHomepageTests extends BaseTest {
         Thread.sleep(2000);
 
         // assert
-        Assert.assertTrue(creditRepairObj.getPageTitle().getAttribute("text").contains("Credit Repair Services"));
+        Assert.assertTrue(creditRepairObj.isHome());
 
         // cleanup
         myPage.goHome();
@@ -63,7 +62,7 @@ public class LexHomepageTests extends BaseTest {
         Thread.sleep(2000);
 
         // assert
-        Assert.assertTrue(creditHelpObj.getPageTitle().getAttribute("text").contains("Credit Help"));
+        Assert.assertTrue(creditHelpObj.isHome());
 
         // cleanup
         myPage.goHome();
@@ -80,7 +79,7 @@ public class LexHomepageTests extends BaseTest {
         Thread.sleep(2000);
 
         // assert
-        Assert.assertTrue(ourFirmObj.getPageTitle().getAttribute("text").contains("Our Firm"));
+        Assert.assertTrue(ourFirmObj.isHome());
 
         // cleanup
         myPage.goHome();

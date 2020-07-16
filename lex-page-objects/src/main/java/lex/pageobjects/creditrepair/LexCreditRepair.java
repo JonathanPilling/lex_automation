@@ -21,5 +21,9 @@ public class LexCreditRepair extends BasePage {
         return pageTitle;
     }
 
+    public boolean isHome() {
+        return getPageTitle().getAttribute("text").contains("Credit Repair Services");
+    }
+
 }
 

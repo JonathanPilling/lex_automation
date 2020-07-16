@@ -3,8 +3,11 @@ package lex.pageobjects.signup;
 import org.openqa.selenium.WebDriver;
 import lex.framework.core.BasePage;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+
+import java.util.List;
 
 public class LexSignup extends BasePage {
 
@@ -53,8 +56,17 @@ public class LexSignup extends BasePage {
     @FindBy(how = How.ID, using = "Zip-ffhd")
     private WebElement familyMemberZip;
 
-    @FindBy(how = How.CSS, using = "button[type='submit']")
+    @FindBy(how = How.CSS, using = "#signup-v2 > div.submit_button_wrap > button")
     private WebElement submit;
+
+    @FindBy(how = How.CSS, using = "div.step1.active")
+    private List<WebElement> stepOne;
+
+    @FindBy(how = How.CSS, using = "div.step2.active")
+    private List<WebElement> stepTwo;
+
+    @FindBy(how = How.CSS, using = "div.step3.active")
+    private List<WebElement> stepThree;
 
     public LexSignup(WebDriver driver) {
         super(driver);
@@ -105,8 +117,24 @@ public class LexSignup extends BasePage {
         submit.click();
     }
 
-    public Boolean atStepTwoUrl(WebDriver driver) {
-        return "https://www.lexingtonlaw.com/signup/step2" == driver.getCurrentUrl();
+    public boolean atStepOne() {
+        return stepOne.size() != 0;
+    }
+
+    public boolean atStepTwo() {
+        return stepTwo.size() != 0;
+    }
+
+    public boolean atStepThree() {
+        return stepThree.size() != 0;
+    }
+
+    public void goHome() {
+        driver.get(url);
+    }
+
+    public boolean isHome() {
+        return getPageTitle().getAttribute("text").contains("Sign Up");
     }
 
 }
