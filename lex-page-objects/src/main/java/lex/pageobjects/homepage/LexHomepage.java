@@ -55,4 +55,12 @@ public class LexHomepage extends BasePage {
         return getPageTitle().getAttribute("text").contains("Lexington Law Firm " +
                 "| Trusted Attorneys Helping to Fix Your Credit");
     }
+
+    public void toggleOnFFD() {
+
+    }
+
+    public void toggleOffFFD() {
+
+    }
 }

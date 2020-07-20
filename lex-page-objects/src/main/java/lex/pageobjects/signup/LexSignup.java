@@ -30,10 +30,10 @@ public class LexSignup extends BasePage {
     private WebElement phone;
 
     @FindBy(how = How.ID, using = "Address")
-    private WebElement address;
+    private WebElement streetAddress;
 
     @FindBy(how = How.ID, using = "Zip")
-    private WebElement zip;
+    private WebElement zipCode;
 
     @FindBy(how = How.ID, using = "yes-ffd")
     private WebElement familyCheckbox;
@@ -67,6 +67,63 @@ public class LexSignup extends BasePage {
 
     @FindBy(how = How.CSS, using = "div.step3.active")
     private List<WebElement> stepThree;
+
+    @FindBy(how = How.CSS, using = "div.ffhd-box > div > label")
+    private WebElement ffdCheckbox;
+
+    @FindBy(how = How.CSS, using = "h2.family-sign-up-wording.step-1-headers[style='display: none;']")
+    private List<WebElement> ffdOff;
+
+    @FindBy(how = How.CSS, using = "h2.family-sign-up-wording.step-1-headers[style='display: block;']")
+    private List<WebElement> ffdOn;
+
+    @FindBy(how = How.CSS, using = "span.mobile-phone")
+    private WebElement lexCountryCode;
+
+    @FindBy(how = How.CSS, using = "span.lexingtonPhoneNumber.phoneNumber")
+    private WebElement lexPhone;
+
+    @FindBy(how = How.CSS, using = "a[href='/info/terms']")
+    private WebElement termsOfUseFooter;
+
+    @FindBy(how = How.CSS, using = "a[href='/info/privacy-policy']")
+    private WebElement privacyPolicyFooter;
+
+    @FindBy(how = How.CSS, using = "a[href='/info/sms-terms']")
+    private WebElement textMessageTermsFooter;
+
+    @FindBy(how = How.CSS, using = "a[href='https://www.lexingtonlaw.com/info/terms.html']")
+    private WebElement termsOfUse;
+
+    @FindBy(how = How.CSS, using = "a[href='https://www.lexingtonlaw.com/info/privacy-policy.html']")
+    private WebElement privacyPolicy;
+
+    @FindBy(how = How.CSS, using = "a[href='https://www.lexingtonlaw.com/info/terms#arbitration-provision']")
+    private WebElement arbitrationProvision;
+
+    @FindBy(how = How.CSS, using = "")
+    private WebElement yesSameServiceCheckbox;
+
+    @FindBy(how = How.CSS, using = "")
+    private WebElement noSameServiceCheckbox;
+
+    @FindBy(how = How.CSS, using = "")
+    private WebElement sameBillingCheckbox;
+
+    @FindBy(how = How.CSS, using = "")
+    private WebElement quickstartCheckbox;
+
+    @FindBy(how = How.CSS, using = "")
+    private WebElement cardNumber;
+
+    @FindBy(how = How.CSS, using = "")
+    private WebElement expiration;
+
+    @FindBy(how = How.CSS, using = "")
+    private WebElement cvv;
+
+    @FindBy(how = How.CSS, using = "")
+    private WebElement billingInfoEdit;
 
     public LexSignup(WebDriver driver) {
         super(driver);
@@ -104,13 +161,13 @@ public class LexSignup extends BasePage {
     }
 
     public void setAddress(String addr) {
-        address.clear();
-        address.sendKeys(addr);
+        streetAddress.clear();
+        streetAddress.sendKeys(addr);
     }
 
     public void setZip(String zp) {
-        zip.clear();
-        zip.sendKeys(zp);
+        zipCode.clear();
+        zipCode.sendKeys(zp);
     }
 
     public void submit() {
@@ -135,6 +192,30 @@ public class LexSignup extends BasePage {
 
     public boolean isHome() {
         return getPageTitle().getAttribute("text").contains("Sign Up");
+    }
+
+    public boolean ffdDisplayed() {
+        return ffdOn.size() != 0;
+    }
+
+    public boolean ffdNotDisplayed() {
+        return ffdOff.size() != 0;
+    }
+
+    public void toggleOnFFD() {
+        if (ffdNotDisplayed()){
+            ffdCheckbox.click();
+        } // else the checkbox is already toggled on
+    }
+
+    public void toggleOffFFD() {
+        if (ffdDisplayed()) {
+            ffdCheckbox.click();
+        } // else the checkbox is already toggled off
+    }
+
+    public String getPhoneNumber() {
+        return lexCountryCode.getText() + lexPhone.getText();
     }
 
 }
