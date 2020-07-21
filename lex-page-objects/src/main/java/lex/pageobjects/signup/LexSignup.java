@@ -101,29 +101,32 @@ public class LexSignup extends BasePage {
     @FindBy(how = How.CSS, using = "a[href='https://www.lexingtonlaw.com/info/terms#arbitration-provision']")
     private WebElement arbitrationProvision;
 
-    @FindBy(how = How.CSS, using = "")
+    @FindBy(how = How.CSS, using = "label[for='yes-same-service']")
     private WebElement yesSameServiceCheckbox;
 
-    @FindBy(how = How.CSS, using = "")
+    @FindBy(how = How.CSS, using = "label[for='no-same-service']")
     private WebElement noSameServiceCheckbox;
 
-    @FindBy(how = How.CSS, using = "")
+    @FindBy(how = How.CSS, using = "label[for='same-billing-check']")
     private WebElement sameBillingCheckbox;
 
-    @FindBy(how = How.CSS, using = "")
+    @FindBy(how = How.ID, using = "quickstart-check")
     private WebElement quickstartCheckbox;
 
-    @FindBy(how = How.CSS, using = "")
+    @FindBy(how = How.ID, using = "cc_num_0")
     private WebElement cardNumber;
 
-    @FindBy(how = How.CSS, using = "")
+    @FindBy(how = How.ID, using = "cc_exp")
     private WebElement expiration;
 
-    @FindBy(how = How.CSS, using = "")
+    @FindBy(how = How.ID, using = "cc_cvv")
     private WebElement cvv;
 
-    @FindBy(how = How.CSS, using = "")
+    @FindBy(how = How.CSS, using = "a.billing-info-edit#primary-user")
     private WebElement billingInfoEdit;
+
+    @FindBy(how = How.CSS, using = "a.billing-info-edit#ffhd-user")
+    private WebElement billingInfoEditFamilyMember;
 
     public LexSignup(WebDriver driver) {
         super(driver);
