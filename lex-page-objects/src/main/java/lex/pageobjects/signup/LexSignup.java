@@ -128,49 +128,36 @@ public class LexSignup extends BasePage {
     @FindBy(how = How.CSS, using = "a.billing-info-edit#ffhd-user")
     private WebElement billingInfoEditFamilyMember;
 
+    @FindBy(how = How.ID, using = "cc-name")
+    private WebElement nameOnCard;
+
+    @FindBy(how = How.ID, using = "cc-street")
+    private WebElement billingAddress;
+
+    @FindBy(how = How.ID, using = "cc-zip")
+    private WebElement billingZipCode;
+
+    @FindBy(how = How.ID, using = "next")
+    private WebElement nextReview;
+
+    @FindBy(how = How.ID, using = "prev")
+    private WebElement prevReview;
+
+    @FindBy(how = How.LINK_TEXT, using = "Info About Our Testimonials")
+    private WebElement testimonialLink;
+
+    // Constructors
     public LexSignup(WebDriver driver) {
         super(driver);
         driver.get(url);
     }
-
-    //Constructor for checking if links navigate to /signup, doesn't load url
     public LexSignup(WebDriver driver, Boolean x) {
         super(driver);
     }
 
-    /* Methods */
+    /* Driver Methods */
     public WebElement getPageTitle() {
         return pageTitle;
-    }
-
-    public void setFirstName(String fname) {
-        firstName.clear();
-        firstName.sendKeys(fname);
-    }
-
-    public void setLastName(String lname) {
-        lastName.clear();
-        lastName.sendKeys(lname);
-    }
-
-    public void setEmail(String emale) {
-        email.clear();
-        email.sendKeys(emale);
-    }
-
-    public void setPhone(String ph) {
-        phone.clear();
-        phone.sendKeys(ph);
-    }
-
-    public void setAddress(String addr) {
-        streetAddress.clear();
-        streetAddress.sendKeys(addr);
-    }
-
-    public void setZip(String zp) {
-        zipCode.clear();
-        zipCode.sendKeys(zp);
     }
 
     public void submit() {
@@ -205,6 +192,36 @@ public class LexSignup extends BasePage {
         return ffdOff.size() != 0;
     }
 
+    public void setFirstName(String fname) {
+        firstName.clear();
+        firstName.sendKeys(fname);
+    }
+
+    public void setLastName(String lname) {
+        lastName.clear();
+        lastName.sendKeys(lname);
+    }
+
+    public void setEmail(String emale) {
+        email.clear();
+        email.sendKeys(emale);
+    }
+
+    public void setPhone(String ph) {
+        phone.clear();
+        phone.sendKeys(ph);
+    }
+
+    public void setAddress(String addr) {
+        streetAddress.clear();
+        streetAddress.sendKeys(addr);
+    }
+
+    public void setZip(String zp) {
+        zipCode.clear();
+        zipCode.sendKeys(zp);
+    }
+
     public void toggleOnFFD() {
         if (ffdNotDisplayed()){
             ffdCheckbox.click();
@@ -219,6 +236,70 @@ public class LexSignup extends BasePage {
 
     public String getPhoneNumber() {
         return lexCountryCode.getText() + lexPhone.getText();
+    }
+
+    public void checkQuickstartCase() {
+        quickstartCheckbox.click();
+    }
+
+    public void setCardNumber(String cardNum) {
+        cardNumber.clear();
+        cardNumber.sendKeys(cardNum);
+    }
+
+    public void setExpiration(String exp) {
+        expiration.clear();
+        expiration.sendKeys(exp);
+    }
+
+    public void setCVV(String _cvv) {
+        cvv.clear();
+        cvv.sendKeys(_cvv);
+    }
+
+    // Helper method for sending all card info
+    public void setCardInfo(String cardNum, String exp, String _cvv) {
+        setCardNumber(cardNum);
+        setExpiration(exp);
+        setCVV(_cvv);
+    }
+
+    public void clickEditBilling() {
+        billingInfoEdit.click();
+    }
+
+    public void setNameOnCard(String newName) {
+        nameOnCard.clear();
+        nameOnCard.sendKeys(newName);
+    }
+
+    public void setBillingAddress(String billAddress) {
+        billingAddress.clear();
+        billingAddress.sendKeys(billAddress);
+    }
+
+    public void setBillingZipCode(String newZip) {
+        billingZipCode.clear();
+        billingZipCode.sendKeys();
+    }
+
+    // Helper method for changing all billing info
+    public void changeBillingInfo(String newName, String billAddress, String newZip) {
+        setNameOnCard(newName);
+        setBillingAddress(billAddress);
+        setBillingZipCode(newZip);
+    }
+
+    public void clickNext() {
+        nextReview.click();
+    }
+
+    public void clickPrevious() {
+        prevReview.click();
+    }
+
+    public void clickTestimonialLink() {
+        testimonialLink.click();
     }
 
 }
