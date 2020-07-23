@@ -13,10 +13,48 @@ public class LexSignup extends BasePage {
 
     private final String url = "https://www.lexingtonlaw.com/signup";
 
-    /* Locators */
+    ///////////////* Locators *///////////////
     @FindBy(how = How.CSS, using = "title")
     private WebElement pageTitle;
 
+    @FindBy(how = How.CSS, using = "#signup-v2 > div.submit_button_wrap > button")
+    private WebElement submit;
+
+    @FindBy(how = How.CSS, using = "div.step1.active")
+    private List<WebElement> stepOne;
+
+    @FindBy(how = How.CSS, using = "div.step2.active")
+    private List<WebElement> stepTwo;
+
+    @FindBy(how = How.CSS, using = "div.step3.active")
+    private List<WebElement> stepThree;
+
+    /////////////// Header & Footer Locators ///////////////
+    @FindBy(how = How.CSS, using = "span.mobile-phone")
+    private WebElement lexCountryCode;
+
+    @FindBy(how = How.CSS, using = "span.lexingtonPhoneNumber.phoneNumber")
+    private WebElement lexPhone;
+
+    @FindBy(how = How.CSS, using = "a[href='/info/terms']")
+    private WebElement termsOfUseFooter;
+
+    @FindBy(how = How.CSS, using = "a[href='/info/privacy-policy']")
+    private WebElement privacyPolicyFooter;
+
+    @FindBy(how = How.CSS, using = "a[href='/info/sms-terms']")
+    private WebElement textMessageTermsFooter;
+
+    @FindBy(how = How.CSS, using = "a[href='https://www.lexingtonlaw.com/info/terms.html']")
+    private WebElement termsOfUse;
+
+    @FindBy(how = How.CSS, using = "a[href='https://www.lexingtonlaw.com/info/privacy-policy.html']")
+    private WebElement privacyPolicy;
+
+    @FindBy(how = How.CSS, using = "a[href='https://www.lexingtonlaw.com/info/terms#arbitration-provision']")
+    private WebElement arbitrationProvision;
+
+    /////////////// Step 1 Locators ///////////////
     @FindBy(how = How.ID, using = "FirstName")
     private WebElement firstName;
 
@@ -56,50 +94,24 @@ public class LexSignup extends BasePage {
     @FindBy(how = How.ID, using = "Zip-ffhd")
     private WebElement familyMemberZip;
 
-    @FindBy(how = How.CSS, using = "#signup-v2 > div.submit_button_wrap > button")
-    private WebElement submit;
-
-    @FindBy(how = How.CSS, using = "div.step1.active")
-    private List<WebElement> stepOne;
-
-    @FindBy(how = How.CSS, using = "div.step2.active")
-    private List<WebElement> stepTwo;
-
-    @FindBy(how = How.CSS, using = "div.step3.active")
-    private List<WebElement> stepThree;
-
-    @FindBy(how = How.CSS, using = "div.ffhd-box > div > label")
-    private WebElement ffdCheckbox;
-
     @FindBy(how = How.CSS, using = "h2.family-sign-up-wording.step-1-headers[style='display: none;']")
     private List<WebElement> ffdOff;
 
     @FindBy(how = How.CSS, using = "h2.family-sign-up-wording.step-1-headers[style='display: block;']")
     private List<WebElement> ffdOn;
 
-    @FindBy(how = How.CSS, using = "span.mobile-phone")
-    private WebElement lexCountryCode;
+    @FindBy(how = How.PARTIAL_LINK_TEXT, using = "California")
+    private WebElement californiaPrivacyRights;
 
-    @FindBy(how = How.CSS, using = "span.lexingtonPhoneNumber.phoneNumber")
-    private WebElement lexPhone;
+    /////////////// Step 2 Locators ///////////////
+    @FindBy(how = How.CSS, using = "label[for='premier-plus-option']")
+    private WebElement premierPlusCheckbox;
 
-    @FindBy(how = How.CSS, using = "a[href='/info/terms']")
-    private WebElement termsOfUseFooter;
+    @FindBy(how = How.CSS, using = "label[for='concord-premier-option']")
+    private WebElement concordPremierCheckbox;
 
-    @FindBy(how = How.CSS, using = "a[href='/info/privacy-policy']")
-    private WebElement privacyPolicyFooter;
-
-    @FindBy(how = How.CSS, using = "a[href='/info/sms-terms']")
-    private WebElement textMessageTermsFooter;
-
-    @FindBy(how = How.CSS, using = "a[href='https://www.lexingtonlaw.com/info/terms.html']")
-    private WebElement termsOfUse;
-
-    @FindBy(how = How.CSS, using = "a[href='https://www.lexingtonlaw.com/info/privacy-policy.html']")
-    private WebElement privacyPolicy;
-
-    @FindBy(how = How.CSS, using = "a[href='https://www.lexingtonlaw.com/info/terms#arbitration-provision']")
-    private WebElement arbitrationProvision;
+    @FindBy(how = How.CSS, using = "label[for='concord-standard-option']")
+    private WebElement concordStandardCheckbox;
 
     @FindBy(how = How.CSS, using = "label[for='yes-same-service']")
     private WebElement yesSameServiceCheckbox;
@@ -113,6 +125,15 @@ public class LexSignup extends BasePage {
     @FindBy(how = How.ID, using = "quickstart-check")
     private WebElement quickstartCheckbox;
 
+    @FindBy(how = How.CSS, using = "span.billing-total-fee.primary-user")
+    private WebElement totalDueToday;
+
+    @FindBy(how = How.CSS, using = "a.billing-info-edit#primary-user")
+    private WebElement billingInfoEdit;
+
+    @FindBy(how = How.CSS, using = "a.billing-info-edit#ffhd-user")
+    private WebElement billingInfoEditFamilyMember;
+
     @FindBy(how = How.ID, using = "cc_num_0")
     private WebElement cardNumber;
 
@@ -121,12 +142,6 @@ public class LexSignup extends BasePage {
 
     @FindBy(how = How.ID, using = "cc_cvv")
     private WebElement cvv;
-
-    @FindBy(how = How.CSS, using = "a.billing-info-edit#primary-user")
-    private WebElement billingInfoEdit;
-
-    @FindBy(how = How.CSS, using = "a.billing-info-edit#ffhd-user")
-    private WebElement billingInfoEditFamilyMember;
 
     @FindBy(how = How.ID, using = "cc-name")
     private WebElement nameOnCard;
@@ -137,6 +152,24 @@ public class LexSignup extends BasePage {
     @FindBy(how = How.ID, using = "cc-zip")
     private WebElement billingZipCode;
 
+    @FindBy(how = How.ID, using = "cc_num_0-ffhd")
+    private WebElement cardNumberSecondary;
+
+    @FindBy(how = How.ID, using = "cc_exp-ffhd")
+    private WebElement expirationSecondary;
+
+    @FindBy(how = How.ID, using = "cc_cvv-ffhd")
+    private WebElement cvvSecondary;
+
+    @FindBy(how = How.ID, using = "cc-name-ffhd")
+    private WebElement nameOnCardSecondary;
+
+    @FindBy(how = How.ID, using = "cc-street-ffhd")
+    private WebElement billingAddressSecondary;
+
+    @FindBy(how = How.ID, using = "cc-zip-ffhd")
+    private WebElement billingZipCodeSecondary;
+
     @FindBy(how = How.ID, using = "next")
     private WebElement nextReview;
 
@@ -145,6 +178,43 @@ public class LexSignup extends BasePage {
 
     @FindBy(how = How.LINK_TEXT, using = "Info About Our Testimonials")
     private WebElement testimonialLink;
+
+    /////////////// Step 3 Locators ///////////////
+    @FindBy(how = How.ID, using = "username")
+    private WebElement username;
+
+    @FindBy(how = How.ID, using = "password")
+    private WebElement password;
+
+    @FindBy(how = How.CSS, using = "label[for='select_all_checkbox']")
+    private WebElement selectAllCheckbox;
+
+    @FindBy(how = How.CSS, using = "label[for='ESignDisclosures']")
+    private WebElement eSignCheckbox;
+
+    @FindBy(how = How.CSS, using = "label[for='FederalDisclosures']")
+    private WebElement federalDisclosureCheckbox;
+
+    @FindBy(how = How.CSS, using = "label[for='StateDisclosures']")
+    private WebElement stateDisclosureCheckbox;
+
+    @FindBy(how = How.CSS, using = "label[for='RetainerAgreement']")
+    private WebElement serviceAgreementCheckbox;
+
+    @FindBy(how = How.CSS, using = "label[for='FederalCancellation']")
+    private WebElement federalCancellationCheckbox;
+
+    @FindBy(how = How.CSS, using = "label[for='StateCancellation']")
+    private WebElement stateCancellationCheckbox;
+
+    @FindBy(how = How.ID, using = "digital_signature")
+    private WebElement legalSignature;
+
+    @FindBy(how = How.ID, using = "ssn")
+    private WebElement socialSecurityNumber;
+
+    @FindBy(how = How.ID, using = "dob")
+    private WebElement dob;
 
     // Constructors
     public LexSignup(WebDriver driver) {
@@ -224,13 +294,13 @@ public class LexSignup extends BasePage {
 
     public void toggleOnFFD() {
         if (ffdNotDisplayed()){
-            ffdCheckbox.click();
+            familyCheckbox.click();
         } // else the checkbox is already toggled on
     }
 
     public void toggleOffFFD() {
         if (ffdDisplayed()) {
-            ffdCheckbox.click();
+            familyCheckbox.click();
         } // else the checkbox is already toggled off
     }
 
@@ -301,6 +371,19 @@ public class LexSignup extends BasePage {
     public void clickTestimonialLink() {
         testimonialLink.click();
     }
+
+    public String getTotalDueToday() {
+        return totalDueToday.getText();
+    }
+
+    public boolean isCaseQuickstarted() {
+        return getTotalDueToday() == "$14.99";
+    }
+
+    public void clickCaliforniaPrivacyRights() {
+        californiaPrivacyRights.click();
+    }
+
 
 }
 
