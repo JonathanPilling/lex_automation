@@ -230,6 +230,10 @@ public class LexSignup extends BasePage {
         return pageTitle;
     }
 
+    public boolean isHome() {
+        return getPageTitle().getAttribute("text").contains("Sign Up");
+    }
+
     public void submit() {
         submit.click();
     }
@@ -246,20 +250,48 @@ public class LexSignup extends BasePage {
         return stepThree.size() != 0;
     }
 
-    public void goHome() {
-        driver.get(url);
+    public String getPhoneNumber() {
+        return lexCountryCode.getText() + lexPhone.getText();
     }
 
-    public boolean isHome() {
-        return getPageTitle().getAttribute("text").contains("Sign Up");
+    public void clickTermsOfUseFooter() {
+
     }
 
-    public boolean ffdDisplayed() {
-        return ffdOn.size() != 0;
+    public void clickTermsOfUse() {
+
     }
 
-    public boolean ffdNotDisplayed() {
-        return ffdOff.size() != 0;
+    public boolean atTermsOfUse() {
+        return true; // Need to implement
+    }
+
+    public void clickPrivacyPolicyFooter() {
+
+    }
+
+    public void clickPrivacyPolicy() {
+
+    }
+
+    public boolean atPrivacyPolicy() {
+        return true; // Need to implement
+    }
+
+    public void clickTextMessageTerms() {
+
+    }
+
+    public boolean atTextMessageTerms() {
+        return true; // Need to implement
+    }
+
+    public void clickArbitrationProvision() {
+
+    }
+
+    public boolean atArbitrationProvision() {
+        return true; // Need to implement
     }
 
     public void setFirstName(String fname) {
@@ -292,6 +324,14 @@ public class LexSignup extends BasePage {
         zipCode.sendKeys(zp);
     }
 
+    public boolean ffdDisplayed() {
+        return ffdOn.size() != 0;
+    }
+
+    public boolean ffdNotDisplayed() {
+        return ffdOff.size() != 0;
+    }
+
     public void toggleOnFFD() {
         if (ffdNotDisplayed()){
             familyCheckbox.click();
@@ -304,12 +344,40 @@ public class LexSignup extends BasePage {
         } // else the checkbox is already toggled off
     }
 
-    public String getPhoneNumber() {
-        return lexCountryCode.getText() + lexPhone.getText();
+    public void clickCaliforniaPrivacyRights() {
+
     }
 
-    public void checkQuickstartCase() {
+    public boolean atCaliforniaPrivacy() {
+
+    }
+
+    public void clickPremierPlus() {
+        premierPlusCheckbox.click();
+    }
+
+    public void clickConcordPremier() {
+        concordPremierCheckbox.click();
+    }
+
+    public void clickConcordStandard() {
+        concordStandardCheckbox.click();
+    }
+
+    public void clickQuickstartCheckbox() {
         quickstartCheckbox.click();
+    }
+
+    public boolean isCaseQuickstarted() {
+        return getTotalDueToday() == "$14.99";
+    }
+
+    public void clickBillingAddressEdit() {
+        billingInfoEdit.click();
+    }
+
+    public void clickBillingAddressEdit2() {
+        billingInfoEditFamilyMember.click();
     }
 
     public void setCardNumber(String cardNum) {
@@ -327,15 +395,10 @@ public class LexSignup extends BasePage {
         cvv.sendKeys(_cvv);
     }
 
-    // Helper method for sending all card info
-    public void setCardInfo(String cardNum, String exp, String _cvv) {
+    public void setCardInfo(String cardNum, String exp, String _cvv) { // send all primary card info
         setCardNumber(cardNum);
         setExpiration(exp);
         setCVV(_cvv);
-    }
-
-    public void clickEditBilling() {
-        billingInfoEdit.click();
     }
 
     public void setNameOnCard(String newName) {
@@ -353,11 +416,58 @@ public class LexSignup extends BasePage {
         billingZipCode.sendKeys();
     }
 
-    // Helper method for changing all billing info
-    public void changeBillingInfo(String newName, String billAddress, String newZip) {
+    public void changeBillingInfo(String newName, String billAddress, String newZip) { // set all billing address info
         setNameOnCard(newName);
         setBillingAddress(billAddress);
         setBillingZipCode(newZip);
+    }
+
+    public void setCardNumber2(String cardNum) {
+        cardNumberSecondary.clear();
+        cardNumberSecondary.sendKeys(cardNum);
+    }
+
+    public void setExpiration2(String exp) {
+        expirationSecondary.clear();
+        expirationSecondary.sendKeys(exp);
+    }
+
+    public void setCVV2(String _cvv) {
+        cvvSecondary.clear();
+        cvvSecondary.sendKeys(_cvv);
+    }
+
+    public void setCardInfo2(String cardNum, String exp, String _cvv) { // send all secondary card info
+        setCardNumber2(cardNum);
+        setExpiration2(exp);
+        setCVV2(_cvv);
+    }
+
+    public void setNameOnCard2(String val) {
+        nameOnCardSecondary.clear();
+        nameOnCardSecondary.sendKeys(val);
+    }
+
+    public void setBillingAddress2(String val) {
+        billingAddressSecondary.clear();
+        billingAddressSecondary.sendKeys(val);
+    }
+
+    public void setBillingZipCode2(String val) {
+        billingZipCodeSecondary.clear();
+        billingZipCodeSecondary.sendKeys(val);
+    }
+
+    public void clickNextTestomonial() {
+        nextReview.click();
+    }
+
+    public void clickPreviousTestomonial() {
+        prevReview.click();
+    }
+
+    public void clickInfoAboutOurTestomonials() {
+        testimonialLink.click();
     }
 
     public void clickNext() {
@@ -376,14 +486,25 @@ public class LexSignup extends BasePage {
         return totalDueToday.getText();
     }
 
-    public boolean isCaseQuickstarted() {
-        return getTotalDueToday() == "$14.99";
+    public void setUsername(String usr) {
+        username.clear();
+        username.sendKeys(usr);
     }
 
-    public void clickCaliforniaPrivacyRights() {
-        californiaPrivacyRights.click();
+    public void setPassword(String pass) {
+        password.clear();
+        password.sendKeys(pass);
     }
 
+    public void clickSelectAllCheckbox() {
+        selectAllCheckbox.click();
+    }
+
+    public void clickESignCheckbox
+
+    public void goHome() {
+        driver.get(url);
+    }
 
 }
 
