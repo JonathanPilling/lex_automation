@@ -14,7 +14,7 @@ public class LexSignupTests extends BaseTest {
     }
 
     @Test
-    public void canAccessStepTwo() throws InterruptedException {
+    public void canSignUpSingleUser() throws InterruptedException {
         // arrange
         LexSignup signupObj = new LexSignup(getDriver());
 
@@ -22,15 +22,29 @@ public class LexSignupTests extends BaseTest {
         Thread.sleep(2000);
         signupObj.setFirstName("Jonathan");
         signupObj.setLastName("SeleniumWiz");
-        signupObj.setEmail("jonathanpilling77+ll@gmail.com");
+        signupObj.setEmail("jonathanpilling77+selenium@gmail.com");
         signupObj.setPhone("8016211928");
         signupObj.setAddress("123 Sesame Street");
         signupObj.setZip("84103");
-        signupObj.submit();
-        Thread.sleep(3500);
+        signupObj.submitStepOne();
+        Thread.sleep(10000);
+
+        signupObj.setCardNumber("");
+        signupObj.setExpiration("");
+        signupObj.setCVV("");
+        signupObj.submitStepOne();
+        Thread.sleep(5000);
+
+        signupObj.setUsername("goldenboy");
+        signupObj.setPassword("asDf123!!!");
+        signupObj.clickSelectAllCheckbox();
+        signupObj.setLegalSignature("Jonathan Seleniumwiz");
+        signupObj.setSocialSecurityNumber("123456789");
+        signupObj.setDateOfBirth("01/01/2000");
+        //signupObj.submit(); // LEGAL STUFF DO NOT SUBMIT YET
 
         // assert
-        Assert.assertTrue(signupObj.atStepTwo());
+        Assert.assertTrue(signupObj.atStepThree());
 
         // cleanup
         signupObj.goHome();
@@ -48,7 +62,7 @@ public class LexSignupTests extends BaseTest {
         signupObj.setPhone("8016211928");
         signupObj.setAddress("123 Sesame Street");
         signupObj.setZip("84103");
-        signupObj.submit();
+        signupObj.submitStepOne();
         Thread.sleep(2000);
 
         // assert
@@ -70,7 +84,7 @@ public class LexSignupTests extends BaseTest {
         signupObj.setPhone("8016211928");
         signupObj.setAddress("123 Sesame Street");
         signupObj.setZip("84103");
-        signupObj.submit();
+        signupObj.submitStepOne();
         Thread.sleep(2000);
 
         // assert
@@ -92,7 +106,7 @@ public class LexSignupTests extends BaseTest {
         signupObj.setPhone("8016211928");
         signupObj.setAddress("123 Sesame Street");
         signupObj.setZip("84103");
-        signupObj.submit();
+        signupObj.submitStepOne();
         Thread.sleep(2000);
 
         // assert
@@ -115,7 +129,7 @@ public class LexSignupTests extends BaseTest {
         signupObj.setPhone("8016211928");
         signupObj.setAddress("123 Sesame Street");
         signupObj.setZip("84103");
-        signupObj.submit();
+        signupObj.submitStepOne();
         Thread.sleep(2000);
 
         // assert
@@ -137,7 +151,7 @@ public class LexSignupTests extends BaseTest {
         signupObj.setEmail("jonathanpilling77+ll@gmail.com");
         signupObj.setAddress("123 Sesame Street");
         signupObj.setZip("84103");
-        signupObj.submit();
+        signupObj.submitStepOne();
         Thread.sleep(2000);
 
         // assert
@@ -160,7 +174,7 @@ public class LexSignupTests extends BaseTest {
         signupObj.setPhone("8016218");
         signupObj.setAddress("123 Sesame Street");
         signupObj.setZip("84103");
-        signupObj.submit();
+        signupObj.submitStepOne();
         Thread.sleep(2000);
 
         // assert
@@ -182,7 +196,7 @@ public class LexSignupTests extends BaseTest {
         signupObj.setEmail("jonathanpilling77+ll@gmail.com");
         signupObj.setPhone("8016211928");
         signupObj.setZip("84103");
-        signupObj.submit();
+        signupObj.submitStepOne();
         Thread.sleep(2000);
 
         // assert
@@ -204,7 +218,7 @@ public class LexSignupTests extends BaseTest {
         signupObj.setEmail("jonathanpilling77+ll@gmail.com");
         signupObj.setPhone("8016211928");
         signupObj.setAddress("123 Sesame Street");
-        signupObj.submit();
+        signupObj.submitStepOne();
         Thread.sleep(2000);
 
         // assert
@@ -227,7 +241,7 @@ public class LexSignupTests extends BaseTest {
         signupObj.setPhone("8016211928");
         signupObj.setAddress("123 Sesame Street");
         signupObj.setZip("8411");
-        signupObj.submit();
+        signupObj.submitStepOne();
         Thread.sleep(2000);
 
         // assert
@@ -250,7 +264,7 @@ public class LexSignupTests extends BaseTest {
         signupObj.setPhone("8016211928");
         signupObj.setAddress("123 Sesame Street");
         signupObj.setZip("aqwert");
-        signupObj.submit();
+        signupObj.submitStepOne();
         Thread.sleep(2000);
 
         // assert
@@ -259,6 +273,56 @@ public class LexSignupTests extends BaseTest {
         // cleanup
         signupObj.goHome();
     }
+
+    @Test
+    public void canSignupWithFamilyMember() throws InterruptedException {
+        // arrange
+        LexSignup signupObj = new LexSignup(getDriver());
+
+        // act
+        Thread.sleep(2000);
+        signupObj.setFirstName("Jonathan");
+        signupObj.setLastName("SeleniumWiz");
+        signupObj.setEmail("jonathanpilling77+ll@gmail.com");
+        signupObj.setPhone("8016211928");
+        signupObj.setAddress("123 Sesame Street");
+        signupObj.setZip("84103");
+        signupObj.submitStepOne();
+        Thread.sleep(3500);
+
+        signupObj.setCardNumber("");
+        signupObj.setExpiration("");
+        signupObj.setCVV("");
+        signupObj.submitStepOne();
+        Thread.sleep(5000);
+
+        signupObj.setUsername("goldenboy");
+        signupObj.setPassword("asDf123!!!");
+        signupObj.clickSelectAllCheckbox();
+        signupObj.setLegalSignature("Jonathan Seleniumwiz");
+        signupObj.setSocialSecurityNumber("123456789");
+        signupObj.setDateOfBirth("01/01/2000");
+        //signupObj.submit(); // LEGAL STUFF DO NOT SUBMIT YET
+
+        // assert
+        Assert.assertTrue(signupObj.atStepThree());
+
+        // cleanup
+        signupObj.goHome();;
+    }
+
+    /*
+    Can signup for Premier Plus singleUser
+    Can Signup for concord premier singleUser
+    Can signup for concord standard single
+    ^ 3 Family Users
+    Can enter one payment method for single user
+    Can enter one payment method for +1 user
+    Can enter two payment methods
+    Can edit 1 billing address
+    Can edit 2 billing address
+    
+     */
 
 }
 

@@ -18,7 +18,10 @@ public class LexSignup extends BasePage {
     private WebElement pageTitle;
 
     @FindBy(how = How.CSS, using = "#signup-v2 > div.submit_button_wrap > button")
-    private WebElement submit;
+    private WebElement submitStepOne;
+
+    @FindBy(how = How.CSS, using = "")
+    private WebElement submitStepTwo;
 
     @FindBy(how = How.CSS, using = "div.step1.active")
     private List<WebElement> stepOne;
@@ -234,8 +237,8 @@ public class LexSignup extends BasePage {
         return getPageTitle().getAttribute("text").contains("Sign Up");
     }
 
-    public void submit() {
-        submit.click();
+    public void submitStepOne() {
+        submitStepOne.click();
     }
 
     public boolean atStepOne() {
@@ -324,6 +327,36 @@ public class LexSignup extends BasePage {
         zipCode.sendKeys(zp);
     }
 
+    public void setSecondaryFirstName(String fname) {
+        familyMemberFirstName.clear();
+        familyMemberFirstName.sendKeys(fname);
+    }
+
+    public void setSecondaryLastName(String lname) {
+        familyMemberLastName.clear();
+        familyMemberLastName.sendKeys();
+    }
+
+    public void setSecondaryEmail(String emale) {
+        familyMemberEmail.clear();
+        familyMemberEmail.sendKeys(emale);
+    }
+
+    public void setSecondaryPhone(String ph) {
+        familyMemberPhone.clear();
+        familyMemberPhone.sendKeys(ph);
+    }
+
+    public void setSecondaryAddress(String addr) {
+        familyMemberAddress.clear();
+        familyMemberAddress.sendKeys(addr);
+    }
+
+    public void setSecondaryZip(String zp) {
+        familyMemberZip.clear();
+        familyMemberZip.sendKeys(zp);
+    }
+
     public boolean ffdDisplayed() {
         return ffdOn.size() != 0;
     }
@@ -349,7 +382,7 @@ public class LexSignup extends BasePage {
     }
 
     public boolean atCaliforniaPrivacy() {
-
+        return true;
     }
 
     public void clickPremierPlus() {
@@ -500,7 +533,20 @@ public class LexSignup extends BasePage {
         selectAllCheckbox.click();
     }
 
-    public void clickESignCheckbox
+    public void setLegalSignature(String signature) {
+        legalSignature.clear();
+        legalSignature.sendKeys(signature);
+    }
+
+    public void setSocialSecurityNumber(String ssn) {
+        socialSecurityNumber.clear();
+        socialSecurityNumber.sendKeys(ssn);
+    }
+
+    public void setDateOfBirth(String val) {
+        dob.clear();
+        dob.sendKeys(val);
+    }
 
     public void goHome() {
         driver.get(url);
