@@ -1,76 +1,34 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 25, Failures: 18, Errors: 0, Skipped: 0, Time elapsed: 20.444 s <<< FAILURE! - in TestSuite
-lex.tests.homepage.LexHomepageTests.canNavigateToCreditHelp  Time elapsed: 0.007 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.homepage.LexHomepageTests.canNavigateToCreditHelp(LexHomepageTests.java:57)
+Tests run: 25, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 145.529 s <<< FAILURE! - in TestSuite
+lex.tests.signup.LexSignupTests.canSignUpSingleUser  Time elapsed: 20.218 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element
+	at lex.tests.signup.LexSignupTests.canSignUpSingleUser(LexSignupTests.java:35)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#signup-v2 > div.submit_button_wrap > button"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'PGX51543.local', ip: 'fe80:0:0:0:1403:3324:92e3:1993%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:59657}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f0e08a0c3ad26dc6b3f3655241b848fb
+*** Element info: {Using=css selector, value=#signup-v2 > div.submit_button_wrap > button}
+	at lex.tests.signup.LexSignupTests.canSignUpSingleUser(LexSignupTests.java:35)
 
-lex.tests.homepage.LexHomepageTests.canNavigateToCreditRepair  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.homepage.LexHomepageTests.canNavigateToCreditRepair(LexHomepageTests.java:40)
-
-lex.tests.homepage.LexHomepageTests.canNavigateToOurFirm  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.homepage.LexHomepageTests.canNavigateToOurFirm(LexHomepageTests.java:74)
-
-lex.tests.homepage.LexHomepageTests.canNavigateToSignUp  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.homepage.LexHomepageTests.canNavigateToSignUp(LexHomepageTests.java:23)
-
-lex.tests.homepage.LexHomepageTests.isAtHomepage  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.homepage.LexHomepageTests.isAtHomepage(LexHomepageTests.java:16)
-
-lex.tests.signup.LexSignupTests.canNotContinueWithInvalidEmail  Time elapsed: 0.003 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithInvalidEmail(LexSignupTests.java:122)
-
-lex.tests.signup.LexSignupTests.canNotContinueWithInvalidPhone  Time elapsed: 0 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithInvalidPhone(LexSignupTests.java:167)
-
-lex.tests.signup.LexSignupTests.canNotContinueWithInvalidZip  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithInvalidZip(LexSignupTests.java:234)
-
-lex.tests.signup.LexSignupTests.canNotContinueWithInvalidZip2  Time elapsed: 0 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithInvalidZip2(LexSignupTests.java:257)
-
-lex.tests.signup.LexSignupTests.canNotContinueWithNoAddress  Time elapsed: 0 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithNoAddress(LexSignupTests.java:190)
-
-lex.tests.signup.LexSignupTests.canNotContinueWithNoEmail  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithNoEmail(LexSignupTests.java:100)
-
-lex.tests.signup.LexSignupTests.canNotContinueWithNoFirstName  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithNoFirstName(LexSignupTests.java:56)
-
-lex.tests.signup.LexSignupTests.canNotContinueWithNoLastName  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithNoLastName(LexSignupTests.java:78)
-
-lex.tests.signup.LexSignupTests.canNotContinueWithNoPhone  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithNoPhone(LexSignupTests.java:145)
-
-lex.tests.signup.LexSignupTests.canNotContinueWithNoZip  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithNoZip(LexSignupTests.java:212)
-
-lex.tests.signup.LexSignupTests.canSignUpSingleUser  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canSignUpSingleUser(LexSignupTests.java:19)
-
-lex.tests.signup.LexSignupTests.canSignupWithFamilyMember  Time elapsed: 0 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canSignupWithFamilyMember(LexSignupTests.java:280)
-
-lex.tests.signup.LexSignupTests.constructorLoadsSignupPage  Time elapsed: 0 s  <<< FAILURE!
-java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.constructorLoadsSignupPage(LexSignupTests.java:12)
+lex.tests.signup.LexSignupTests.canSignupWithFamilyMember  Time elapsed: 12.587 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element
+	at lex.tests.signup.LexSignupTests.canSignupWithFamilyMember(LexSignupTests.java:293)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#cc_num_0"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'PGX51543.local', ip: 'fe80:0:0:0:1403:3324:92e3:1993%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:59657}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f0e08a0c3ad26dc6b3f3655241b848fb
+*** Element info: {Using=id, value=cc_num_0}
+	at lex.tests.signup.LexSignupTests.canSignupWithFamilyMember(LexSignupTests.java:293)
 

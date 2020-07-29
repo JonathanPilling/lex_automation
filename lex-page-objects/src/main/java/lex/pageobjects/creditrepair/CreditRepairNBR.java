@@ -11,22 +11,18 @@ import java.util.List;
 public class CreditRepairNBR extends CreditRepairOnlineAbstract {
 
     private final String url = "https://www.lexingtonlaw.com/l/credit-repair-nbr";
-    @FindBy(how=How.CSS, using="a")
-    private List<WebElement> buttonArray;
+
+    @FindBy(how=How.CSS, using="a[/href*='credit-snapshot']")
+    private List<WebElement> creditSnapshotButtons;
 
     public CreditRepairNBR(WebDriver driver) {
         super(driver);
         driver.get(url);
     }
 
-    public void clickSignupButtonInHeroImage() {
-        buttonArray.get(5).click();
+    public void clickCreditSnapshotButton6() { creditSnapshotButtons.get(5).click(); }
+
+    public void goHome() {
+        driver.get(url);
     }
-
-    public void clickCreditSnapshotButton() {
-        buttonArray.get(4).click();
-    }
-
-
-
 }

@@ -4,14 +4,14 @@ import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
 
     private WebDriver driver;
 
-    @BeforeSuite
+    @BeforeClass
     public void beforeSuite() {
         System.setProperty("headless", "false"); // You can set this property elsewhere
         System.setProperty("webdriver.chrome.driver", "chromedriver");
@@ -27,7 +27,7 @@ public class BaseTest {
         }
     }
 
-    @AfterSuite
+    @AfterClass
     public void afterSuite() {
         if(null != driver) {
             driver.close();

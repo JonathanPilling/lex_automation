@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="20.444" tests="25" errors="0" skipped="0" failures="18">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="145.529" tests="25" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="webdriver.chrome.driver" value="chromedriver"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/13.0.2+8_2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/184973/Documents/Automation/lex/lex-regression-tests/target/surefire/surefirebooter5571252101182474421.jar /Users/184973/Documents/Automation/lex/lex-regression-tests/target/surefire 2020-07-29T15-20-48_972-jvmRun1 surefire17769778260901472257tmp surefire_017052913189970132129tmp"/>
+    <property name="sun.java.command" value="/Users/184973/Documents/Automation/lex/lex-regression-tests/target/surefire/surefirebooter11587445359789005936.jar /Users/184973/Documents/Automation/lex/lex-regression-tests/target/surefire 2020-07-29T16-33-46_629-jvmRun1 surefire15999141091360026597tmp surefire_013647381825256975547tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/184973/Documents/Automation/lex/lex-regression-tests/target/test-classes:/Users/184973/Documents/Automation/lex/lex-regression-tests/target/classes:/Users/184973/Documents/Automation/lex/lex-framework/target/classes:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/Users/184973/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/184973/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/184973/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/184973/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/184973/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/184973/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/184973/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/184973/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/184973/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/184973/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/184973/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/184973/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/184973/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/Users/184973/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-server/3.14.0/selenium-server-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/Users/184973/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/Users/184973/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar:/Users/184973/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/184973/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.30/htmlunit-2.30.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.28/htmlunit-core-js-2.28.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit-cssparser/1.0.0/htmlunit-cssparser-1.0.0.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.30/neko-htmlunit-2.30.jar:/Users/184973/.m2/repository/org/apache/httpcomponents/httpmime/4.5.5/httpmime-4.5.5.jar:/Users/184973/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.8.v20180619/jetty-repacked-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-client/9.4.8.v20180619/jetty-client-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-http/9.4.8.v20180619/jetty-http-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-io/9.4.8.v20180619/jetty-io-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-util/9.4.8.v20180619/jetty-util-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.8.v20180619/jetty-xml-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.30.0/htmlunit-driver-2.30.0.jar:/Users/184973/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.8.v20180619/websocket-api-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.8.v20180619/websocket-client-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.8.v20180619/websocket-common-9.4.8.v20180619.jar:/Users/184973/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/184973/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/184973/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/184973/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/184973/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/Users/184973/.m2/repository/io/github/bonigarcia/webdrivermanager/3.0.0/webdrivermanager-3.0.0.jar:/Users/184973/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/184973/.m2/repository/org/rauschig/jarchivelib/0.8.0/jarchivelib-0.8.0.jar:/Users/184973/.m2/repository/org/apache/commons/commons-compress/1.14/commons-compress-1.14.jar:/Users/184973/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/184973/Documents/Automation/lex/lex-page-objects/target/classes:/Users/184973/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/184973/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/184973/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/184973/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/184973/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/Users/184973/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/184973/Documents/Automation/lex/lex-regression-tests/target/surefire/surefirebooter5571252101182474421.jar"/>
+    <property name="surefire.real.class.path" value="/Users/184973/Documents/Automation/lex/lex-regression-tests/target/surefire/surefirebooter11587445359789005936.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="13.0.2+8"/>
@@ -56,110 +56,86 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="57.0"/>
   </properties>
-  <testcase name="canNavigateToCreditSnapshot1" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="2.606">
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 29007
+  <testcase name="canNavigateToCreditSnapshot1" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="2.871">
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 34032
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1596057651.435][WARNING]: This version of ChromeDriver has not been tested with Chrome version 84.
-Jul 29, 2020 3:20:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1596062029.392][WARNING]: This version of ChromeDriver has not been tested with Chrome version 84.
+Jul 29, 2020 4:33:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="canNavigateToCreditSnapshot2" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="1.073"/>
-  <testcase name="canNavigateToSignup1" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="1.627"/>
-  <testcase name="canNavigateToSignup2" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="1.607"/>
-  <testcase name="canNavigateToSignup3" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="2.618"/>
-  <testcase name="canNavigateToSignup4" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="2.163"/>
-  <testcase name="canNavigateToSignup5" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="1.012"/>
-  <testcase name="canNavigateToCreditHelp" classname="lex.tests.homepage.LexHomepageTests" time="0.007">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.homepage.LexHomepageTests.canNavigateToCreditHelp(LexHomepageTests.java:57)
+  <testcase name="canNavigateToCreditSnapshot2" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="1.113"/>
+  <testcase name="canNavigateToSignup1" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="1.05"/>
+  <testcase name="canNavigateToSignup2" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="1.228"/>
+  <testcase name="canNavigateToSignup3" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="2.563"/>
+  <testcase name="canNavigateToSignup4" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="2.183"/>
+  <testcase name="canNavigateToSignup5" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="3.721"/>
+  <testcase name="canNavigateToCreditHelp" classname="lex.tests.homepage.LexHomepageTests" time="4.118">
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 19129
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1596062046.279][WARNING]: This version of ChromeDriver has not been tested with Chrome version 84.
+Jul 29, 2020 4:34:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="canNavigateToCreditRepair" classname="lex.tests.homepage.LexHomepageTests" time="3.349"/>
+  <testcase name="canNavigateToOurFirm" classname="lex.tests.homepage.LexHomepageTests" time="3.079"/>
+  <testcase name="canNavigateToSignUp" classname="lex.tests.homepage.LexHomepageTests" time="3.516"/>
+  <testcase name="isAtHomepage" classname="lex.tests.homepage.LexHomepageTests" time="0.741"/>
+  <testcase name="canNotContinueWithInvalidEmail" classname="lex.tests.signup.LexSignupTests" time="7.287">
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 14021
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1596062063.263][WARNING]: This version of ChromeDriver has not been tested with Chrome version 84.
+Jul 29, 2020 4:34:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="canNotContinueWithInvalidPhone" classname="lex.tests.signup.LexSignupTests" time="7.457"/>
+  <testcase name="canNotContinueWithInvalidZip" classname="lex.tests.signup.LexSignupTests" time="7.228"/>
+  <testcase name="canNotContinueWithInvalidZip2" classname="lex.tests.signup.LexSignupTests" time="6.979"/>
+  <testcase name="canNotContinueWithNoAddress" classname="lex.tests.signup.LexSignupTests" time="7.05"/>
+  <testcase name="canNotContinueWithNoEmail" classname="lex.tests.signup.LexSignupTests" time="6.602"/>
+  <testcase name="canNotContinueWithNoFirstName" classname="lex.tests.signup.LexSignupTests" time="6.946"/>
+  <testcase name="canNotContinueWithNoLastName" classname="lex.tests.signup.LexSignupTests" time="6.759"/>
+  <testcase name="canNotContinueWithNoPhone" classname="lex.tests.signup.LexSignupTests" time="7.074"/>
+  <testcase name="canNotContinueWithNoZip" classname="lex.tests.signup.LexSignupTests" time="6.933"/>
+  <testcase name="canSignUpSingleUser" classname="lex.tests.signup.LexSignupTests" time="20.218">
+    <failure message="Timed out after 5 seconds. Unable to locate the element" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element
+	at lex.tests.signup.LexSignupTests.canSignUpSingleUser(LexSignupTests.java:35)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#signup-v2 > div.submit_button_wrap > button"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'PGX51543.local', ip: 'fe80:0:0:0:1403:3324:92e3:1993%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:59657}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f0e08a0c3ad26dc6b3f3655241b848fb
+*** Element info: {Using=css selector, value=#signup-v2 > div.submit_button_wrap > button}
+	at lex.tests.signup.LexSignupTests.canSignUpSingleUser(LexSignupTests.java:35)
 ]]></failure>
   </testcase>
-  <testcase name="canNavigateToCreditRepair" classname="lex.tests.homepage.LexHomepageTests" time="0.001">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.homepage.LexHomepageTests.canNavigateToCreditRepair(LexHomepageTests.java:40)
+  <testcase name="canSignupWithFamilyMember" classname="lex.tests.signup.LexSignupTests" time="12.587">
+    <failure message="Timed out after 5 seconds. Unable to locate the element" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element
+	at lex.tests.signup.LexSignupTests.canSignupWithFamilyMember(LexSignupTests.java:293)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#cc_num_0"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'PGX51543.local', ip: 'fe80:0:0:0:1403:3324:92e3:1993%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:59657}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f0e08a0c3ad26dc6b3f3655241b848fb
+*** Element info: {Using=id, value=cc_num_0}
+	at lex.tests.signup.LexSignupTests.canSignupWithFamilyMember(LexSignupTests.java:293)
 ]]></failure>
   </testcase>
-  <testcase name="canNavigateToOurFirm" classname="lex.tests.homepage.LexHomepageTests" time="0.001">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.homepage.LexHomepageTests.canNavigateToOurFirm(LexHomepageTests.java:74)
-]]></failure>
-  </testcase>
-  <testcase name="canNavigateToSignUp" classname="lex.tests.homepage.LexHomepageTests" time="0.001">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.homepage.LexHomepageTests.canNavigateToSignUp(LexHomepageTests.java:23)
-]]></failure>
-  </testcase>
-  <testcase name="isAtHomepage" classname="lex.tests.homepage.LexHomepageTests" time="0.001">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.homepage.LexHomepageTests.isAtHomepage(LexHomepageTests.java:16)
-]]></failure>
-  </testcase>
-  <testcase name="canNotContinueWithInvalidEmail" classname="lex.tests.signup.LexSignupTests" time="0.003">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithInvalidEmail(LexSignupTests.java:122)
-]]></failure>
-  </testcase>
-  <testcase name="canNotContinueWithInvalidPhone" classname="lex.tests.signup.LexSignupTests" time="0">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithInvalidPhone(LexSignupTests.java:167)
-]]></failure>
-  </testcase>
-  <testcase name="canNotContinueWithInvalidZip" classname="lex.tests.signup.LexSignupTests" time="0.001">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithInvalidZip(LexSignupTests.java:234)
-]]></failure>
-  </testcase>
-  <testcase name="canNotContinueWithInvalidZip2" classname="lex.tests.signup.LexSignupTests" time="0">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithInvalidZip2(LexSignupTests.java:257)
-]]></failure>
-  </testcase>
-  <testcase name="canNotContinueWithNoAddress" classname="lex.tests.signup.LexSignupTests" time="0">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithNoAddress(LexSignupTests.java:190)
-]]></failure>
-  </testcase>
-  <testcase name="canNotContinueWithNoEmail" classname="lex.tests.signup.LexSignupTests" time="0.001">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithNoEmail(LexSignupTests.java:100)
-]]></failure>
-  </testcase>
-  <testcase name="canNotContinueWithNoFirstName" classname="lex.tests.signup.LexSignupTests" time="0.001">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithNoFirstName(LexSignupTests.java:56)
-]]></failure>
-  </testcase>
-  <testcase name="canNotContinueWithNoLastName" classname="lex.tests.signup.LexSignupTests" time="0.001">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithNoLastName(LexSignupTests.java:78)
-]]></failure>
-  </testcase>
-  <testcase name="canNotContinueWithNoPhone" classname="lex.tests.signup.LexSignupTests" time="0.001">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithNoPhone(LexSignupTests.java:145)
-]]></failure>
-  </testcase>
-  <testcase name="canNotContinueWithNoZip" classname="lex.tests.signup.LexSignupTests" time="0.001">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canNotContinueWithNoZip(LexSignupTests.java:212)
-]]></failure>
-  </testcase>
-  <testcase name="canSignUpSingleUser" classname="lex.tests.signup.LexSignupTests" time="0.001">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canSignUpSingleUser(LexSignupTests.java:19)
-]]></failure>
-  </testcase>
-  <testcase name="canSignupWithFamilyMember" classname="lex.tests.signup.LexSignupTests" time="0">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.canSignupWithFamilyMember(LexSignupTests.java:280)
-]]></failure>
-  </testcase>
-  <testcase name="constructorLoadsSignupPage" classname="lex.tests.signup.LexSignupTests" time="0">
-    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
-	at lex.tests.signup.LexSignupTests.constructorLoadsSignupPage(LexSignupTests.java:12)
-]]></failure>
-  </testcase>
+  <testcase name="constructorLoadsSignupPage" classname="lex.tests.signup.LexSignupTests" time="0.635"/>
 </testsuite>
