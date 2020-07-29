@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]">
+  <test thread-count="5" name="Command line test(failed)">
+    <classes>
+      <class name="lex.tests.creditrepair.CreditRepairOnlineTests">
+        <methods>
+          <include name="canNavigateToSignup1"/>
+          <include name="canNavigateToSignup2"/>
+          <include name="beforeSuite"/>
+          <include name="canNavigateToSignup3"/>
+          <include name="canNavigateToCreditSnapshot2"/>
+          <include name="canNavigateToCreditSnapshot1"/>
+          <include name="afterSuite"/>
+          <include name="canNavigateToSignup4"/>
+          <include name="canNavigateToSignup5"/>
+        </methods>
+      </class> <!-- lex.tests.creditrepair.CreditRepairOnlineTests -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

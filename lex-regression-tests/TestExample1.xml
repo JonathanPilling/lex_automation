@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Example test run">
+    <test name="Simple Test">
+        <classes>
+            <class name="lex.tests.creditrepair.CreditRepairOnlineTests"/>
+            <class name="lex.tests.homepage.LexHomepageTests"/>
+            <class name="lex.tests.signup.LexSignupTests"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Example test run]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Simple Test(failed)" verbose="0">
+    <classes>
+      <class name="lex.tests.signup.LexSignupTests">
+        <methods>
+          <include name="canNotContinueWithNoLastName"/>
+          <include name="canNotContinueWithNoEmail"/>
+          <include name="canNotContinueWithInvalidEmail"/>
+          <include name="canNotContinueWithNoZip"/>
+          <include name="canNotContinueWithNoFirstName"/>
+          <include name="canNotContinueWithInvalidPhone"/>
+          <include name="canSignUpSingleUser"/>
+          <include name="canNotContinueWithInvalidZip"/>
+          <include name="canNotContinueWithNoPhone"/>
+          <include name="beforeSuite"/>
+          <include name="constructorLoadsSignupPage"/>
+          <include name="afterSuite"/>
+          <include name="canSignupWithFamilyMember"/>
+          <include name="canNotContinueWithNoAddress"/>
+          <include name="canNotContinueWithInvalidZip2"/>
+        </methods>
+      </class> <!-- lex.tests.signup.LexSignupTests -->
+      <class name="lex.tests.homepage.LexHomepageTests">
+        <methods>
+          <include name="isAtHomepage"/>
+          <include name="beforeSuite"/>
+          <include name="canNavigateToOurFirm"/>
+          <include name="canNavigateToCreditHelp"/>
+          <include name="canNavigateToSignUp"/>
+          <include name="afterSuite"/>
+          <include name="canNavigateToCreditRepair"/>
+        </methods>
+      </class> <!-- lex.tests.homepage.LexHomepageTests -->
+    </classes>
+  </test> <!-- Simple Test(failed) -->
+</suite> <!-- Failed suite [Example test run] -->

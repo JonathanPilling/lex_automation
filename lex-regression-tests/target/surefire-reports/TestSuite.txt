@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 25, Failures: 18, Errors: 0, Skipped: 0, Time elapsed: 20.444 s <<< FAILURE! - in TestSuite
+lex.tests.homepage.LexHomepageTests.canNavigateToCreditHelp  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.homepage.LexHomepageTests.canNavigateToCreditHelp(LexHomepageTests.java:57)
+
+lex.tests.homepage.LexHomepageTests.canNavigateToCreditRepair  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.homepage.LexHomepageTests.canNavigateToCreditRepair(LexHomepageTests.java:40)
+
+lex.tests.homepage.LexHomepageTests.canNavigateToOurFirm  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.homepage.LexHomepageTests.canNavigateToOurFirm(LexHomepageTests.java:74)
+
+lex.tests.homepage.LexHomepageTests.canNavigateToSignUp  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.homepage.LexHomepageTests.canNavigateToSignUp(LexHomepageTests.java:23)
+
+lex.tests.homepage.LexHomepageTests.isAtHomepage  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.homepage.LexHomepageTests.isAtHomepage(LexHomepageTests.java:16)
+
+lex.tests.signup.LexSignupTests.canNotContinueWithInvalidEmail  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.signup.LexSignupTests.canNotContinueWithInvalidEmail(LexSignupTests.java:122)
+
+lex.tests.signup.LexSignupTests.canNotContinueWithInvalidPhone  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.signup.LexSignupTests.canNotContinueWithInvalidPhone(LexSignupTests.java:167)
+
+lex.tests.signup.LexSignupTests.canNotContinueWithInvalidZip  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.signup.LexSignupTests.canNotContinueWithInvalidZip(LexSignupTests.java:234)
+
+lex.tests.signup.LexSignupTests.canNotContinueWithInvalidZip2  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.signup.LexSignupTests.canNotContinueWithInvalidZip2(LexSignupTests.java:257)
+
+lex.tests.signup.LexSignupTests.canNotContinueWithNoAddress  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.signup.LexSignupTests.canNotContinueWithNoAddress(LexSignupTests.java:190)
+
+lex.tests.signup.LexSignupTests.canNotContinueWithNoEmail  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.signup.LexSignupTests.canNotContinueWithNoEmail(LexSignupTests.java:100)
+
+lex.tests.signup.LexSignupTests.canNotContinueWithNoFirstName  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.signup.LexSignupTests.canNotContinueWithNoFirstName(LexSignupTests.java:56)
+
+lex.tests.signup.LexSignupTests.canNotContinueWithNoLastName  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.signup.LexSignupTests.canNotContinueWithNoLastName(LexSignupTests.java:78)
+
+lex.tests.signup.LexSignupTests.canNotContinueWithNoPhone  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.signup.LexSignupTests.canNotContinueWithNoPhone(LexSignupTests.java:145)
+
+lex.tests.signup.LexSignupTests.canNotContinueWithNoZip  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.signup.LexSignupTests.canNotContinueWithNoZip(LexSignupTests.java:212)
+
+lex.tests.signup.LexSignupTests.canSignUpSingleUser  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.signup.LexSignupTests.canSignUpSingleUser(LexSignupTests.java:19)
+
+lex.tests.signup.LexSignupTests.canSignupWithFamilyMember  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.signup.LexSignupTests.canSignupWithFamilyMember(LexSignupTests.java:280)
+
+lex.tests.signup.LexSignupTests.constructorLoadsSignupPage  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at lex.tests.signup.LexSignupTests.constructorLoadsSignupPage(LexSignupTests.java:12)
+
