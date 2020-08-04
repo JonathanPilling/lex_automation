@@ -8,17 +8,17 @@ import org.openqa.selenium.support.How;
 
 import java.util.List;
 
-public abstract class CreditRepairOnlineAbstract extends BasePage {
+public abstract class CreditRepairAbstract extends BasePage {
     @FindBy(how=How.CSS, using="a[href='/signup']")
     private List<WebElement> signupButtons;
 
-    @FindBy(how=How.CSS, using="a[href='/']")
+    @FindBy(how=How.CSS, using="a[href*='credit-snapshot']")
     private List<WebElement> creditSnapshotButtons;
 
     @FindBy(how=How.CSS, using="button.close")
     private WebElement modalCloseButton;
 
-    public CreditRepairOnlineAbstract(WebDriver driver) {
+    public CreditRepairAbstract(WebDriver driver) {
         super(driver);
     }
 
@@ -55,6 +55,8 @@ public abstract class CreditRepairOnlineAbstract extends BasePage {
     public void clickCreditSnapshotButton4() { creditSnapshotButtons.get(3).click(); }
 
     public void clickCreditSnapshotButton5() { creditSnapshotButtons.get(4).click(); }
+
+    public void clickCreditSnapshotButton6() { creditSnapshotButtons.get(5).click(); }
 
 
     public boolean isAtSignupPage(WebDriver driver) {

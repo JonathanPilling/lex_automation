@@ -1,17 +1,17 @@
 package lex.tests.creditrepair;
 
 import lex.pageobjects.creditrepair.CreditRepairNBR;
-import lex.pageobjects.creditrepair.CreditRepairOnline;
 import org.testng.annotations.Test;
 import lex.framework.core.BaseTest;
 
 public class CreditRepairNBRTests extends BaseTest {
     @Test
-    public void canNavigateToSignup1() {
+    public void canNavigateToSignup1() throws InterruptedException {
         // arrange
         CreditRepairNBR repair = new CreditRepairNBR(getDriver());
 
         // act
+        Thread.sleep(1000);
         if (repair.isModalOpen()) {
             repair.closeModal();
         }
@@ -25,11 +25,12 @@ public class CreditRepairNBRTests extends BaseTest {
     }
 
     @Test
-    public void canNavigateToSignup2() {
+    public void canNavigateToSignup2() throws InterruptedException {
         // arrange
         CreditRepairNBR repair = new CreditRepairNBR(getDriver());
 
         // act
+        Thread.sleep(1000);
         if (repair.isModalOpen()) {
             repair.closeModal();
         }
@@ -43,11 +44,12 @@ public class CreditRepairNBRTests extends BaseTest {
     }
 
     @Test
-    public void canNavigateToSignup3() {
+    public void canNavigateToSignup3() throws InterruptedException {
         // arrange
         CreditRepairNBR repair = new CreditRepairNBR(getDriver());
 
         // act
+        Thread.sleep(1000);
         if (repair.isModalOpen()) {
             repair.closeModal();
         }
@@ -61,11 +63,12 @@ public class CreditRepairNBRTests extends BaseTest {
     }
 
     @Test
-    public void canNavigateToSignup4() {
+    public void canNavigateToSignup4() throws InterruptedException {
         // arrange
         CreditRepairNBR repair = new CreditRepairNBR(getDriver());
 
         // act
+        Thread.sleep(1000);
         if (repair.isModalOpen()) {
             repair.closeModal();
         }
@@ -79,11 +82,12 @@ public class CreditRepairNBRTests extends BaseTest {
     }
 
     @Test
-    public void canNavigateToSignup5() {
+    public void canNavigateToSignup5() throws InterruptedException {
         // arrange
         CreditRepairNBR repair = new CreditRepairNBR(getDriver());
 
         // act
+        Thread.sleep(1000);
         if (repair.isModalOpen()) {
             repair.closeModal();
         }
@@ -97,11 +101,12 @@ public class CreditRepairNBRTests extends BaseTest {
     }
 
     @Test
-    public void canNavigateToCreditSnapshot1() {
+    public void canNavigateToCreditSnapshot1() throws InterruptedException {
         // arrange
         CreditRepairNBR repair = new CreditRepairNBR(getDriver());
 
         // act
+        Thread.sleep(1000);
         if (repair.isModalOpen()) {
             repair.closeModal();
         }
@@ -115,11 +120,12 @@ public class CreditRepairNBRTests extends BaseTest {
     }
 
     @Test
-    public void canNavigateToCreditSnapshot2() {
+    public void canNavigateToCreditSnapshot2() throws InterruptedException {
         // arrange
         CreditRepairNBR repair = new CreditRepairNBR(getDriver());
 
         // act
+        Thread.sleep(1000);
         if (repair.isModalOpen()) {
             repair.closeModal();
         }
@@ -133,11 +139,12 @@ public class CreditRepairNBRTests extends BaseTest {
     }
 
     @Test
-    public void canNavigateToCreditSnapshot3() {
+    public void canNavigateToCreditSnapshot3() throws InterruptedException {
         // arrange
         CreditRepairNBR repair = new CreditRepairNBR(getDriver());
 
         // act
+        Thread.sleep(1000);
         if (repair.isModalOpen()) {
             repair.closeModal();
         }
@@ -151,11 +158,12 @@ public class CreditRepairNBRTests extends BaseTest {
     }
 
     @Test
-    public void canNavigateToCreditSnapshot4() {
+    public void canNavigateToCreditSnapshot4() throws InterruptedException {
         // arrange
         CreditRepairNBR repair = new CreditRepairNBR(getDriver());
 
         // act
+        Thread.sleep(1000);
         if (repair.isModalOpen()) {
             repair.closeModal();
         }
@@ -169,11 +177,12 @@ public class CreditRepairNBRTests extends BaseTest {
     }
 
     @Test
-    public void canNavigateToCreditSnapshot5() {
+    public void canNavigateToCreditSnapshot5() throws InterruptedException {
         // arrange
         CreditRepairNBR repair = new CreditRepairNBR(getDriver());
 
         // act
+        Thread.sleep(1000);
         if (repair.isModalOpen()) {
             repair.closeModal();
         }
@@ -187,11 +196,12 @@ public class CreditRepairNBRTests extends BaseTest {
     }
 
     @Test
-    public void canNavigateToCreditSnapshot6() {
+    public void canNavigateToCreditSnapshot6() throws InterruptedException {
         // arrange
         CreditRepairNBR repair = new CreditRepairNBR(getDriver());
 
         // act
+        Thread.sleep(1000);
         if (repair.isModalOpen()) {
             repair.closeModal();
         }
