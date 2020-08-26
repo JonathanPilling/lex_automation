@@ -34,6 +34,33 @@ public class LexHomepage extends BasePage {
     @FindBy(how = How.CSS, using = ".desktop_site_nav_left a[href='/our-firm']")
     private WebElement ourFirmButton;
 
+    @FindBy(how = How.CSS, using = "div.hero-content a.lex-cta-number")
+    private WebElement getStartedHeroButton;
+
+    @FindBy(how=How.CSS, using = "div.hero-content a.lex-online-signup")
+    private WebElement signupHeroLink;
+
+    @FindBy(how=How.CSS, using = ".hero-cta a")
+    private WebElement getStartedHeroLink;
+
+    @FindBy(how=How.CSS, using = "#credit-costing-you a.lex-cta-number")
+    private WebElement seeMyCreditButton;
+
+    @FindBy(how=How.CSS, using = "#credit-costing-you a.sign-up-cta")
+    private WebElement signupCostLink;
+
+    @FindBy(how=How.CSS, using = "div.image-reveal-cta a.call-now-cta")
+    private WebElement getStartedImageRevealButton;
+
+    @FindBy(how=How.CSS, using = "div.image-reveal-cta a.sign-up-cta")
+    private WebElement signupImageRevealLink;
+
+    @FindBy(how=How.CSS, using = "#client-reviews a.call-now-cta")
+    private WebElement getStartedClientReviewsButton;
+
+    @FindBy(how=How.CSS, using = "#client-reviews a.sign-up-cta")
+    private WebElement signupClientReviewsLink;
+
     /* Methods */
     public WebElement getPageTitle() {
         return pageTitle;
@@ -56,11 +83,47 @@ public class LexHomepage extends BasePage {
                 "| Trusted Attorneys Helping to Fix Your Credit");
     }
 
-    public void toggleOnFFD() {
-
+    public boolean isAtCreditSnapshot() {
+        return driver.getCurrentUrl() == "https://www.lexingtonlaw.com/credit-snapshot/pi";
     }
 
-    public void toggleOffFFD() {
+    public boolean isAtSignup() {
+        return driver.getCurrentUrl() == "https://www.lexingtonlaw.com/signup";
+    }
 
+    public void clickGetStartedHeroButton() {
+        getStartedHeroButton.click();
+    }
+
+    public void clickSignupHeroLink() {
+        signupHeroLink.click();
+    }
+
+    public void clickGetStartedHeroLink() {
+        getStartedHeroLink.click();
+    }
+
+    public void clickSeeMyCreditButton() {
+        seeMyCreditButton.click();
+    }
+
+    public void clickSignupCostLink() {
+        signupCostLink.click();
+    }
+
+    public void clickGetStartedImageRevealButton() {
+        getStartedImageRevealButton.click();
+    }
+
+    public void clickSignupImageRevealLink() {
+        signupImageRevealLink.click();
+    }
+
+    public void clickGetStartedClientReviewsButton() {
+        getStartedClientReviewsButton.click();
+    }
+
+    public void clickSignupClientReviewsLink() {
+        signupClientReviewsLink.click();
     }
 }

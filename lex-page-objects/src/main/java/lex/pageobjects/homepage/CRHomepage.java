@@ -7,7 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class CRHomepage extends BasePage {
-    private static String URL = "www.creditrepair.com";
+
+    private static String URL = "https://www.creditrepair.com";
 
     /* locators */
     @FindBy(how=How.CLASS_NAME, using="closeBtn")
@@ -167,4 +168,26 @@ public class CRHomepage extends BasePage {
     public void clickCostSignupText() {
         costSignupText.click();
     }
+
+    public boolean isAtCreditSnapshot() {
+        return driver.getCurrentUrl().startsWith("https://www.creditrepair.com/credit-snapshots/pi");
+    }
+
+    public boolean isAtSignup() {
+        return driver.getCurrentUrl() == "https://www.creditrepair.com/signup";
+    }
+
+    public boolean isAtLogin() {
+        return driver.getCurrentUrl() == "https://members.creditrepair.com/login";
+    }
+
+    public boolean isAtReportPull() {
+        return driver.getCurrentUrl() == "https://www.creditrepair.com/credit-snapshot/rp";
+    }
+
+
+    public void goHome() {
+        driver.get(URL);
+    }
+
 }

@@ -85,5 +85,142 @@ public class LexHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
+    @Test
+    public void canClickGetStartedButtonInHeroSection() {
+        // arrange
+        LexHomepage myPage = new LexHomepage(getDriver());
+
+        // act
+        myPage.clickGetStartedHeroButton();
+
+        // assert
+        Assert.assertTrue(myPage.isAtCreditSnapshot());
+
+        // clean up
+        myPage.goHome();
+    }
+
+    @Test
+    public void canClickSignupLinkInHeroSection() {
+        // arrange
+        LexHomepage myPage = new LexHomepage(getDriver());
+
+        // act
+        myPage.clickSignupHeroLink();
+
+        // assert
+        Assert.assertTrue(myPage.isAtSignup());
+
+        // clean up
+        myPage.goHome();
+    }
+
+    @Test
+    public void canClickGetStartedLinkInHeroSection() {
+        // arrange
+        LexHomepage myPage = new LexHomepage(getDriver());
+
+        // act
+        myPage.clickGetStartedHeroLink();
+
+        // assert
+        Assert.assertTrue(myPage.isAtCreditSnapshot());
+
+        // clean up
+        myPage.goHome();
+    }
+
+    @Test
+    public void canClickSeeMyCreditButton() {
+        // arrange
+        LexHomepage myPage = new LexHomepage(getDriver());
+
+        // act
+        myPage.clickSeeMyCreditButton();
+
+        // assert
+        Assert.assertTrue(myPage.isAtCreditSnapshot());
+
+        // clean up
+        myPage.goHome();
+    }
+
+    @Test
+    public void canClickSignupCreditCostLink() {
+        // arrange
+        LexHomepage myPage = new LexHomepage(getDriver());
+
+        // act
+        myPage.clickSignupCostLink();
+
+        // assert
+        Assert.assertTrue(myPage.isAtSignup());
+
+        // clean up
+        myPage.goHome();
+    }
+
+    @Test
+    public void canClickGetStartedButtonInImageRevealSection() {
+        // arrange
+        LexHomepage myPage = new LexHomepage(getDriver());
+
+        // act
+        myPage.clickGetStartedImageRevealButton();
+
+        // assert
+        Assert.assertTrue(myPage.isAtCreditSnapshot());
+
+        // clean up
+        myPage.goHome();
+    }
+
+    @Test
+    public void canClickSignupLinkInImageRevealSection() {
+        // arrange
+        LexHomepage myPage = new LexHomepage(getDriver());
+
+        // act
+        myPage.clickSignupImageRevealLink();
+
+        // assert
+        Assert.assertTrue(myPage.isAtSignup());
+
+        // clean up
+        myPage.goHome();
+    }
+
+    @Test
+    public void canClickGetStartedButtonInClientReviewsSection() {
+        // arrange
+        LexHomepage myPage = new LexHomepage(getDriver());
+
+        // act
+        myPage.clickGetStartedClientReviewsButton();
+
+        // assert
+        Assert.assertTrue(myPage.isAtCreditSnapshot());
+
+        // clean up
+        myPage.goHome();
+    }
+
+    @Test
+    public void canClickSignupLinkInClientReviewsSection() {
+        // arrange
+        LexHomepage myPage = new LexHomepage(getDriver());
+
+        // act
+        myPage.clickSignupClientReviewsLink();
+
+        // assert
+        Assert.assertTrue(myPage.isAtSignup());
+
+        // clean up
+        myPage.goHome();
+    }
+
+
+
 }
 
