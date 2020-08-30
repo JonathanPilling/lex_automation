@@ -24,21 +24,21 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 10 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Example_test_run" class="navigator-link">
-              <span class="suite-name border-passed">Example test run</span>
+            <a href="#" class="navigator-link" panel-name="suite-Example_test_run">
+              <span class="suite-name border-failed">Example test run</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Example_test_run" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="test-xml-Example_test_run">
                     <span>TestExample1.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Example_test_run" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-Example_test_run">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Example_test_run" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-Example_test_run">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Example_test_run" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-Example_test_run">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Example_test_run" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-Example_test_run">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Example_test_run" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Example_test_run">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Example_test_run" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-Example_test_run">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,7 +91,66 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">56 methods,   56 passed</span>
+                    <span class="method-stats">65 methods, 10 failed,   55 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Example_test_run" class="hide-methods failed suite-Example_test_run"> (hide)</a> <!-- hide-methods failed suite-Example_test_run -->
+                      <a href="#" panel-name="suite-Example_test_run" class="show-methods failed suite-Example_test_run"> (show)</a> <!-- show-methods failed suite-Example_test_run -->
+                    </span>
+                    <div class="method-list-content failed suite-Example_test_run">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" hash-for-method="canClickGetStartedButtonInClientReviewsSection">canClickGetStartedButtonInClientReviewsSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" hash-for-method="canClickGetStartedButtonInHeroSection">canClickGetStartedButtonInHeroSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" hash-for-method="canClickGetStartedButtonInImageRevealSection">canClickGetStartedButtonInImageRevealSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" hash-for-method="canClickGetStartedLinkInHeroSection">canClickGetStartedLinkInHeroSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" hash-for-method="canClickSeeMyCreditButton">canClickSeeMyCreditButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" hash-for-method="canClickSignupCreditCostLink">canClickSignupCreditCostLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" hash-for-method="canClickSignupLinkInClientReviewsSection">canClickSignupLinkInClientReviewsSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" hash-for-method="canClickSignupLinkInHeroSection">canClickSignupLinkInHeroSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" hash-for-method="canClickSignupLinkInImageRevealSection">canClickSignupLinkInImageRevealSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" hash-for-method="canNotContinueWithInvalidEmail">canNotContinueWithInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Example_test_run -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,283 +160,278 @@
                     </span>
                     <div class="method-list-content passed suite-Example_test_run">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" class="method navigator-link" hash-for-method="canNavigateToCreditHelp">canNavigateToCreditHelp</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" hash-for-method="canNavigateToCreditHelp">canNavigateToCreditHelp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" class="method navigator-link" hash-for-method="canNavigateToCreditRepair">canNavigateToCreditRepair</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" hash-for-method="canNavigateToCreditRepair">canNavigateToCreditRepair</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot1">canNavigateToCreditSnapshot1</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" hash-for-method="canNavigateToCreditSnapshot1">canNavigateToCreditSnapshot1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot1">canNavigateToCreditSnapshot1</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" hash-for-method="canNavigateToCreditSnapshot1">canNavigateToCreditSnapshot1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot1">canNavigateToCreditSnapshot1</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairOnlineTests" hash-for-method="canNavigateToCreditSnapshot1">canNavigateToCreditSnapshot1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairOnlineTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot1">canNavigateToCreditSnapshot1</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" hash-for-method="canNavigateToCreditSnapshot1">canNavigateToCreditSnapshot1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot2">canNavigateToCreditSnapshot2</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairOnlineTests" hash-for-method="canNavigateToCreditSnapshot2">canNavigateToCreditSnapshot2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairOnlineTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot2">canNavigateToCreditSnapshot2</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" hash-for-method="canNavigateToCreditSnapshot2">canNavigateToCreditSnapshot2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot2">canNavigateToCreditSnapshot2</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" hash-for-method="canNavigateToCreditSnapshot2">canNavigateToCreditSnapshot2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot2">canNavigateToCreditSnapshot2</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" hash-for-method="canNavigateToCreditSnapshot2">canNavigateToCreditSnapshot2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot3">canNavigateToCreditSnapshot3</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" hash-for-method="canNavigateToCreditSnapshot3">canNavigateToCreditSnapshot3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot3">canNavigateToCreditSnapshot3</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" hash-for-method="canNavigateToCreditSnapshot3">canNavigateToCreditSnapshot3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot3">canNavigateToCreditSnapshot3</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" hash-for-method="canNavigateToCreditSnapshot3">canNavigateToCreditSnapshot3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot4">canNavigateToCreditSnapshot4</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" hash-for-method="canNavigateToCreditSnapshot4">canNavigateToCreditSnapshot4</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot4">canNavigateToCreditSnapshot4</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" hash-for-method="canNavigateToCreditSnapshot4">canNavigateToCreditSnapshot4</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot4">canNavigateToCreditSnapshot4</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" hash-for-method="canNavigateToCreditSnapshot4">canNavigateToCreditSnapshot4</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot5">canNavigateToCreditSnapshot5</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" hash-for-method="canNavigateToCreditSnapshot5">canNavigateToCreditSnapshot5</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot5">canNavigateToCreditSnapshot5</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" hash-for-method="canNavigateToCreditSnapshot5">canNavigateToCreditSnapshot5</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot5">canNavigateToCreditSnapshot5</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" hash-for-method="canNavigateToCreditSnapshot5">canNavigateToCreditSnapshot5</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot6">canNavigateToCreditSnapshot6</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" hash-for-method="canNavigateToCreditSnapshot6">canNavigateToCreditSnapshot6</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot6">canNavigateToCreditSnapshot6</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" hash-for-method="canNavigateToCreditSnapshot6">canNavigateToCreditSnapshot6</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" class="method navigator-link" hash-for-method="canNavigateToCreditSnapshot6">canNavigateToCreditSnapshot6</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" hash-for-method="canNavigateToCreditSnapshot6">canNavigateToCreditSnapshot6</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" class="method navigator-link" hash-for-method="canNavigateToOurFirm">canNavigateToOurFirm</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" hash-for-method="canNavigateToOurFirm">canNavigateToOurFirm</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" class="method navigator-link" hash-for-method="canNavigateToSignUp">canNavigateToSignUp</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" hash-for-method="canNavigateToSignUp">canNavigateToSignUp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" class="method navigator-link" hash-for-method="canNavigateToSignup1">canNavigateToSignup1</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" hash-for-method="canNavigateToSignup1">canNavigateToSignup1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairOnlineTests" class="method navigator-link" hash-for-method="canNavigateToSignup1">canNavigateToSignup1</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" hash-for-method="canNavigateToSignup1">canNavigateToSignup1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" class="method navigator-link" hash-for-method="canNavigateToSignup1">canNavigateToSignup1</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairOnlineTests" hash-for-method="canNavigateToSignup1">canNavigateToSignup1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" class="method navigator-link" hash-for-method="canNavigateToSignup1">canNavigateToSignup1</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" hash-for-method="canNavigateToSignup1">canNavigateToSignup1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairOnlineTests" class="method navigator-link" hash-for-method="canNavigateToSignup2">canNavigateToSignup2</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" hash-for-method="canNavigateToSignup2">canNavigateToSignup2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" class="method navigator-link" hash-for-method="canNavigateToSignup2">canNavigateToSignup2</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairOnlineTests" hash-for-method="canNavigateToSignup2">canNavigateToSignup2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" class="method navigator-link" hash-for-method="canNavigateToSignup2">canNavigateToSignup2</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" hash-for-method="canNavigateToSignup2">canNavigateToSignup2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" class="method navigator-link" hash-for-method="canNavigateToSignup2">canNavigateToSignup2</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" hash-for-method="canNavigateToSignup2">canNavigateToSignup2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" class="method navigator-link" hash-for-method="canNavigateToSignup3">canNavigateToSignup3</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" hash-for-method="canNavigateToSignup3">canNavigateToSignup3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" class="method navigator-link" hash-for-method="canNavigateToSignup3">canNavigateToSignup3</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" hash-for-method="canNavigateToSignup3">canNavigateToSignup3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" class="method navigator-link" hash-for-method="canNavigateToSignup3">canNavigateToSignup3</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" hash-for-method="canNavigateToSignup3">canNavigateToSignup3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairOnlineTests" class="method navigator-link" hash-for-method="canNavigateToSignup3">canNavigateToSignup3</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairOnlineTests" hash-for-method="canNavigateToSignup3">canNavigateToSignup3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" class="method navigator-link" hash-for-method="canNavigateToSignup4">canNavigateToSignup4</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" hash-for-method="canNavigateToSignup4">canNavigateToSignup4</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" class="method navigator-link" hash-for-method="canNavigateToSignup4">canNavigateToSignup4</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" hash-for-method="canNavigateToSignup4">canNavigateToSignup4</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" class="method navigator-link" hash-for-method="canNavigateToSignup4">canNavigateToSignup4</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairOnlineTests" hash-for-method="canNavigateToSignup4">canNavigateToSignup4</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairOnlineTests" class="method navigator-link" hash-for-method="canNavigateToSignup4">canNavigateToSignup4</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" hash-for-method="canNavigateToSignup4">canNavigateToSignup4</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairOnlineTests" class="method navigator-link" hash-for-method="canNavigateToSignup5">canNavigateToSignup5</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" hash-for-method="canNavigateToSignup5">canNavigateToSignup5</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" class="method navigator-link" hash-for-method="canNavigateToSignup5">canNavigateToSignup5</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" hash-for-method="canNavigateToSignup5">canNavigateToSignup5</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairNBRTests" class="method navigator-link" hash-for-method="canNavigateToSignup5">canNavigateToSignup5</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairOnlineTests" hash-for-method="canNavigateToSignup5">canNavigateToSignup5</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairBRTests" class="method navigator-link" hash-for-method="canNavigateToSignup5">canNavigateToSignup5</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.creditrepair.CreditRepairTests" hash-for-method="canNavigateToSignup5">canNavigateToSignup5</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" class="method navigator-link" hash-for-method="canNotContinueWithInvalidEmail">canNotContinueWithInvalidEmail</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" hash-for-method="canNotContinueWithInvalidPhone">canNotContinueWithInvalidPhone</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" class="method navigator-link" hash-for-method="canNotContinueWithInvalidPhone">canNotContinueWithInvalidPhone</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" hash-for-method="canNotContinueWithInvalidZip">canNotContinueWithInvalidZip</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" class="method navigator-link" hash-for-method="canNotContinueWithInvalidZip">canNotContinueWithInvalidZip</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" hash-for-method="canNotContinueWithInvalidZip2">canNotContinueWithInvalidZip2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" class="method navigator-link" hash-for-method="canNotContinueWithInvalidZip2">canNotContinueWithInvalidZip2</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" hash-for-method="canNotContinueWithNoAddress">canNotContinueWithNoAddress</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" class="method navigator-link" hash-for-method="canNotContinueWithNoAddress">canNotContinueWithNoAddress</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" hash-for-method="canNotContinueWithNoEmail">canNotContinueWithNoEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" class="method navigator-link" hash-for-method="canNotContinueWithNoEmail">canNotContinueWithNoEmail</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" hash-for-method="canNotContinueWithNoFirstName">canNotContinueWithNoFirstName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" class="method navigator-link" hash-for-method="canNotContinueWithNoFirstName">canNotContinueWithNoFirstName</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" hash-for-method="canNotContinueWithNoLastName">canNotContinueWithNoLastName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" class="method navigator-link" hash-for-method="canNotContinueWithNoLastName">canNotContinueWithNoLastName</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" hash-for-method="canNotContinueWithNoPhone">canNotContinueWithNoPhone</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" class="method navigator-link" hash-for-method="canNotContinueWithNoPhone">canNotContinueWithNoPhone</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" hash-for-method="canNotContinueWithNoZip">canNotContinueWithNoZip</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" class="method navigator-link" hash-for-method="canNotContinueWithNoZip">canNotContinueWithNoZip</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" hash-for-method="constructorLoadsSignupPage">constructorLoadsSignupPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.signup.LexSignupTests" class="method navigator-link" hash-for-method="constructorLoadsSignupPage">constructorLoadsSignupPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" class="method navigator-link" hash-for-method="isAtHomepage">isAtHomepage</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Example_test_run" title="lex.tests.homepage.LexHomepageTests" hash-for-method="isAtHomepage">isAtHomepage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Example_test_run -->
@@ -392,6 +446,263 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Example_test_run" class="panel Example_test_run">
+          <div class="suite-Example_test_run-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">lex.tests.homepage.LexHomepageTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="canClickGetStartedButtonInClientReviewsSection">
+                  </a> <!-- canClickGetStartedButtonInClientReviewsSection -->
+                  <span class="method-name">canClickGetStartedButtonInClientReviewsSection</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.homepage.LexHomepageTests.canClickGetStartedButtonInClientReviewsSection(LexHomepageTests.java:202)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canClickGetStartedButtonInHeroSection">
+                  </a> <!-- canClickGetStartedButtonInHeroSection -->
+                  <span class="method-name">canClickGetStartedButtonInHeroSection</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;lex-cta-number call-now-cta&quot; data-unique=&quot;hero-phone-cta&quot; href=&quot;/credit-snapshot/pi&quot;&gt;...&lt;/a&gt; is not clickable at point (289, 25). Other element would receive the click: &lt;a href=&quot;/credit-help&quot; class=&quot;active&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=85.0.4183.83)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;pgx180189mac.local&apos;, ip: &apos;2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at lex.pageobjects.homepage.LexHomepage.clickGetStartedHeroButton(LexHomepage.java:95)
+	at lex.tests.homepage.LexHomepageTests.canClickGetStartedButtonInHeroSection(LexHomepageTests.java:94)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canClickGetStartedButtonInImageRevealSection">
+                  </a> <!-- canClickGetStartedButtonInImageRevealSection -->
+                  <span class="method-name">canClickGetStartedButtonInImageRevealSection</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/credit-snapshot/pi&quot; class=&quot;call-now-cta&quot; data-unique=&quot;image-find-out-now&quot; id=&quot;image-slider-button&quot;&gt;...&lt;/a&gt; is not clickable at point (599, 28). Other element would receive the click: &lt;li class=&quot;login&quot;&gt;...&lt;/li&gt;
+  (Session info: chrome=85.0.4183.83)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;pgx180189mac.local&apos;, ip: &apos;2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at lex.pageobjects.homepage.LexHomepage.clickGetStartedImageRevealButton(LexHomepage.java:115)
+	at lex.tests.homepage.LexHomepageTests.canClickGetStartedButtonInImageRevealSection(LexHomepageTests.java:169)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canClickGetStartedLinkInHeroSection">
+                  </a> <!-- canClickGetStartedLinkInHeroSection -->
+                  <span class="method-name">canClickGetStartedLinkInHeroSection</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/credit-snapshot/pi&quot;&gt;...&lt;/a&gt; is not clickable at point (179, 13). Other element would receive the click: &lt;a href=&quot;/credit-repair-services&quot; class=&quot;active&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=85.0.4183.83)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;pgx180189mac.local&apos;, ip: &apos;2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at lex.pageobjects.homepage.LexHomepage.clickGetStartedHeroLink(LexHomepage.java:103)
+	at lex.tests.homepage.LexHomepageTests.canClickGetStartedLinkInHeroSection(LexHomepageTests.java:124)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canClickSeeMyCreditButton">
+                  </a> <!-- canClickSeeMyCreditButton -->
+                  <span class="method-name">canClickSeeMyCreditButton</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;lex-cta-number call-now-cta&quot; data-unique=&quot;graph-content-lex-cta&quot; href=&quot;https://www.lexingtonlaw.com/credit-snapshot&quot;&gt;...&lt;/a&gt; is not clickable at point (599, 28). Other element would receive the click: &lt;li class=&quot;login&quot;&gt;...&lt;/li&gt;
+  (Session info: chrome=85.0.4183.83)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;pgx180189mac.local&apos;, ip: &apos;2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at lex.pageobjects.homepage.LexHomepage.clickSeeMyCreditButton(LexHomepage.java:107)
+	at lex.tests.homepage.LexHomepageTests.canClickSeeMyCreditButton(LexHomepageTests.java:139)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canClickSignupCreditCostLink">
+                  </a> <!-- canClickSignupCreditCostLink -->
+                  <span class="method-name">canClickSignupCreditCostLink</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;sign-up-cta&quot; data-unique=&quot;graph-content-signup-btn&quot; href=&quot;/signup&quot;&gt;...&lt;/a&gt; is not clickable at point (600, 11). Other element would receive the click: &lt;li class=&quot;login&quot;&gt;...&lt;/li&gt;
+  (Session info: chrome=85.0.4183.83)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;pgx180189mac.local&apos;, ip: &apos;2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at lex.pageobjects.homepage.LexHomepage.clickSignupCostLink(LexHomepage.java:111)
+	at lex.tests.homepage.LexHomepageTests.canClickSignupCreditCostLink(LexHomepageTests.java:154)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canClickSignupLinkInClientReviewsSection">
+                  </a> <!-- canClickSignupLinkInClientReviewsSection -->
+                  <span class="method-name">canClickSignupLinkInClientReviewsSection</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.homepage.LexHomepageTests.canClickSignupLinkInClientReviewsSection(LexHomepageTests.java:217)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canClickSignupLinkInHeroSection">
+                  </a> <!-- canClickSignupLinkInHeroSection -->
+                  <span class="method-name">canClickSignupLinkInHeroSection</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.homepage.LexHomepageTests.canClickSignupLinkInHeroSection(LexHomepageTests.java:112)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canClickSignupLinkInImageRevealSection">
+                  </a> <!-- canClickSignupLinkInImageRevealSection -->
+                  <span class="method-name">canClickSignupLinkInImageRevealSection</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:123)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at lex.pageobjects.homepage.LexHomepage.clickSignupImageRevealLink(LexHomepage.java:119)
+	at lex.tests.homepage.LexHomepageTests.canClickSignupLinkInImageRevealSection(LexHomepageTests.java:184)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.image-reveal-cta a.sign-up-cta&quot;}
+  (Session info: chrome=85.0.4183.83)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;pgx180189mac.local&apos;, ip: &apos;2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
+*** Element info: {Using=css selector, value=div.image-reveal-cta a.sign-up-cta}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:39)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:194)
+	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:78)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:119)
+	... 33 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Example_test_run-class-failed -->
+          <div class="suite-Example_test_run-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">lex.tests.signup.LexSignupTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="canNotContinueWithInvalidEmail">
+                  </a> <!-- canNotContinueWithInvalidEmail -->
+                  <span class="method-name">canNotContinueWithInvalidEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=85.0.4183.83)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;pgx180189mac.local&apos;, ip: &apos;2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 71a9c28d4e1ea3dc77b665d1348ef31d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy8.clear(Unknown Source)
+	at lex.pageobjects.signup.LexSignup.setFirstName(LexSignup.java:301)
+	at lex.tests.signup.LexSignupTests.canNotContinueWithInvalidEmail(LexSignupTests.java:89)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Example_test_run-class-failed -->
           <div class="suite-Example_test_run-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -453,6 +764,134 @@
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">lex.tests.creditrepair.CreditRepairTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="canNavigateToCreditSnapshot1">
+                  </a> <!-- canNavigateToCreditSnapshot1 -->
+                  <span class="method-name">canNavigateToCreditSnapshot1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canNavigateToCreditSnapshot2">
+                  </a> <!-- canNavigateToCreditSnapshot2 -->
+                  <span class="method-name">canNavigateToCreditSnapshot2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canNavigateToCreditSnapshot3">
+                  </a> <!-- canNavigateToCreditSnapshot3 -->
+                  <span class="method-name">canNavigateToCreditSnapshot3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canNavigateToCreditSnapshot4">
+                  </a> <!-- canNavigateToCreditSnapshot4 -->
+                  <span class="method-name">canNavigateToCreditSnapshot4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canNavigateToCreditSnapshot5">
+                  </a> <!-- canNavigateToCreditSnapshot5 -->
+                  <span class="method-name">canNavigateToCreditSnapshot5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canNavigateToCreditSnapshot6">
+                  </a> <!-- canNavigateToCreditSnapshot6 -->
+                  <span class="method-name">canNavigateToCreditSnapshot6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canNavigateToSignup1">
+                  </a> <!-- canNavigateToSignup1 -->
+                  <span class="method-name">canNavigateToSignup1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canNavigateToSignup2">
+                  </a> <!-- canNavigateToSignup2 -->
+                  <span class="method-name">canNavigateToSignup2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canNavigateToSignup3">
+                  </a> <!-- canNavigateToSignup3 -->
+                  <span class="method-name">canNavigateToSignup3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canNavigateToSignup4">
+                  </a> <!-- canNavigateToSignup4 -->
+                  <span class="method-name">canNavigateToSignup4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canNavigateToSignup5">
+                  </a> <!-- canNavigateToSignup5 -->
+                  <span class="method-name">canNavigateToSignup5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Example_test_run-class-passed -->
+          <div class="suite-Example_test_run-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">lex.tests.homepage.LexHomepageTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="canNavigateToCreditHelp">
+                  </a> <!-- canNavigateToCreditHelp -->
+                  <span class="method-name">canNavigateToCreditHelp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canNavigateToCreditRepair">
+                  </a> <!-- canNavigateToCreditRepair -->
+                  <span class="method-name">canNavigateToCreditRepair</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canNavigateToOurFirm">
+                  </a> <!-- canNavigateToOurFirm -->
+                  <span class="method-name">canNavigateToOurFirm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canNavigateToSignUp">
+                  </a> <!-- canNavigateToSignUp -->
+                  <span class="method-name">canNavigateToSignUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isAtHomepage">
+                  </a> <!-- isAtHomepage -->
+                  <span class="method-name">isAtHomepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Example_test_run-class-passed -->
+          <div class="suite-Example_test_run-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">lex.tests.creditrepair.CreditRepairBRTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -622,59 +1061,9 @@
           <div class="suite-Example_test_run-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">lex.tests.homepage.LexHomepageTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="canNavigateToCreditHelp">
-                  </a> <!-- canNavigateToCreditHelp -->
-                  <span class="method-name">canNavigateToCreditHelp</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="canNavigateToCreditRepair">
-                  </a> <!-- canNavigateToCreditRepair -->
-                  <span class="method-name">canNavigateToCreditRepair</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="canNavigateToOurFirm">
-                  </a> <!-- canNavigateToOurFirm -->
-                  <span class="method-name">canNavigateToOurFirm</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="canNavigateToSignUp">
-                  </a> <!-- canNavigateToSignUp -->
-                  <span class="method-name">canNavigateToSignUp</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="isAtHomepage">
-                  </a> <!-- isAtHomepage -->
-                  <span class="method-name">isAtHomepage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Example_test_run-class-passed -->
-          <div class="suite-Example_test_run-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">lex.tests.signup.LexSignupTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="canNotContinueWithInvalidEmail">
-                  </a> <!-- canNotContinueWithInvalidEmail -->
-                  <span class="method-name">canNotContinueWithInvalidEmail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="canNotContinueWithInvalidPhone">
@@ -747,102 +1136,17 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Example_test_run-class-passed -->
-          <div class="suite-Example_test_run-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">lex.tests.creditrepair.CreditRepairBRTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="canNavigateToCreditSnapshot1">
-                  </a> <!-- canNavigateToCreditSnapshot1 -->
-                  <span class="method-name">canNavigateToCreditSnapshot1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="canNavigateToCreditSnapshot2">
-                  </a> <!-- canNavigateToCreditSnapshot2 -->
-                  <span class="method-name">canNavigateToCreditSnapshot2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="canNavigateToCreditSnapshot3">
-                  </a> <!-- canNavigateToCreditSnapshot3 -->
-                  <span class="method-name">canNavigateToCreditSnapshot3</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="canNavigateToCreditSnapshot4">
-                  </a> <!-- canNavigateToCreditSnapshot4 -->
-                  <span class="method-name">canNavigateToCreditSnapshot4</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="canNavigateToCreditSnapshot5">
-                  </a> <!-- canNavigateToCreditSnapshot5 -->
-                  <span class="method-name">canNavigateToCreditSnapshot5</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="canNavigateToCreditSnapshot6">
-                  </a> <!-- canNavigateToCreditSnapshot6 -->
-                  <span class="method-name">canNavigateToCreditSnapshot6</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="canNavigateToSignup1">
-                  </a> <!-- canNavigateToSignup1 -->
-                  <span class="method-name">canNavigateToSignup1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="canNavigateToSignup2">
-                  </a> <!-- canNavigateToSignup2 -->
-                  <span class="method-name">canNavigateToSignup2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="canNavigateToSignup3">
-                  </a> <!-- canNavigateToSignup3 -->
-                  <span class="method-name">canNavigateToSignup3</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="canNavigateToSignup4">
-                  </a> <!-- canNavigateToSignup4 -->
-                  <span class="method-name">canNavigateToSignup4</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="canNavigateToSignup5">
-                  </a> <!-- canNavigateToSignup5 -->
-                  <span class="method-name">canNavigateToSignup5</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Example_test_run-class-passed -->
         </div> <!-- panel Example_test_run -->
         <div panel-name="test-xml-Example_test_run" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/184973/Documents/Automation/lex/lex-regression-tests/TestExample1.xml</span>
+            <span class="header-content">/Users/184973/Documents/automation/lex_automation/lex-regression-tests/TestExample1.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Example test run&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Simple Test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Example test run&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Simple Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;lex.tests.creditrepair.CreditRepairOnlineTests&quot;/&gt;
       &lt;class name=&quot;lex.tests.creditrepair.CreditRepairBRTests&quot;/&gt;
@@ -889,231 +1193,267 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(56);
+data.addRows(65);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'canNotContinueWithInvalidEmail')
-data.setCell(0, 2, 'lex.tests.signup.LexSignupTests')
-data.setCell(0, 3, 6994);
+data.setCell(0, 1, 'canNavigateToSignup3')
+data.setCell(0, 2, 'lex.tests.creditrepair.CreditRepairOnlineTests')
+data.setCell(0, 3, 7568);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'canNotContinueWithNoLastName')
+data.setCell(1, 1, 'canNotContinueWithNoAddress')
 data.setCell(1, 2, 'lex.tests.signup.LexSignupTests')
-data.setCell(1, 3, 6928);
+data.setCell(1, 3, 5989);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'canNotContinueWithNoAddress')
+data.setCell(2, 1, 'canNotContinueWithInvalidPhone')
 data.setCell(2, 2, 'lex.tests.signup.LexSignupTests')
-data.setCell(2, 3, 6809);
+data.setCell(2, 3, 5974);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'canNotContinueWithNoZip')
+data.setCell(3, 1, 'canNotContinueWithInvalidZip')
 data.setCell(3, 2, 'lex.tests.signup.LexSignupTests')
-data.setCell(3, 3, 6754);
+data.setCell(3, 3, 5914);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'canNotContinueWithInvalidZip')
+data.setCell(4, 1, 'canNotContinueWithNoFirstName')
 data.setCell(4, 2, 'lex.tests.signup.LexSignupTests')
-data.setCell(4, 3, 6733);
+data.setCell(4, 3, 5913);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'canNotContinueWithNoPhone')
+data.setCell(5, 1, 'canNotContinueWithNoLastName')
 data.setCell(5, 2, 'lex.tests.signup.LexSignupTests')
-data.setCell(5, 3, 6681);
+data.setCell(5, 3, 5903);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'canNotContinueWithNoFirstName')
+data.setCell(6, 1, 'canNotContinueWithInvalidZip2')
 data.setCell(6, 2, 'lex.tests.signup.LexSignupTests')
-data.setCell(6, 3, 6662);
+data.setCell(6, 3, 5896);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'canNotContinueWithInvalidPhone')
+data.setCell(7, 1, 'canNotContinueWithNoEmail')
 data.setCell(7, 2, 'lex.tests.signup.LexSignupTests')
-data.setCell(7, 3, 6626);
+data.setCell(7, 3, 5873);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'canNotContinueWithInvalidZip2')
+data.setCell(8, 1, 'canNotContinueWithNoPhone')
 data.setCell(8, 2, 'lex.tests.signup.LexSignupTests')
-data.setCell(8, 3, 6621);
+data.setCell(8, 3, 5845);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'canNotContinueWithNoEmail')
-data.setCell(9, 2, 'lex.tests.signup.LexSignupTests')
-data.setCell(9, 3, 6511);
+data.setCell(9, 1, 'canClickSignupLinkInImageRevealSection')
+data.setCell(9, 2, 'lex.tests.homepage.LexHomepageTests')
+data.setCell(9, 3, 5809);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'canNavigateToCreditSnapshot1')
-data.setCell(10, 2, 'lex.tests.creditrepair.CreditRepairOnlineTests')
-data.setCell(10, 3, 4527);
+data.setCell(10, 1, 'canNotContinueWithNoZip')
+data.setCell(10, 2, 'lex.tests.signup.LexSignupTests')
+data.setCell(10, 3, 5737);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'canNavigateToCreditHelp')
-data.setCell(11, 2, 'lex.tests.homepage.LexHomepageTests')
-data.setCell(11, 3, 3976);
+data.setCell(11, 1, 'canNavigateToCreditSnapshot1')
+data.setCell(11, 2, 'lex.tests.creditrepair.CreditRepairTests')
+data.setCell(11, 3, 4991);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'canNavigateToCreditSnapshot2')
-data.setCell(12, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
-data.setCell(12, 3, 3546);
+data.setCell(12, 1, 'canNotContinueWithInvalidEmail')
+data.setCell(12, 2, 'lex.tests.signup.LexSignupTests')
+data.setCell(12, 3, 4519);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'canNavigateToCreditSnapshot1')
 data.setCell(13, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
-data.setCell(13, 3, 3472);
+data.setCell(13, 3, 4195);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'canNavigateToCreditSnapshot3')
-data.setCell(14, 2, 'lex.tests.creditrepair.CreditRepairTests')
-data.setCell(14, 3, 3394);
+data.setCell(14, 1, 'canNavigateToCreditSnapshot1')
+data.setCell(14, 2, 'lex.tests.creditrepair.CreditRepairOnlineTests')
+data.setCell(14, 3, 3626);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'canNavigateToSignup4')
-data.setCell(15, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
-data.setCell(15, 3, 3357);
+data.setCell(15, 1, 'canNavigateToCreditHelp')
+data.setCell(15, 2, 'lex.tests.homepage.LexHomepageTests')
+data.setCell(15, 3, 3530);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'canNavigateToSignup2')
-data.setCell(16, 2, 'lex.tests.creditrepair.CreditRepairTests')
-data.setCell(16, 3, 3342);
+data.setCell(16, 1, 'canNavigateToCreditRepair')
+data.setCell(16, 2, 'lex.tests.homepage.LexHomepageTests')
+data.setCell(16, 3, 3202);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'canNavigateToSignUp')
-data.setCell(17, 2, 'lex.tests.homepage.LexHomepageTests')
-data.setCell(17, 3, 3341);
+data.setCell(17, 1, 'canNavigateToCreditSnapshot1')
+data.setCell(17, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
+data.setCell(17, 3, 2903);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'canNavigateToCreditSnapshot1')
-data.setCell(18, 2, 'lex.tests.creditrepair.CreditRepairTests')
-data.setCell(18, 3, 3288);
+data.setCell(18, 1, 'canNavigateToOurFirm')
+data.setCell(18, 2, 'lex.tests.homepage.LexHomepageTests')
+data.setCell(18, 3, 2811);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'canNavigateToCreditSnapshot6')
-data.setCell(19, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
-data.setCell(19, 3, 3275);
+data.setCell(19, 1, 'canNavigateToSignUp')
+data.setCell(19, 2, 'lex.tests.homepage.LexHomepageTests')
+data.setCell(19, 3, 2705);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'canNavigateToSignup3')
-data.setCell(20, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
-data.setCell(20, 3, 3231);
+data.setCell(20, 1, 'canClickGetStartedButtonInClientReviewsSection')
+data.setCell(20, 2, 'lex.tests.homepage.LexHomepageTests')
+data.setCell(20, 3, 2682);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'canNavigateToSignup2')
-data.setCell(21, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
-data.setCell(21, 3, 3195);
+data.setCell(21, 1, 'canNavigateToCreditSnapshot4')
+data.setCell(21, 2, 'lex.tests.creditrepair.CreditRepairTests')
+data.setCell(21, 3, 2564);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'canNavigateToOurFirm')
-data.setCell(22, 2, 'lex.tests.homepage.LexHomepageTests')
-data.setCell(22, 3, 3185);
+data.setCell(22, 1, 'canNavigateToSignup5')
+data.setCell(22, 2, 'lex.tests.creditrepair.CreditRepairOnlineTests')
+data.setCell(22, 3, 2438);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'canNavigateToCreditSnapshot1')
-data.setCell(23, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
-data.setCell(23, 3, 3167);
+data.setCell(23, 1, 'canNavigateToSignup4')
+data.setCell(23, 2, 'lex.tests.creditrepair.CreditRepairOnlineTests')
+data.setCell(23, 3, 2408);
 data.setCell(24, 0, 24)
 data.setCell(24, 1, 'canNavigateToSignup5')
-data.setCell(24, 2, 'lex.tests.creditrepair.CreditRepairTests')
-data.setCell(24, 3, 3158);
+data.setCell(24, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
+data.setCell(24, 3, 2376);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'canNavigateToSignup3')
-data.setCell(25, 2, 'lex.tests.creditrepair.CreditRepairTests')
-data.setCell(25, 3, 3152);
+data.setCell(25, 1, 'canNavigateToSignup1')
+data.setCell(25, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
+data.setCell(25, 3, 2362);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'canNavigateToSignup2')
-data.setCell(26, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
-data.setCell(26, 3, 3135);
+data.setCell(26, 1, 'canNavigateToSignup1')
+data.setCell(26, 2, 'lex.tests.creditrepair.CreditRepairTests')
+data.setCell(26, 3, 2331);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'canNavigateToSignup3')
-data.setCell(27, 2, 'lex.tests.creditrepair.CreditRepairOnlineTests')
-data.setCell(27, 3, 3122);
+data.setCell(27, 1, 'canNavigateToSignup4')
+data.setCell(27, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
+data.setCell(27, 3, 2319);
 data.setCell(28, 0, 28)
 data.setCell(28, 1, 'canNavigateToSignup3')
-data.setCell(28, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
-data.setCell(28, 3, 3118);
+data.setCell(28, 2, 'lex.tests.creditrepair.CreditRepairTests')
+data.setCell(28, 3, 2263);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'canNavigateToSignup5')
-data.setCell(29, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
-data.setCell(29, 3, 3118);
+data.setCell(29, 1, 'canNavigateToSignup2')
+data.setCell(29, 2, 'lex.tests.creditrepair.CreditRepairOnlineTests')
+data.setCell(29, 3, 2260);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'canNavigateToSignup4')
-data.setCell(30, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
-data.setCell(30, 3, 3104);
+data.setCell(30, 1, 'canNavigateToSignup2')
+data.setCell(30, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
+data.setCell(30, 3, 2247);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'canNavigateToCreditRepair')
-data.setCell(31, 2, 'lex.tests.homepage.LexHomepageTests')
-data.setCell(31, 3, 3049);
+data.setCell(31, 1, 'canNavigateToSignup2')
+data.setCell(31, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
+data.setCell(31, 3, 2217);
 data.setCell(32, 0, 32)
 data.setCell(32, 1, 'canNavigateToSignup4')
-data.setCell(32, 2, 'lex.tests.creditrepair.CreditRepairTests')
-data.setCell(32, 3, 3036);
+data.setCell(32, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
+data.setCell(32, 3, 2213);
 data.setCell(33, 0, 33)
 data.setCell(33, 1, 'canNavigateToSignup4')
-data.setCell(33, 2, 'lex.tests.creditrepair.CreditRepairOnlineTests')
-data.setCell(33, 3, 3019);
+data.setCell(33, 2, 'lex.tests.creditrepair.CreditRepairTests')
+data.setCell(33, 3, 2208);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'canNavigateToSignup5')
+data.setCell(34, 1, 'canNavigateToSignup3')
 data.setCell(34, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
-data.setCell(34, 3, 3003);
+data.setCell(34, 3, 2194);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'canNavigateToCreditSnapshot2')
-data.setCell(35, 2, 'lex.tests.creditrepair.CreditRepairOnlineTests')
-data.setCell(35, 3, 3000);
+data.setCell(35, 1, 'canNavigateToCreditSnapshot3')
+data.setCell(35, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
+data.setCell(35, 3, 2179);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'canNavigateToSignup5')
+data.setCell(36, 1, 'canNavigateToSignup1')
 data.setCell(36, 2, 'lex.tests.creditrepair.CreditRepairOnlineTests')
-data.setCell(36, 3, 2988);
+data.setCell(36, 3, 2168);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'canNavigateToSignup1')
-data.setCell(37, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
-data.setCell(37, 3, 2964);
+data.setCell(37, 1, 'canNavigateToSignup3')
+data.setCell(37, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
+data.setCell(37, 3, 2167);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'canNavigateToCreditSnapshot6')
+data.setCell(38, 1, 'canNavigateToSignup5')
 data.setCell(38, 2, 'lex.tests.creditrepair.CreditRepairTests')
-data.setCell(38, 3, 2862);
+data.setCell(38, 3, 2156);
 data.setCell(39, 0, 39)
-data.setCell(39, 1, 'canNavigateToSignup2')
-data.setCell(39, 2, 'lex.tests.creditrepair.CreditRepairOnlineTests')
-data.setCell(39, 3, 2825);
+data.setCell(39, 1, 'canNavigateToSignup5')
+data.setCell(39, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
+data.setCell(39, 3, 2123);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'canNavigateToSignup1')
-data.setCell(40, 2, 'lex.tests.creditrepair.CreditRepairOnlineTests')
-data.setCell(40, 3, 2820);
+data.setCell(40, 1, 'canNavigateToCreditSnapshot2')
+data.setCell(40, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
+data.setCell(40, 3, 2109);
 data.setCell(41, 0, 41)
-data.setCell(41, 1, 'canNavigateToSignup1')
+data.setCell(41, 1, 'canNavigateToCreditSnapshot5')
 data.setCell(41, 2, 'lex.tests.creditrepair.CreditRepairTests')
-data.setCell(41, 3, 2787);
+data.setCell(41, 3, 2058);
 data.setCell(42, 0, 42)
-data.setCell(42, 1, 'canNavigateToSignup1')
-data.setCell(42, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
-data.setCell(42, 3, 2763);
+data.setCell(42, 1, 'canNavigateToCreditSnapshot2')
+data.setCell(42, 2, 'lex.tests.creditrepair.CreditRepairTests')
+data.setCell(42, 3, 2057);
 data.setCell(43, 0, 43)
-data.setCell(43, 1, 'canNavigateToCreditSnapshot4')
-data.setCell(43, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
-data.setCell(43, 3, 2589);
+data.setCell(43, 1, 'canNavigateToCreditSnapshot6')
+data.setCell(43, 2, 'lex.tests.creditrepair.CreditRepairTests')
+data.setCell(43, 3, 2036);
 data.setCell(44, 0, 44)
 data.setCell(44, 1, 'canNavigateToCreditSnapshot3')
 data.setCell(44, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
-data.setCell(44, 3, 2575);
+data.setCell(44, 3, 2033);
 data.setCell(45, 0, 45)
-data.setCell(45, 1, 'canNavigateToCreditSnapshot5')
-data.setCell(45, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
-data.setCell(45, 3, 2497);
+data.setCell(45, 1, 'canNavigateToCreditSnapshot2')
+data.setCell(45, 2, 'lex.tests.creditrepair.CreditRepairOnlineTests')
+data.setCell(45, 3, 2026);
 data.setCell(46, 0, 46)
-data.setCell(46, 1, 'canNavigateToCreditSnapshot5')
-data.setCell(46, 2, 'lex.tests.creditrepair.CreditRepairTests')
-data.setCell(46, 3, 2491);
+data.setCell(46, 1, 'canNavigateToCreditSnapshot4')
+data.setCell(46, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
+data.setCell(46, 3, 2023);
 data.setCell(47, 0, 47)
-data.setCell(47, 1, 'canNavigateToCreditSnapshot3')
-data.setCell(47, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
-data.setCell(47, 3, 2491);
+data.setCell(47, 1, 'canNavigateToCreditSnapshot6')
+data.setCell(47, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
+data.setCell(47, 3, 2023);
 data.setCell(48, 0, 48)
-data.setCell(48, 1, 'canNavigateToCreditSnapshot4')
-data.setCell(48, 2, 'lex.tests.creditrepair.CreditRepairTests')
-data.setCell(48, 3, 2443);
+data.setCell(48, 1, 'canNavigateToCreditSnapshot2')
+data.setCell(48, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
+data.setCell(48, 3, 2022);
 data.setCell(49, 0, 49)
-data.setCell(49, 1, 'canNavigateToCreditSnapshot6')
-data.setCell(49, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
-data.setCell(49, 3, 2428);
+data.setCell(49, 1, 'canNavigateToCreditSnapshot5')
+data.setCell(49, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
+data.setCell(49, 3, 2020);
 data.setCell(50, 0, 50)
 data.setCell(50, 1, 'canNavigateToCreditSnapshot5')
-data.setCell(50, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
-data.setCell(50, 3, 2406);
+data.setCell(50, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
+data.setCell(50, 3, 2019);
 data.setCell(51, 0, 51)
-data.setCell(51, 1, 'canNavigateToCreditSnapshot2')
+data.setCell(51, 1, 'canNavigateToCreditSnapshot3')
 data.setCell(51, 2, 'lex.tests.creditrepair.CreditRepairTests')
-data.setCell(51, 3, 2390);
+data.setCell(51, 3, 2007);
 data.setCell(52, 0, 52)
 data.setCell(52, 1, 'canNavigateToCreditSnapshot4')
-data.setCell(52, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
-data.setCell(52, 3, 2358);
+data.setCell(52, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
+data.setCell(52, 3, 2002);
 data.setCell(53, 0, 53)
-data.setCell(53, 1, 'canNavigateToCreditSnapshot2')
+data.setCell(53, 1, 'canNavigateToCreditSnapshot6')
 data.setCell(53, 2, 'lex.tests.creditrepair.CreditRepairBRTests')
-data.setCell(53, 3, 2270);
+data.setCell(53, 3, 1992);
 data.setCell(54, 0, 54)
-data.setCell(54, 1, 'constructorLoadsSignupPage')
-data.setCell(54, 2, 'lex.tests.signup.LexSignupTests')
-data.setCell(54, 3, 1122);
+data.setCell(54, 1, 'canNavigateToSignup2')
+data.setCell(54, 2, 'lex.tests.creditrepair.CreditRepairTests')
+data.setCell(54, 3, 1958);
 data.setCell(55, 0, 55)
-data.setCell(55, 1, 'isAtHomepage')
-data.setCell(55, 2, 'lex.tests.homepage.LexHomepageTests')
-data.setCell(55, 3, 623);
+data.setCell(55, 1, 'canNavigateToSignup1')
+data.setCell(55, 2, 'lex.tests.creditrepair.CreditRepairNBRTests')
+data.setCell(55, 3, 1881);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'canClickSignupCreditCostLink')
+data.setCell(56, 2, 'lex.tests.homepage.LexHomepageTests')
+data.setCell(56, 3, 1477);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'canClickGetStartedButtonInHeroSection')
+data.setCell(57, 2, 'lex.tests.homepage.LexHomepageTests')
+data.setCell(57, 3, 1464);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'canClickSeeMyCreditButton')
+data.setCell(58, 2, 'lex.tests.homepage.LexHomepageTests')
+data.setCell(58, 3, 1407);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'canClickGetStartedButtonInImageRevealSection')
+data.setCell(59, 2, 'lex.tests.homepage.LexHomepageTests')
+data.setCell(59, 3, 1393);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'canClickGetStartedLinkInHeroSection')
+data.setCell(60, 2, 'lex.tests.homepage.LexHomepageTests')
+data.setCell(60, 3, 1382);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'constructorLoadsSignupPage')
+data.setCell(61, 2, 'lex.tests.signup.LexSignupTests')
+data.setCell(61, 3, 1108);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'canClickSignupLinkInClientReviewsSection')
+data.setCell(62, 2, 'lex.tests.homepage.LexHomepageTests')
+data.setCell(62, 3, 513);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'canClickSignupLinkInHeroSection')
+data.setCell(63, 2, 'lex.tests.homepage.LexHomepageTests')
+data.setCell(63, 3, 404);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'isAtHomepage')
+data.setCell(64, 2, 'lex.tests.homepage.LexHomepageTests')
+data.setCell(64, 3, 381);
 window.suiteTableData['Example_test_run']= { tableData: data, tableDiv: 'times-div-Example_test_run'}
 return data;
 }
@@ -1151,286 +1491,342 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot1</span>
-                <span class="method-start">2656 ms</span>
+                <span class="method-start">1762 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot2</span>
-                <span class="method-start">7184 ms</span>
+                <span class="method-start">5389 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup1</span>
-                <span class="method-start">10185 ms</span>
+                <span class="method-start">7415 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup2</span>
-                <span class="method-start">13006 ms</span>
+                <span class="method-start">9584 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup3</span>
-                <span class="method-start">15832 ms</span>
+                <span class="method-start">11844 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup4</span>
-                <span class="method-start">18955 ms</span>
+                <span class="method-start">19412 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup5</span>
-                <span class="method-start">21975 ms</span>
+                <span class="method-start">21821 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">24964 ms</span>
+                <span class="method-start">24259 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">lex.tests.creditrepair.CreditRepairBRTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeSuite</span>
-                <span class="method-start">25320 ms</span>
+                <span class="method-start">24535 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot1</span>
-                <span class="method-start">26639 ms</span>
+                <span class="method-start">25540 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot2</span>
-                <span class="method-start">29806 ms</span>
+                <span class="method-start">28443 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot3</span>
-                <span class="method-start">32076 ms</span>
+                <span class="method-start">30552 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot4</span>
-                <span class="method-start">34567 ms</span>
+                <span class="method-start">32732 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot5</span>
-                <span class="method-start">36925 ms</span>
+                <span class="method-start">34755 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot6</span>
-                <span class="method-start">39332 ms</span>
+                <span class="method-start">36775 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup1</span>
-                <span class="method-start">42607 ms</span>
+                <span class="method-start">38767 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup2</span>
-                <span class="method-start">45371 ms</span>
+                <span class="method-start">41129 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup3</span>
-                <span class="method-start">48506 ms</span>
+                <span class="method-start">43346 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup4</span>
-                <span class="method-start">51624 ms</span>
+                <span class="method-start">45513 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup5</span>
-                <span class="method-start">54728 ms</span>
+                <span class="method-start">47727 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">57847 ms</span>
+                <span class="method-start">49850 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">lex.tests.creditrepair.CreditRepairNBRTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeSuite</span>
-                <span class="method-start">58258 ms</span>
+                <span class="method-start">50161 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot1</span>
-                <span class="method-start">59515 ms</span>
+                <span class="method-start">51311 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot2</span>
-                <span class="method-start">62987 ms</span>
+                <span class="method-start">55506 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot3</span>
-                <span class="method-start">66533 ms</span>
+                <span class="method-start">57528 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot4</span>
-                <span class="method-start">69109 ms</span>
+                <span class="method-start">59561 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot5</span>
-                <span class="method-start">71698 ms</span>
+                <span class="method-start">61563 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot6</span>
-                <span class="method-start">74195 ms</span>
+                <span class="method-start">63582 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup1</span>
-                <span class="method-start">76624 ms</span>
+                <span class="method-start">65606 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup2</span>
-                <span class="method-start">79588 ms</span>
+                <span class="method-start">67488 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup3</span>
-                <span class="method-start">82783 ms</span>
+                <span class="method-start">69736 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup4</span>
-                <span class="method-start">86014 ms</span>
+                <span class="method-start">71930 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup5</span>
-                <span class="method-start">89371 ms</span>
+                <span class="method-start">74249 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">92374 ms</span>
+                <span class="method-start">76626 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">lex.tests.creditrepair.CreditRepairTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeSuite</span>
-                <span class="method-start">92717 ms</span>
+                <span class="method-start">76951 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot1</span>
-                <span class="method-start">93718 ms</span>
+                <span class="method-start">78323 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot2</span>
-                <span class="method-start">97006 ms</span>
+                <span class="method-start">83314 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot3</span>
-                <span class="method-start">99397 ms</span>
+                <span class="method-start">85371 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot4</span>
-                <span class="method-start">102792 ms</span>
+                <span class="method-start">87379 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot5</span>
-                <span class="method-start">105235 ms</span>
+                <span class="method-start">89943 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditSnapshot6</span>
-                <span class="method-start">107727 ms</span>
+                <span class="method-start">92001 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup1</span>
-                <span class="method-start">110589 ms</span>
+                <span class="method-start">94037 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup2</span>
-                <span class="method-start">113376 ms</span>
+                <span class="method-start">96368 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup3</span>
-                <span class="method-start">116718 ms</span>
+                <span class="method-start">98327 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup4</span>
-                <span class="method-start">119871 ms</span>
+                <span class="method-start">100591 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignup5</span>
-                <span class="method-start">122908 ms</span>
+                <span class="method-start">102799 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">126066 ms</span>
+                <span class="method-start">104955 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">lex.tests.homepage.LexHomepageTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeSuite</span>
-                <span class="method-start">126446 ms</span>
+                <span class="method-start">105280 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">canClickGetStartedButtonInClientReviewsSection</span>
+                <span class="method-start">106801 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">canClickGetStartedButtonInHeroSection</span>
+                <span class="method-start">109486 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">canClickGetStartedButtonInImageRevealSection</span>
+                <span class="method-start">110951 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">canClickGetStartedLinkInHeroSection</span>
+                <span class="method-start">112344 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">canClickSeeMyCreditButton</span>
+                <span class="method-start">113727 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">canClickSignupCreditCostLink</span>
+                <span class="method-start">115135 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">canClickSignupLinkInClientReviewsSection</span>
+                <span class="method-start">116613 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">canClickSignupLinkInHeroSection</span>
+                <span class="method-start">117126 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">canClickSignupLinkInImageRevealSection</span>
+                <span class="method-start">117531 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">canNavigateToCreditHelp</span>
-                <span class="method-start">127694 ms</span>
+                <span class="method-start">123340 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToCreditRepair</span>
-                <span class="method-start">131670 ms</span>
+                <span class="method-start">126870 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToOurFirm</span>
-                <span class="method-start">134720 ms</span>
+                <span class="method-start">130072 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNavigateToSignUp</span>
-                <span class="method-start">137906 ms</span>
+                <span class="method-start">132884 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">isAtHomepage</span>
-                <span class="method-start">141247 ms</span>
+                <span class="method-start">135589 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">141870 ms</span>
+                <span class="method-start">135971 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">lex.tests.signup.LexSignupTests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeSuite</span>
-                <span class="method-start">142155 ms</span>
+                <span class="method-start">136241 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">canNotContinueWithInvalidEmail</span>
-                <span class="method-start">143624 ms</span>
+                <span class="method-start">137426 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNotContinueWithInvalidPhone</span>
-                <span class="method-start">150619 ms</span>
+                <span class="method-start">141946 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNotContinueWithInvalidZip</span>
-                <span class="method-start">157245 ms</span>
+                <span class="method-start">147920 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNotContinueWithInvalidZip2</span>
-                <span class="method-start">163978 ms</span>
+                <span class="method-start">153834 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNotContinueWithNoAddress</span>
-                <span class="method-start">170600 ms</span>
+                <span class="method-start">159730 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNotContinueWithNoEmail</span>
-                <span class="method-start">177409 ms</span>
+                <span class="method-start">165719 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNotContinueWithNoFirstName</span>
-                <span class="method-start">183920 ms</span>
+                <span class="method-start">171592 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNotContinueWithNoLastName</span>
-                <span class="method-start">190583 ms</span>
+                <span class="method-start">177505 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNotContinueWithNoPhone</span>
-                <span class="method-start">197511 ms</span>
+                <span class="method-start">183408 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">canNotContinueWithNoZip</span>
-                <span class="method-start">204193 ms</span>
+                <span class="method-start">189254 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">constructorLoadsSignupPage</span>
-                <span class="method-start">210947 ms</span>
+                <span class="method-start">194991 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">212070 ms</span>
+                <span class="method-start">196099 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

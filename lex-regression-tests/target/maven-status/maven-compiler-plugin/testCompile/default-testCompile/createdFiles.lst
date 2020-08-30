@@ -1,0 +1,9 @@
+lex/tests/homepage/LexHomepageTests.class
+lex/tests/signup/LexSignupTests.class
+lex/tests/snapshot/CRSnapshotTests.class
+lex/tests/homepage/CRHomepageTests.class
+lex/tests/creditrepair/CreditRepairNBRTests.class
+lex/tests/snapshot/LexSnapshotTests.class
+lex/tests/creditrepair/CreditRepairTests.class
+lex/tests/creditrepair/CreditRepairOnlineTests.class
+lex/tests/creditrepair/CreditRepairBRTests.class

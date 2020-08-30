@@ -1,291 +1,942 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="56" passed="56" failed="0" skipped="0">
+<testng-results skipped="0" failed="10" ignored="0" total="65" passed="55">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-12T22:55:12Z" name="Example test run" finished-at="2020-08-12T22:58:44Z" duration-ms="212402">
+  <suite name="Example test run" duration-ms="196397" started-at="2020-08-28T17:38:30Z" finished-at="2020-08-28T17:41:46Z">
     <groups>
     </groups>
-    <test started-at="2020-08-12T22:55:12Z" name="Simple Test" finished-at="2020-08-12T22:58:44Z" duration-ms="212402">
+    <test name="Simple Test" duration-ms="196397" started-at="2020-08-28T17:38:30Z" finished-at="2020-08-28T17:41:46Z">
       <class name="lex.tests.homepage.LexHomepageTests">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:lex.tests.homepage.LexHomepageTests@3967e60c]" started-at="2020-08-12T22:57:18Z" name="beforeSuite" finished-at="2020-08-12T22:57:20Z" duration-ms="1248" status="PASS">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:lex.tests.homepage.LexHomepageTests@e320068]" name="beforeSuite" is-config="true" duration-ms="1521" started-at="2020-08-28T17:40:15Z" finished-at="2020-08-28T17:40:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method signature="canNavigateToCreditHelp()[pri:0, instance:lex.tests.homepage.LexHomepageTests@3967e60c]" started-at="2020-08-12T22:57:20Z" name="canNavigateToCreditHelp" finished-at="2020-08-12T22:57:23Z" duration-ms="3976" status="PASS">
+        <test-method status="FAIL" signature="canClickGetStartedButtonInClientReviewsSection()[pri:0, instance:lex.tests.homepage.LexHomepageTests@e320068]" name="canClickGetStartedButtonInClientReviewsSection" duration-ms="2682" started-at="2020-08-28T17:40:17Z" finished-at="2020-08-28T17:40:19Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at lex.tests.homepage.LexHomepageTests.canClickGetStartedButtonInClientReviewsSection(LexHomepageTests.java:202)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canClickGetStartedButtonInClientReviewsSection -->
+        <test-method status="FAIL" signature="canClickGetStartedButtonInHeroSection()[pri:0, instance:lex.tests.homepage.LexHomepageTests@e320068]" name="canClickGetStartedButtonInHeroSection" duration-ms="1464" started-at="2020-08-28T17:40:19Z" finished-at="2020-08-28T17:40:21Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a class="lex-cta-number call-now-cta" data-unique="hero-phone-cta" href="/credit-snapshot/pi">...</a> is not clickable at point (289, 25). Other element would receive the click: <a href="/credit-help" class="active">...</a>
+  (Session info: chrome=85.0.4183.83)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="lex-cta-number call-now-cta" data-unique="hero-phone-cta" href="/credit-snapshot/pi">...</a> is not clickable at point (289, 25). Other element would receive the click: <a href="/credit-help" class="active">...</a>
+  (Session info: chrome=85.0.4183.83)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy8.click(Unknown Source)
+at lex.pageobjects.homepage.LexHomepage.clickGetStartedHeroButton(LexHomepage.java:95)
+at lex.tests.homepage.LexHomepageTests.canClickGetStartedButtonInHeroSection(LexHomepageTests.java:94)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canClickGetStartedButtonInHeroSection -->
+        <test-method status="FAIL" signature="canClickGetStartedButtonInImageRevealSection()[pri:0, instance:lex.tests.homepage.LexHomepageTests@e320068]" name="canClickGetStartedButtonInImageRevealSection" duration-ms="1393" started-at="2020-08-28T17:40:21Z" finished-at="2020-08-28T17:40:22Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="/credit-snapshot/pi" class="call-now-cta" data-unique="image-find-out-now" id="image-slider-button">...</a> is not clickable at point (599, 28). Other element would receive the click: <li class="login">...</li>
+  (Session info: chrome=85.0.4183.83)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/credit-snapshot/pi" class="call-now-cta" data-unique="image-find-out-now" id="image-slider-button">...</a> is not clickable at point (599, 28). Other element would receive the click: <li class="login">...</li>
+  (Session info: chrome=85.0.4183.83)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy8.click(Unknown Source)
+at lex.pageobjects.homepage.LexHomepage.clickGetStartedImageRevealButton(LexHomepage.java:115)
+at lex.tests.homepage.LexHomepageTests.canClickGetStartedButtonInImageRevealSection(LexHomepageTests.java:169)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canClickGetStartedButtonInImageRevealSection -->
+        <test-method status="FAIL" signature="canClickGetStartedLinkInHeroSection()[pri:0, instance:lex.tests.homepage.LexHomepageTests@e320068]" name="canClickGetStartedLinkInHeroSection" duration-ms="1382" started-at="2020-08-28T17:40:22Z" finished-at="2020-08-28T17:40:23Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="/credit-snapshot/pi">...</a> is not clickable at point (179, 13). Other element would receive the click: <a href="/credit-repair-services" class="active">...</a>
+  (Session info: chrome=85.0.4183.83)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/credit-snapshot/pi">...</a> is not clickable at point (179, 13). Other element would receive the click: <a href="/credit-repair-services" class="active">...</a>
+  (Session info: chrome=85.0.4183.83)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy8.click(Unknown Source)
+at lex.pageobjects.homepage.LexHomepage.clickGetStartedHeroLink(LexHomepage.java:103)
+at lex.tests.homepage.LexHomepageTests.canClickGetStartedLinkInHeroSection(LexHomepageTests.java:124)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canClickGetStartedLinkInHeroSection -->
+        <test-method status="FAIL" signature="canClickSeeMyCreditButton()[pri:0, instance:lex.tests.homepage.LexHomepageTests@e320068]" name="canClickSeeMyCreditButton" duration-ms="1407" started-at="2020-08-28T17:40:23Z" finished-at="2020-08-28T17:40:25Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a class="lex-cta-number call-now-cta" data-unique="graph-content-lex-cta" href="https://www.lexingtonlaw.com/credit-snapshot">...</a> is not clickable at point (599, 28). Other element would receive the click: <li class="login">...</li>
+  (Session info: chrome=85.0.4183.83)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="lex-cta-number call-now-cta" data-unique="graph-content-lex-cta" href="https://www.lexingtonlaw.com/credit-snapshot">...</a> is not clickable at point (599, 28). Other element would receive the click: <li class="login">...</li>
+  (Session info: chrome=85.0.4183.83)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy8.click(Unknown Source)
+at lex.pageobjects.homepage.LexHomepage.clickSeeMyCreditButton(LexHomepage.java:107)
+at lex.tests.homepage.LexHomepageTests.canClickSeeMyCreditButton(LexHomepageTests.java:139)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canClickSeeMyCreditButton -->
+        <test-method status="FAIL" signature="canClickSignupCreditCostLink()[pri:0, instance:lex.tests.homepage.LexHomepageTests@e320068]" name="canClickSignupCreditCostLink" duration-ms="1477" started-at="2020-08-28T17:40:25Z" finished-at="2020-08-28T17:40:26Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a class="sign-up-cta" data-unique="graph-content-signup-btn" href="/signup">...</a> is not clickable at point (600, 11). Other element would receive the click: <li class="login">...</li>
+  (Session info: chrome=85.0.4183.83)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="sign-up-cta" data-unique="graph-content-signup-btn" href="/signup">...</a> is not clickable at point (600, 11). Other element would receive the click: <li class="login">...</li>
+  (Session info: chrome=85.0.4183.83)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy8.click(Unknown Source)
+at lex.pageobjects.homepage.LexHomepage.clickSignupCostLink(LexHomepage.java:111)
+at lex.tests.homepage.LexHomepageTests.canClickSignupCreditCostLink(LexHomepageTests.java:154)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canClickSignupCreditCostLink -->
+        <test-method status="FAIL" signature="canClickSignupLinkInClientReviewsSection()[pri:0, instance:lex.tests.homepage.LexHomepageTests@e320068]" name="canClickSignupLinkInClientReviewsSection" duration-ms="513" started-at="2020-08-28T17:40:26Z" finished-at="2020-08-28T17:40:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at lex.tests.homepage.LexHomepageTests.canClickSignupLinkInClientReviewsSection(LexHomepageTests.java:217)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canClickSignupLinkInClientReviewsSection -->
+        <test-method status="FAIL" signature="canClickSignupLinkInHeroSection()[pri:0, instance:lex.tests.homepage.LexHomepageTests@e320068]" name="canClickSignupLinkInHeroSection" duration-ms="404" started-at="2020-08-28T17:40:27Z" finished-at="2020-08-28T17:40:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at lex.tests.homepage.LexHomepageTests.canClickSignupLinkInHeroSection(LexHomepageTests.java:112)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canClickSignupLinkInHeroSection -->
+        <test-method status="FAIL" signature="canClickSignupLinkInImageRevealSection()[pri:0, instance:lex.tests.homepage.LexHomepageTests@e320068]" name="canClickSignupLinkInImageRevealSection" duration-ms="5809" started-at="2020-08-28T17:40:27Z" finished-at="2020-08-28T17:40:33Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Timed out after 5 seconds. Unable to locate the element]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element
+at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:123)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy8.click(Unknown Source)
+at lex.pageobjects.homepage.LexHomepage.clickSignupImageRevealLink(LexHomepage.java:119)
+at lex.tests.homepage.LexHomepageTests.canClickSignupLinkInImageRevealSection(LexHomepageTests.java:184)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.image-reveal-cta a.sign-up-cta"}
+  (Session info: chrome=85.0.4183.83)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
+*** Element info: {Using=css selector, value=div.image-reveal-cta a.sign-up-cta}
+at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:39)
+at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:194)
+at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:78)
+at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:119)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- canClickSignupLinkInImageRevealSection -->
+        <test-method status="PASS" signature="canNavigateToCreditHelp()[pri:0, instance:lex.tests.homepage.LexHomepageTests@e320068]" name="canNavigateToCreditHelp" duration-ms="3530" started-at="2020-08-28T17:40:33Z" finished-at="2020-08-28T17:40:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditHelp -->
-        <test-method signature="canNavigateToCreditRepair()[pri:0, instance:lex.tests.homepage.LexHomepageTests@3967e60c]" started-at="2020-08-12T22:57:23Z" name="canNavigateToCreditRepair" finished-at="2020-08-12T22:57:27Z" duration-ms="3049" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditRepair()[pri:0, instance:lex.tests.homepage.LexHomepageTests@e320068]" name="canNavigateToCreditRepair" duration-ms="3202" started-at="2020-08-28T17:40:37Z" finished-at="2020-08-28T17:40:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditRepair -->
-        <test-method signature="canNavigateToOurFirm()[pri:0, instance:lex.tests.homepage.LexHomepageTests@3967e60c]" started-at="2020-08-12T22:57:27Z" name="canNavigateToOurFirm" finished-at="2020-08-12T22:57:30Z" duration-ms="3185" status="PASS">
+        <test-method status="PASS" signature="canNavigateToOurFirm()[pri:0, instance:lex.tests.homepage.LexHomepageTests@e320068]" name="canNavigateToOurFirm" duration-ms="2811" started-at="2020-08-28T17:40:40Z" finished-at="2020-08-28T17:40:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToOurFirm -->
-        <test-method signature="canNavigateToSignUp()[pri:0, instance:lex.tests.homepage.LexHomepageTests@3967e60c]" started-at="2020-08-12T22:57:30Z" name="canNavigateToSignUp" finished-at="2020-08-12T22:57:33Z" duration-ms="3341" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignUp()[pri:0, instance:lex.tests.homepage.LexHomepageTests@e320068]" name="canNavigateToSignUp" duration-ms="2705" started-at="2020-08-28T17:40:43Z" finished-at="2020-08-28T17:40:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignUp -->
-        <test-method signature="isAtHomepage()[pri:0, instance:lex.tests.homepage.LexHomepageTests@3967e60c]" started-at="2020-08-12T22:57:33Z" name="isAtHomepage" finished-at="2020-08-12T22:57:34Z" duration-ms="623" status="PASS">
+        <test-method status="PASS" signature="isAtHomepage()[pri:0, instance:lex.tests.homepage.LexHomepageTests@e320068]" name="isAtHomepage" duration-ms="381" started-at="2020-08-28T17:40:45Z" finished-at="2020-08-28T17:40:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isAtHomepage -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:lex.tests.homepage.LexHomepageTests@3967e60c]" started-at="2020-08-12T22:57:34Z" name="afterSuite" finished-at="2020-08-12T22:57:34Z" duration-ms="285" status="PASS">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:lex.tests.homepage.LexHomepageTests@e320068]" name="afterSuite" is-config="true" duration-ms="269" started-at="2020-08-28T17:40:46Z" finished-at="2020-08-28T17:40:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- lex.tests.homepage.LexHomepageTests -->
       <class name="lex.tests.creditrepair.CreditRepairOnlineTests">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@4b5a5ed1]" started-at="2020-08-12T22:55:12Z" name="beforeSuite" finished-at="2020-08-12T22:55:14Z" duration-ms="2649" status="PASS">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@1b68ddbd]" name="beforeSuite" is-config="true" duration-ms="1747" started-at="2020-08-28T17:38:30Z" finished-at="2020-08-28T17:38:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method signature="canNavigateToCreditSnapshot1()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@4b5a5ed1]" started-at="2020-08-12T22:55:14Z" name="canNavigateToCreditSnapshot1" finished-at="2020-08-12T22:55:19Z" duration-ms="4527" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot1()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@1b68ddbd]" name="canNavigateToCreditSnapshot1" duration-ms="3626" started-at="2020-08-28T17:38:31Z" finished-at="2020-08-28T17:38:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot1 -->
-        <test-method signature="canNavigateToCreditSnapshot2()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@4b5a5ed1]" started-at="2020-08-12T22:55:19Z" name="canNavigateToCreditSnapshot2" finished-at="2020-08-12T22:55:22Z" duration-ms="3000" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot2()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@1b68ddbd]" name="canNavigateToCreditSnapshot2" duration-ms="2026" started-at="2020-08-28T17:38:35Z" finished-at="2020-08-28T17:38:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot2 -->
-        <test-method signature="canNavigateToSignup1()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@4b5a5ed1]" started-at="2020-08-12T22:55:22Z" name="canNavigateToSignup1" finished-at="2020-08-12T22:55:25Z" duration-ms="2820" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup1()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@1b68ddbd]" name="canNavigateToSignup1" duration-ms="2168" started-at="2020-08-28T17:38:37Z" finished-at="2020-08-28T17:38:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup1 -->
-        <test-method signature="canNavigateToSignup2()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@4b5a5ed1]" started-at="2020-08-12T22:55:25Z" name="canNavigateToSignup2" finished-at="2020-08-12T22:55:28Z" duration-ms="2825" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup2()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@1b68ddbd]" name="canNavigateToSignup2" duration-ms="2260" started-at="2020-08-28T17:38:39Z" finished-at="2020-08-28T17:38:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup2 -->
-        <test-method signature="canNavigateToSignup3()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@4b5a5ed1]" started-at="2020-08-12T22:55:28Z" name="canNavigateToSignup3" finished-at="2020-08-12T22:55:31Z" duration-ms="3122" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup3()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@1b68ddbd]" name="canNavigateToSignup3" duration-ms="7568" started-at="2020-08-28T17:38:42Z" finished-at="2020-08-28T17:38:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup3 -->
-        <test-method signature="canNavigateToSignup4()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@4b5a5ed1]" started-at="2020-08-12T22:55:31Z" name="canNavigateToSignup4" finished-at="2020-08-12T22:55:34Z" duration-ms="3019" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup4()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@1b68ddbd]" name="canNavigateToSignup4" duration-ms="2408" started-at="2020-08-28T17:38:49Z" finished-at="2020-08-28T17:38:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup4 -->
-        <test-method signature="canNavigateToSignup5()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@4b5a5ed1]" started-at="2020-08-12T22:55:34Z" name="canNavigateToSignup5" finished-at="2020-08-12T22:55:37Z" duration-ms="2988" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup5()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@1b68ddbd]" name="canNavigateToSignup5" duration-ms="2438" started-at="2020-08-28T17:38:52Z" finished-at="2020-08-28T17:38:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup5 -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@4b5a5ed1]" started-at="2020-08-12T22:55:37Z" name="afterSuite" finished-at="2020-08-12T22:55:37Z" duration-ms="354" status="PASS">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:lex.tests.creditrepair.CreditRepairOnlineTests@1b68ddbd]" name="afterSuite" is-config="true" duration-ms="274" started-at="2020-08-28T17:38:54Z" finished-at="2020-08-28T17:38:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- lex.tests.creditrepair.CreditRepairOnlineTests -->
       <class name="lex.tests.signup.LexSignupTests">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:lex.tests.signup.LexSignupTests@60d8c9b7]" started-at="2020-08-12T22:57:34Z" name="beforeSuite" finished-at="2020-08-12T22:57:35Z" duration-ms="1469" status="PASS">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:lex.tests.signup.LexSignupTests@1f57539]" name="beforeSuite" is-config="true" duration-ms="1185" started-at="2020-08-28T17:40:46Z" finished-at="2020-08-28T17:40:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method signature="canNotContinueWithInvalidEmail()[pri:0, instance:lex.tests.signup.LexSignupTests@60d8c9b7]" started-at="2020-08-12T22:57:35Z" name="canNotContinueWithInvalidEmail" finished-at="2020-08-12T22:57:42Z" duration-ms="6994" status="PASS">
+        <test-method status="FAIL" signature="canNotContinueWithInvalidEmail()[pri:0, instance:lex.tests.signup.LexSignupTests@1f57539]" name="canNotContinueWithInvalidEmail" duration-ms="4519" started-at="2020-08-28T17:40:47Z" finished-at="2020-08-28T17:40:52Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=85.0.4183.83)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 71a9c28d4e1ea3dc77b665d1348ef31d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=85.0.4183.83)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 71a9c28d4e1ea3dc77b665d1348ef31d
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy8.clear(Unknown Source)
+at lex.pageobjects.signup.LexSignup.setFirstName(LexSignup.java:301)
+at lex.tests.signup.LexSignupTests.canNotContinueWithInvalidEmail(LexSignupTests.java:89)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNotContinueWithInvalidEmail -->
-        <test-method signature="canNotContinueWithInvalidPhone()[pri:0, instance:lex.tests.signup.LexSignupTests@60d8c9b7]" started-at="2020-08-12T22:57:42Z" name="canNotContinueWithInvalidPhone" finished-at="2020-08-12T22:57:49Z" duration-ms="6626" status="PASS">
+        <test-method status="PASS" signature="canNotContinueWithInvalidPhone()[pri:0, instance:lex.tests.signup.LexSignupTests@1f57539]" name="canNotContinueWithInvalidPhone" duration-ms="5974" started-at="2020-08-28T17:40:52Z" finished-at="2020-08-28T17:40:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNotContinueWithInvalidPhone -->
-        <test-method signature="canNotContinueWithInvalidZip()[pri:0, instance:lex.tests.signup.LexSignupTests@60d8c9b7]" started-at="2020-08-12T22:57:49Z" name="canNotContinueWithInvalidZip" finished-at="2020-08-12T22:57:56Z" duration-ms="6733" status="PASS">
+        <test-method status="PASS" signature="canNotContinueWithInvalidZip()[pri:0, instance:lex.tests.signup.LexSignupTests@1f57539]" name="canNotContinueWithInvalidZip" duration-ms="5914" started-at="2020-08-28T17:40:58Z" finished-at="2020-08-28T17:41:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNotContinueWithInvalidZip -->
-        <test-method signature="canNotContinueWithInvalidZip2()[pri:0, instance:lex.tests.signup.LexSignupTests@60d8c9b7]" started-at="2020-08-12T22:57:56Z" name="canNotContinueWithInvalidZip2" finished-at="2020-08-12T22:58:02Z" duration-ms="6621" status="PASS">
+        <test-method status="PASS" signature="canNotContinueWithInvalidZip2()[pri:0, instance:lex.tests.signup.LexSignupTests@1f57539]" name="canNotContinueWithInvalidZip2" duration-ms="5896" started-at="2020-08-28T17:41:04Z" finished-at="2020-08-28T17:41:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNotContinueWithInvalidZip2 -->
-        <test-method signature="canNotContinueWithNoAddress()[pri:0, instance:lex.tests.signup.LexSignupTests@60d8c9b7]" started-at="2020-08-12T22:58:02Z" name="canNotContinueWithNoAddress" finished-at="2020-08-12T22:58:09Z" duration-ms="6809" status="PASS">
+        <test-method status="PASS" signature="canNotContinueWithNoAddress()[pri:0, instance:lex.tests.signup.LexSignupTests@1f57539]" name="canNotContinueWithNoAddress" duration-ms="5989" started-at="2020-08-28T17:41:09Z" finished-at="2020-08-28T17:41:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNotContinueWithNoAddress -->
-        <test-method signature="canNotContinueWithNoEmail()[pri:0, instance:lex.tests.signup.LexSignupTests@60d8c9b7]" started-at="2020-08-12T22:58:09Z" name="canNotContinueWithNoEmail" finished-at="2020-08-12T22:58:16Z" duration-ms="6511" status="PASS">
+        <test-method status="PASS" signature="canNotContinueWithNoEmail()[pri:0, instance:lex.tests.signup.LexSignupTests@1f57539]" name="canNotContinueWithNoEmail" duration-ms="5873" started-at="2020-08-28T17:41:15Z" finished-at="2020-08-28T17:41:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNotContinueWithNoEmail -->
-        <test-method signature="canNotContinueWithNoFirstName()[pri:0, instance:lex.tests.signup.LexSignupTests@60d8c9b7]" started-at="2020-08-12T22:58:16Z" name="canNotContinueWithNoFirstName" finished-at="2020-08-12T22:58:22Z" duration-ms="6662" status="PASS">
+        <test-method status="PASS" signature="canNotContinueWithNoFirstName()[pri:0, instance:lex.tests.signup.LexSignupTests@1f57539]" name="canNotContinueWithNoFirstName" duration-ms="5913" started-at="2020-08-28T17:41:21Z" finished-at="2020-08-28T17:41:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNotContinueWithNoFirstName -->
-        <test-method signature="canNotContinueWithNoLastName()[pri:0, instance:lex.tests.signup.LexSignupTests@60d8c9b7]" started-at="2020-08-12T22:58:22Z" name="canNotContinueWithNoLastName" finished-at="2020-08-12T22:58:29Z" duration-ms="6928" status="PASS">
+        <test-method status="PASS" signature="canNotContinueWithNoLastName()[pri:0, instance:lex.tests.signup.LexSignupTests@1f57539]" name="canNotContinueWithNoLastName" duration-ms="5903" started-at="2020-08-28T17:41:27Z" finished-at="2020-08-28T17:41:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNotContinueWithNoLastName -->
-        <test-method signature="canNotContinueWithNoPhone()[pri:0, instance:lex.tests.signup.LexSignupTests@60d8c9b7]" started-at="2020-08-12T22:58:29Z" name="canNotContinueWithNoPhone" finished-at="2020-08-12T22:58:36Z" duration-ms="6681" status="PASS">
+        <test-method status="PASS" signature="canNotContinueWithNoPhone()[pri:0, instance:lex.tests.signup.LexSignupTests@1f57539]" name="canNotContinueWithNoPhone" duration-ms="5845" started-at="2020-08-28T17:41:33Z" finished-at="2020-08-28T17:41:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNotContinueWithNoPhone -->
-        <test-method signature="canNotContinueWithNoZip()[pri:0, instance:lex.tests.signup.LexSignupTests@60d8c9b7]" started-at="2020-08-12T22:58:36Z" name="canNotContinueWithNoZip" finished-at="2020-08-12T22:58:43Z" duration-ms="6754" status="PASS">
+        <test-method status="PASS" signature="canNotContinueWithNoZip()[pri:0, instance:lex.tests.signup.LexSignupTests@1f57539]" name="canNotContinueWithNoZip" duration-ms="5737" started-at="2020-08-28T17:41:39Z" finished-at="2020-08-28T17:41:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNotContinueWithNoZip -->
-        <test-method signature="constructorLoadsSignupPage()[pri:0, instance:lex.tests.signup.LexSignupTests@60d8c9b7]" started-at="2020-08-12T22:58:43Z" name="constructorLoadsSignupPage" finished-at="2020-08-12T22:58:44Z" duration-ms="1122" status="PASS">
+        <test-method status="PASS" signature="constructorLoadsSignupPage()[pri:0, instance:lex.tests.signup.LexSignupTests@1f57539]" name="constructorLoadsSignupPage" duration-ms="1108" started-at="2020-08-28T17:41:45Z" finished-at="2020-08-28T17:41:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- constructorLoadsSignupPage -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:lex.tests.signup.LexSignupTests@60d8c9b7]" started-at="2020-08-12T22:58:44Z" name="afterSuite" finished-at="2020-08-12T22:58:44Z" duration-ms="324" status="PASS">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:lex.tests.signup.LexSignupTests@1f57539]" name="afterSuite" is-config="true" duration-ms="287" started-at="2020-08-28T17:41:46Z" finished-at="2020-08-28T17:41:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- lex.tests.signup.LexSignupTests -->
       <class name="lex.tests.creditrepair.CreditRepairNBRTests">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@3cc2931c]" started-at="2020-08-12T22:56:10Z" name="beforeSuite" finished-at="2020-08-12T22:56:11Z" duration-ms="1257" status="PASS">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@59e5ddf]" name="beforeSuite" is-config="true" duration-ms="1149" started-at="2020-08-28T17:39:20Z" finished-at="2020-08-28T17:39:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method signature="canNavigateToCreditSnapshot1()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@3cc2931c]" started-at="2020-08-12T22:56:11Z" name="canNavigateToCreditSnapshot1" finished-at="2020-08-12T22:56:15Z" duration-ms="3472" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot1()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@59e5ddf]" name="canNavigateToCreditSnapshot1" duration-ms="4195" started-at="2020-08-28T17:39:21Z" finished-at="2020-08-28T17:39:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot1 -->
-        <test-method signature="canNavigateToCreditSnapshot2()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@3cc2931c]" started-at="2020-08-12T22:56:15Z" name="canNavigateToCreditSnapshot2" finished-at="2020-08-12T22:56:18Z" duration-ms="3546" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot2()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@59e5ddf]" name="canNavigateToCreditSnapshot2" duration-ms="2022" started-at="2020-08-28T17:39:25Z" finished-at="2020-08-28T17:39:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot2 -->
-        <test-method signature="canNavigateToCreditSnapshot3()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@3cc2931c]" started-at="2020-08-12T22:56:18Z" name="canNavigateToCreditSnapshot3" finished-at="2020-08-12T22:56:21Z" duration-ms="2575" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot3()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@59e5ddf]" name="canNavigateToCreditSnapshot3" duration-ms="2033" started-at="2020-08-28T17:39:27Z" finished-at="2020-08-28T17:39:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot3 -->
-        <test-method signature="canNavigateToCreditSnapshot4()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@3cc2931c]" started-at="2020-08-12T22:56:21Z" name="canNavigateToCreditSnapshot4" finished-at="2020-08-12T22:56:24Z" duration-ms="2589" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot4()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@59e5ddf]" name="canNavigateToCreditSnapshot4" duration-ms="2002" started-at="2020-08-28T17:39:29Z" finished-at="2020-08-28T17:39:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot4 -->
-        <test-method signature="canNavigateToCreditSnapshot5()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@3cc2931c]" started-at="2020-08-12T22:56:24Z" name="canNavigateToCreditSnapshot5" finished-at="2020-08-12T22:56:26Z" duration-ms="2497" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot5()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@59e5ddf]" name="canNavigateToCreditSnapshot5" duration-ms="2019" started-at="2020-08-28T17:39:31Z" finished-at="2020-08-28T17:39:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot5 -->
-        <test-method signature="canNavigateToCreditSnapshot6()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@3cc2931c]" started-at="2020-08-12T22:56:26Z" name="canNavigateToCreditSnapshot6" finished-at="2020-08-12T22:56:28Z" duration-ms="2428" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot6()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@59e5ddf]" name="canNavigateToCreditSnapshot6" duration-ms="2023" started-at="2020-08-28T17:39:33Z" finished-at="2020-08-28T17:39:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot6 -->
-        <test-method signature="canNavigateToSignup1()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@3cc2931c]" started-at="2020-08-12T22:56:28Z" name="canNavigateToSignup1" finished-at="2020-08-12T22:56:31Z" duration-ms="2964" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup1()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@59e5ddf]" name="canNavigateToSignup1" duration-ms="1881" started-at="2020-08-28T17:39:35Z" finished-at="2020-08-28T17:39:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup1 -->
-        <test-method signature="canNavigateToSignup2()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@3cc2931c]" started-at="2020-08-12T22:56:31Z" name="canNavigateToSignup2" finished-at="2020-08-12T22:56:35Z" duration-ms="3195" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup2()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@59e5ddf]" name="canNavigateToSignup2" duration-ms="2247" started-at="2020-08-28T17:39:37Z" finished-at="2020-08-28T17:39:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup2 -->
-        <test-method signature="canNavigateToSignup3()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@3cc2931c]" started-at="2020-08-12T22:56:35Z" name="canNavigateToSignup3" finished-at="2020-08-12T22:56:38Z" duration-ms="3231" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup3()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@59e5ddf]" name="canNavigateToSignup3" duration-ms="2194" started-at="2020-08-28T17:39:39Z" finished-at="2020-08-28T17:39:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup3 -->
-        <test-method signature="canNavigateToSignup4()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@3cc2931c]" started-at="2020-08-12T22:56:38Z" name="canNavigateToSignup4" finished-at="2020-08-12T22:56:41Z" duration-ms="3357" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup4()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@59e5ddf]" name="canNavigateToSignup4" duration-ms="2319" started-at="2020-08-28T17:39:42Z" finished-at="2020-08-28T17:39:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup4 -->
-        <test-method signature="canNavigateToSignup5()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@3cc2931c]" started-at="2020-08-12T22:56:41Z" name="canNavigateToSignup5" finished-at="2020-08-12T22:56:44Z" duration-ms="3003" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup5()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@59e5ddf]" name="canNavigateToSignup5" duration-ms="2376" started-at="2020-08-28T17:39:44Z" finished-at="2020-08-28T17:39:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup5 -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@3cc2931c]" started-at="2020-08-12T22:56:44Z" name="afterSuite" finished-at="2020-08-12T22:56:45Z" duration-ms="342" status="PASS">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:lex.tests.creditrepair.CreditRepairNBRTests@59e5ddf]" name="afterSuite" is-config="true" duration-ms="324" started-at="2020-08-28T17:39:46Z" finished-at="2020-08-28T17:39:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- lex.tests.creditrepair.CreditRepairNBRTests -->
       <class name="lex.tests.creditrepair.CreditRepairBRTests">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@59d016c9]" started-at="2020-08-12T22:55:37Z" name="beforeSuite" finished-at="2020-08-12T22:55:38Z" duration-ms="1319" status="PASS">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@646d64ab]" name="beforeSuite" is-config="true" duration-ms="1004" started-at="2020-08-28T17:38:54Z" finished-at="2020-08-28T17:38:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method signature="canNavigateToCreditSnapshot1()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@59d016c9]" started-at="2020-08-12T22:55:38Z" name="canNavigateToCreditSnapshot1" finished-at="2020-08-12T22:55:42Z" duration-ms="3167" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot1()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@646d64ab]" name="canNavigateToCreditSnapshot1" duration-ms="2903" started-at="2020-08-28T17:38:55Z" finished-at="2020-08-28T17:38:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot1 -->
-        <test-method signature="canNavigateToCreditSnapshot2()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@59d016c9]" started-at="2020-08-12T22:55:42Z" name="canNavigateToCreditSnapshot2" finished-at="2020-08-12T22:55:44Z" duration-ms="2270" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot2()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@646d64ab]" name="canNavigateToCreditSnapshot2" duration-ms="2109" started-at="2020-08-28T17:38:58Z" finished-at="2020-08-28T17:39:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot2 -->
-        <test-method signature="canNavigateToCreditSnapshot3()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@59d016c9]" started-at="2020-08-12T22:55:44Z" name="canNavigateToCreditSnapshot3" finished-at="2020-08-12T22:55:46Z" duration-ms="2491" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot3()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@646d64ab]" name="canNavigateToCreditSnapshot3" duration-ms="2179" started-at="2020-08-28T17:39:00Z" finished-at="2020-08-28T17:39:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot3 -->
-        <test-method signature="canNavigateToCreditSnapshot4()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@59d016c9]" started-at="2020-08-12T22:55:46Z" name="canNavigateToCreditSnapshot4" finished-at="2020-08-12T22:55:49Z" duration-ms="2358" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot4()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@646d64ab]" name="canNavigateToCreditSnapshot4" duration-ms="2023" started-at="2020-08-28T17:39:02Z" finished-at="2020-08-28T17:39:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot4 -->
-        <test-method signature="canNavigateToCreditSnapshot5()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@59d016c9]" started-at="2020-08-12T22:55:49Z" name="canNavigateToCreditSnapshot5" finished-at="2020-08-12T22:55:51Z" duration-ms="2406" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot5()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@646d64ab]" name="canNavigateToCreditSnapshot5" duration-ms="2020" started-at="2020-08-28T17:39:04Z" finished-at="2020-08-28T17:39:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot5 -->
-        <test-method signature="canNavigateToCreditSnapshot6()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@59d016c9]" started-at="2020-08-12T22:55:51Z" name="canNavigateToCreditSnapshot6" finished-at="2020-08-12T22:55:54Z" duration-ms="3275" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot6()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@646d64ab]" name="canNavigateToCreditSnapshot6" duration-ms="1992" started-at="2020-08-28T17:39:07Z" finished-at="2020-08-28T17:39:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot6 -->
-        <test-method signature="canNavigateToSignup1()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@59d016c9]" started-at="2020-08-12T22:55:54Z" name="canNavigateToSignup1" finished-at="2020-08-12T22:55:57Z" duration-ms="2763" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup1()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@646d64ab]" name="canNavigateToSignup1" duration-ms="2362" started-at="2020-08-28T17:39:08Z" finished-at="2020-08-28T17:39:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup1 -->
-        <test-method signature="canNavigateToSignup2()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@59d016c9]" started-at="2020-08-12T22:55:57Z" name="canNavigateToSignup2" finished-at="2020-08-12T22:56:00Z" duration-ms="3135" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup2()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@646d64ab]" name="canNavigateToSignup2" duration-ms="2217" started-at="2020-08-28T17:39:11Z" finished-at="2020-08-28T17:39:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup2 -->
-        <test-method signature="canNavigateToSignup3()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@59d016c9]" started-at="2020-08-12T22:56:00Z" name="canNavigateToSignup3" finished-at="2020-08-12T22:56:03Z" duration-ms="3118" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup3()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@646d64ab]" name="canNavigateToSignup3" duration-ms="2167" started-at="2020-08-28T17:39:13Z" finished-at="2020-08-28T17:39:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup3 -->
-        <test-method signature="canNavigateToSignup4()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@59d016c9]" started-at="2020-08-12T22:56:03Z" name="canNavigateToSignup4" finished-at="2020-08-12T22:56:07Z" duration-ms="3104" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup4()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@646d64ab]" name="canNavigateToSignup4" duration-ms="2213" started-at="2020-08-28T17:39:15Z" finished-at="2020-08-28T17:39:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup4 -->
-        <test-method signature="canNavigateToSignup5()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@59d016c9]" started-at="2020-08-12T22:56:07Z" name="canNavigateToSignup5" finished-at="2020-08-12T22:56:10Z" duration-ms="3118" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup5()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@646d64ab]" name="canNavigateToSignup5" duration-ms="2123" started-at="2020-08-28T17:39:17Z" finished-at="2020-08-28T17:39:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup5 -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@59d016c9]" started-at="2020-08-12T22:56:10Z" name="afterSuite" finished-at="2020-08-12T22:56:10Z" duration-ms="409" status="PASS">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:lex.tests.creditrepair.CreditRepairBRTests@646d64ab]" name="afterSuite" is-config="true" duration-ms="310" started-at="2020-08-28T17:39:20Z" finished-at="2020-08-28T17:39:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- lex.tests.creditrepair.CreditRepairBRTests -->
       <class name="lex.tests.creditrepair.CreditRepairTests">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@20d28811]" started-at="2020-08-12T22:56:45Z" name="beforeSuite" finished-at="2020-08-12T22:56:46Z" duration-ms="1000" status="PASS">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@536aaa8d]" name="beforeSuite" is-config="true" duration-ms="1372" started-at="2020-08-28T17:39:47Z" finished-at="2020-08-28T17:39:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method signature="canNavigateToCreditSnapshot1()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@20d28811]" started-at="2020-08-12T22:56:46Z" name="canNavigateToCreditSnapshot1" finished-at="2020-08-12T22:56:49Z" duration-ms="3288" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot1()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@536aaa8d]" name="canNavigateToCreditSnapshot1" duration-ms="4991" started-at="2020-08-28T17:39:48Z" finished-at="2020-08-28T17:39:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot1 -->
-        <test-method signature="canNavigateToCreditSnapshot2()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@20d28811]" started-at="2020-08-12T22:56:49Z" name="canNavigateToCreditSnapshot2" finished-at="2020-08-12T22:56:51Z" duration-ms="2390" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot2()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@536aaa8d]" name="canNavigateToCreditSnapshot2" duration-ms="2057" started-at="2020-08-28T17:39:53Z" finished-at="2020-08-28T17:39:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot2 -->
-        <test-method signature="canNavigateToCreditSnapshot3()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@20d28811]" started-at="2020-08-12T22:56:51Z" name="canNavigateToCreditSnapshot3" finished-at="2020-08-12T22:56:55Z" duration-ms="3394" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot3()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@536aaa8d]" name="canNavigateToCreditSnapshot3" duration-ms="2007" started-at="2020-08-28T17:39:55Z" finished-at="2020-08-28T17:39:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot3 -->
-        <test-method signature="canNavigateToCreditSnapshot4()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@20d28811]" started-at="2020-08-12T22:56:55Z" name="canNavigateToCreditSnapshot4" finished-at="2020-08-12T22:56:57Z" duration-ms="2443" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot4()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@536aaa8d]" name="canNavigateToCreditSnapshot4" duration-ms="2564" started-at="2020-08-28T17:39:57Z" finished-at="2020-08-28T17:40:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot4 -->
-        <test-method signature="canNavigateToCreditSnapshot5()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@20d28811]" started-at="2020-08-12T22:56:57Z" name="canNavigateToCreditSnapshot5" finished-at="2020-08-12T22:57:00Z" duration-ms="2491" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot5()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@536aaa8d]" name="canNavigateToCreditSnapshot5" duration-ms="2058" started-at="2020-08-28T17:40:00Z" finished-at="2020-08-28T17:40:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot5 -->
-        <test-method signature="canNavigateToCreditSnapshot6()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@20d28811]" started-at="2020-08-12T22:57:00Z" name="canNavigateToCreditSnapshot6" finished-at="2020-08-12T22:57:02Z" duration-ms="2862" status="PASS">
+        <test-method status="PASS" signature="canNavigateToCreditSnapshot6()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@536aaa8d]" name="canNavigateToCreditSnapshot6" duration-ms="2036" started-at="2020-08-28T17:40:02Z" finished-at="2020-08-28T17:40:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToCreditSnapshot6 -->
-        <test-method signature="canNavigateToSignup1()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@20d28811]" started-at="2020-08-12T22:57:02Z" name="canNavigateToSignup1" finished-at="2020-08-12T22:57:05Z" duration-ms="2787" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup1()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@536aaa8d]" name="canNavigateToSignup1" duration-ms="2331" started-at="2020-08-28T17:40:04Z" finished-at="2020-08-28T17:40:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup1 -->
-        <test-method signature="canNavigateToSignup2()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@20d28811]" started-at="2020-08-12T22:57:05Z" name="canNavigateToSignup2" finished-at="2020-08-12T22:57:09Z" duration-ms="3342" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup2()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@536aaa8d]" name="canNavigateToSignup2" duration-ms="1958" started-at="2020-08-28T17:40:06Z" finished-at="2020-08-28T17:40:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup2 -->
-        <test-method signature="canNavigateToSignup3()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@20d28811]" started-at="2020-08-12T22:57:09Z" name="canNavigateToSignup3" finished-at="2020-08-12T22:57:12Z" duration-ms="3152" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup3()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@536aaa8d]" name="canNavigateToSignup3" duration-ms="2263" started-at="2020-08-28T17:40:08Z" finished-at="2020-08-28T17:40:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup3 -->
-        <test-method signature="canNavigateToSignup4()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@20d28811]" started-at="2020-08-12T22:57:12Z" name="canNavigateToSignup4" finished-at="2020-08-12T22:57:15Z" duration-ms="3036" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup4()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@536aaa8d]" name="canNavigateToSignup4" duration-ms="2208" started-at="2020-08-28T17:40:10Z" finished-at="2020-08-28T17:40:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup4 -->
-        <test-method signature="canNavigateToSignup5()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@20d28811]" started-at="2020-08-12T22:57:15Z" name="canNavigateToSignup5" finished-at="2020-08-12T22:57:18Z" duration-ms="3158" status="PASS">
+        <test-method status="PASS" signature="canNavigateToSignup5()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@536aaa8d]" name="canNavigateToSignup5" duration-ms="2156" started-at="2020-08-28T17:40:13Z" finished-at="2020-08-28T17:40:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canNavigateToSignup5 -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@20d28811]" started-at="2020-08-12T22:57:18Z" name="afterSuite" finished-at="2020-08-12T22:57:18Z" duration-ms="379" status="PASS">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:lex.tests.creditrepair.CreditRepairTests@536aaa8d]" name="afterSuite" is-config="true" duration-ms="324" started-at="2020-08-28T17:40:15Z" finished-at="2020-08-28T17:40:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

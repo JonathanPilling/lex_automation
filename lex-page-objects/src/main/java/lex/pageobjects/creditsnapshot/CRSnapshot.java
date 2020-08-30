@@ -88,7 +88,7 @@ public class CRSnapshot extends BasePage {
         signupModalLink.click();
     }
 
-    public clickLoginButton() {
+    public void clickLoginButton() {
         loginButton.click();
     }
 

@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Example test run]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" name="Simple Test(failed)" verbose="0">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Example test run]">
+  <test thread-count="5" verbose="0" name="Simple Test(failed)">
     <classes>
+      <class name="lex.tests.homepage.LexHomepageTests">
+        <methods>
+          <include name="canClickGetStartedButtonInHeroSection"/>
+          <include name="canClickGetStartedButtonInImageRevealSection"/>
+          <include name="beforeSuite"/>
+          <include name="canClickSignupLinkInImageRevealSection"/>
+          <include name="canClickSignupLinkInHeroSection"/>
+          <include name="canClickSignupCreditCostLink"/>
+          <include name="canClickGetStartedLinkInHeroSection"/>
+          <include name="afterSuite"/>
+          <include name="canClickGetStartedButtonInClientReviewsSection"/>
+          <include name="canClickSignupLinkInClientReviewsSection"/>
+          <include name="canClickSeeMyCreditButton"/>
+        </methods>
+      </class> <!-- lex.tests.homepage.LexHomepageTests -->
       <class name="lex.tests.signup.LexSignupTests">
         <methods>
           <include name="beforeSuite"/>
+          <include name="canNotContinueWithInvalidEmail"/>
           <include name="afterSuite"/>
-          <include name="canSignUpSingleUser"/>
-          <include name="canSignupWithFamilyMember"/>
         </methods>
       </class> <!-- lex.tests.signup.LexSignupTests -->
     </classes>
