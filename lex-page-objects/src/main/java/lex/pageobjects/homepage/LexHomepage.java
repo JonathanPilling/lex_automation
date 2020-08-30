@@ -10,9 +10,10 @@ public class LexHomepage extends BasePage {
 
     private static String URL = "https://www.lexingtonlaw.com";
 
-    public LexHomepage(WebDriver driver) {
+    public LexHomepage(WebDriver driver) throws InterruptedException {
         super(driver);
         driver.get(URL);
+        Thread.sleep(1000);
     }
 
     /* Locators */
@@ -84,11 +85,11 @@ public class LexHomepage extends BasePage {
     }
 
     public boolean isAtCreditSnapshot() {
-        return driver.getCurrentUrl() == "https://www.lexingtonlaw.com/credit-snapshot/pi";
+        return driver.getCurrentUrl().startsWith("https://www.lexingtonlaw.com/credit-snapshot/pi");
     }
 
     public boolean isAtSignup() {
-        return driver.getCurrentUrl() == "https://www.lexingtonlaw.com/signup";
+        return driver.getCurrentUrl().startsWith("https://www.lexingtonlaw.com/signup");
     }
 
     public void clickGetStartedHeroButton() {

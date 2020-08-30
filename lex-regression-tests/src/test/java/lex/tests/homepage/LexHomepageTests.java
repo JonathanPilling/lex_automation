@@ -12,7 +12,7 @@ import lex.pageobjects.ourfirm.LexOurFirm;
 public class LexHomepageTests extends BaseTest {
 
     @Test
-    public void isAtHomepage() {
+    public void isAtHomepage() throws InterruptedException {
         LexHomepage myPage = new LexHomepage(getDriver());
         Assert.assertTrue(myPage.isHome());
     }
@@ -86,7 +86,7 @@ public class LexHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickGetStartedButtonInHeroSection() {
+    public void canClickGetStartedButtonInHeroSection() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
 
@@ -101,7 +101,7 @@ public class LexHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickSignupLinkInHeroSection() {
+    public void canClickSignupLinkInHeroSection() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
 
@@ -116,7 +116,7 @@ public class LexHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickGetStartedLinkInHeroSection() {
+    public void canClickGetStartedLinkInHeroSection() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
 
@@ -131,7 +131,7 @@ public class LexHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickSeeMyCreditButton() {
+    public void canClickSeeMyCreditButton() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
 
@@ -146,7 +146,7 @@ public class LexHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickSignupCreditCostLink() {
+    public void canClickSignupCreditCostLink() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
 
@@ -161,7 +161,7 @@ public class LexHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickGetStartedButtonInImageRevealSection() {
+    public void canClickGetStartedButtonInImageRevealSection() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
 
@@ -175,12 +175,13 @@ public class LexHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
-    public void canClickSignupLinkInImageRevealSection() {
+    /* WIP TEST @Test
+    public void canClickSignupLinkInImageRevealSection() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
 
         // act
+
         myPage.clickSignupImageRevealLink();
 
         // assert
@@ -188,10 +189,10 @@ public class LexHomepageTests extends BaseTest {
 
         // clean up
         myPage.goHome();
-    }
+    }*/
 
     @Test
-    public void canClickGetStartedButtonInClientReviewsSection() {
+    public void canClickGetStartedButtonInClientReviewsSection() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
 
@@ -206,7 +207,7 @@ public class LexHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickSignupLinkInClientReviewsSection() {
+    public void canClickSignupLinkInClientReviewsSection() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
 

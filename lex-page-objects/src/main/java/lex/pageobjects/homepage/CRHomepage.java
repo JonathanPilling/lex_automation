@@ -68,15 +68,19 @@ public class CRHomepage extends BasePage {
     @FindBy(how=How.CSS, using="div.how-works-new-container a.text-link")
     private WebElement howWorksSignupText;
 
-    @FindBy(how=How.CSS, using="div.cost-new-container a.text-link")
+    @FindBy(how=How.CSS, using="div.cost-new-container a.btn-new")
     private WebElement costGetStartedButton;
 
     @FindBy(how=How.CSS, using="div.cost-new-container a.text-link")
     private WebElement costSignupText;
 
-    public CRHomepage(WebDriver driver) {
+    @FindBy(how=How.CSS, using="div.slider-app-wrapper")
+    private WebElement sliderApp;
+
+    public CRHomepage(WebDriver driver) throws InterruptedException {
         super(driver);
         driver.get(URL);
+        Thread.sleep(3000);
     }
 
     public void clickModalCloseButton() {
@@ -136,9 +140,9 @@ public class CRHomepage extends BasePage {
         streetAddress.sendKeys(input);
     }
 
-    public void sendZipCode(String fname) {
+    public void sendZipCode(String input) {
         zipCode.clear();
-        zipCode.sendKeys(fname);
+        zipCode.sendKeys(input);
     }
 
     public void clickSubmitButton() {
@@ -174,15 +178,19 @@ public class CRHomepage extends BasePage {
     }
 
     public boolean isAtSignup() {
-        return driver.getCurrentUrl() == "https://www.creditrepair.com/signup";
+        return driver.getCurrentUrl().startsWith("https://www.creditrepair.com/signup");
     }
 
     public boolean isAtLogin() {
-        return driver.getCurrentUrl() == "https://members.creditrepair.com/login";
+        return driver.getCurrentUrl().startsWith("https://members.creditrepair.com/login");
     }
 
     public boolean isAtReportPull() {
-        return driver.getCurrentUrl() == "https://www.creditrepair.com/credit-snapshot/rp";
+        return driver.getCurrentUrl().startsWith("https://www.creditrepair.com/credit-snapshot/rp");
+    }
+
+    public boolean sliderAppOpened() {
+        return sliderApp.getAttribute("style") == "display: block;";
     }
 
 

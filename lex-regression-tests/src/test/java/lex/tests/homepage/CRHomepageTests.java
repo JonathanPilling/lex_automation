@@ -1,14 +1,13 @@
 package lex.tests.homepage;
 
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.Test;
-import org.testng.Assert;
 import lex.framework.core.BaseTest;
 import lex.pageobjects.homepage.CRHomepage;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class CRHomepageTests extends BaseTest {
     @Test
-    public void canClickGetStartedInModal() {
+    public void canClickGetStartedInModal() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
 
@@ -23,7 +22,7 @@ public class CRHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickSignupInModal() {
+    public void canClickSignupInModal() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
 
@@ -38,12 +37,14 @@ public class CRHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickLoginButton() {
+    public void canClickLoginButton() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
 
         // act
+        myPage.clickModalCloseButton();
         myPage.clickLoginButton();
+        Thread.sleep(1000);
 
         // assert
         Assert.assertTrue(myPage.isAtLogin());
@@ -53,7 +54,7 @@ public class CRHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickSignupInTopNav() {
+    public void canClickSignupInTopNav() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
 
@@ -69,7 +70,7 @@ public class CRHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickStimulusSignupButon() {
+    public void canClickStimulusSignupButon() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
 
@@ -85,7 +86,7 @@ public class CRHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickGetStartedHero() {
+    public void canClickGetStartedHero() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
 
@@ -101,7 +102,7 @@ public class CRHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickSignupHero() {
+    public void canClickSignupHero() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
 
@@ -117,7 +118,7 @@ public class CRHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canSubmitForm() {
+    public void canSubmitForm() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
 
@@ -130,16 +131,17 @@ public class CRHomepageTests extends BaseTest {
         myPage.sendStreetAddress("123 R");
         myPage.sendZipCode("84103");
         myPage.clickSubmitButton();
+        Thread.sleep(5000);
 
         // assert
-        Assert.assertTrue(myPage.isAtReportPull());
+        Assert.assertTrue(myPage.isAtReportPull() || myPage.sliderAppOpened()); // two possibilities?
 
         // clean up
         myPage.goHome();
     }
 
     @Test
-    public void canClickGetStartedInHardWorkSection() {
+    public void canClickGetStartedInHardWorkSection() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
 
@@ -155,7 +157,7 @@ public class CRHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickSignupInHardWorkSection() {
+    public void canClickSignupInHardWorkSection() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
 
@@ -171,7 +173,7 @@ public class CRHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickGetStartedInHowCreditRepairWorksSection() {
+    public void canClickGetStartedInHowCreditRepairWorksSection() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
 
@@ -187,7 +189,7 @@ public class CRHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickSignupInHowCreditRepairWorksSection() {
+    public void canClickSignupInHowCreditRepairWorksSection() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
 
@@ -203,7 +205,7 @@ public class CRHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickGetStartedInCostSection() {
+    public void canClickGetStartedInCostSection() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
 
@@ -219,7 +221,7 @@ public class CRHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickSignupInCostSection() {
+    public void canClickSignupInCostSection() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
 
