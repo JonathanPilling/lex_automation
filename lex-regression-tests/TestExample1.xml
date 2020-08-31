@@ -6,9 +6,9 @@
             <class name="lex.tests.creditrepair.CreditRepairBRTests"/>
             <class name="lex.tests.creditrepair.CreditRepairNBRTests"/>
             <class name="lex.tests.creditrepair.CreditRepairTests"/>
-            <class name="lex.tests.signup.LexSignupTests"/>                      -->
+            <class name="lex.tests.signup.LexSignupTests"/>
             <class name="lex.tests.homepage.LexHomepageTests"/>
-            <class name ="lex.tests.homepage.CRHomepageTests"/>
+            <class name ="lex.tests.homepage.CRHomepageTests"/> -->
         </classes>
     </test>
 </suite>
