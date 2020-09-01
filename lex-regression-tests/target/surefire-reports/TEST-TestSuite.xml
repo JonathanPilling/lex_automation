@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="197.013" tests="65" errors="0" skipped="0" failures="10">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="251.595" tests="54" errors="0" skipped="0" failures="2">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib"/>
-    <property name="sun.java.command" value="/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/surefire/surefirebooter2766478384086542262.jar /Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/surefire 2020-08-28T11-38-29_252-jvmRun1 surefire3837647925260957494tmp surefire_03213916874844737454tmp"/>
+    <property name="sun.java.command" value="/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/surefire/surefirebooter6157412042610897961.jar /Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/surefire 2020-09-01T15-43-19_601-jvmRun1 surefire8481133247445345516tmp surefire_05564111376688128657tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="surefire.test.class.path" value="/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/test-classes:/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/classes:/Users/184973/Documents/automation/lex_automation/lex-framework/target/classes:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/Users/184973/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/184973/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/184973/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/184973/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/184973/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/184973/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/184973/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/184973/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/184973/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/184973/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/184973/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/184973/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/184973/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/Users/184973/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-server/3.14.0/selenium-server-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/Users/184973/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/Users/184973/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar:/Users/184973/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/184973/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.30/htmlunit-2.30.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.28/htmlunit-core-js-2.28.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit-cssparser/1.0.0/htmlunit-cssparser-1.0.0.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.30/neko-htmlunit-2.30.jar:/Users/184973/.m2/repository/org/apache/httpcomponents/httpmime/4.5.5/httpmime-4.5.5.jar:/Users/184973/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.8.v20180619/jetty-repacked-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-client/9.4.8.v20180619/jetty-client-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-http/9.4.8.v20180619/jetty-http-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-io/9.4.8.v20180619/jetty-io-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-util/9.4.8.v20180619/jetty-util-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.8.v20180619/jetty-xml-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.30.0/htmlunit-driver-2.30.0.jar:/Users/184973/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.8.v20180619/websocket-api-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.8.v20180619/websocket-client-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.8.v20180619/websocket-common-9.4.8.v20180619.jar:/Users/184973/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/184973/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/184973/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/184973/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/184973/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/Users/184973/.m2/repository/io/github/bonigarcia/webdrivermanager/3.6.0/webdrivermanager-3.6.0.jar:/Users/184973/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/184973/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/184973/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/184973/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/184973/Documents/automation/lex_automation/lex-page-objects/target/classes:/Users/184973/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/184973/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/184973/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/184973/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/184973/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/Users/184973/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/surefire/surefirebooter2766478384086542262.jar"/>
+    <property name="surefire.real.class.path" value="/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/surefire/surefirebooter6157412042610897961.jar"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
@@ -63,214 +63,113 @@
     <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="canNavigateToCreditSnapshot1" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="3.606">
-    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 43890
-Only local conne[ct1i5o9n8s6 3a6r3e1 0a.l6l2o5w]e[dW.A
-RPNlIeNaGs]e:  sFereo mhStotcpksA:d/d/rc hfroamedirleidv eonr .necthmarsokm
-ium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+  <testcase name="canClickGetStartedButtonInClientReviewsSection" classname="lex.tests.homepage.LexHomepageTests" time="4.184">
+    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 42995
+Only local connections a[r1e5 9al8l9o9we66d0.0.765][
+WPAlRNeIaNsGe] :s eeF rhotmtpSso:/c/chkroAmedddrriv efra.iclherdo moinu m.noertgma/sske
+curity-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Aug 28, 2020 11:38:31 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 01, 2020 3:43:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="canNavigateToCreditSnapshot2" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="2.025"/>
-  <testcase name="canNavigateToSignup1" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="2.169"/>
-  <testcase name="canNavigateToSignup2" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="2.261"/>
-  <testcase name="canNavigateToSignup3" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="7.567"/>
-  <testcase name="canNavigateToSignup4" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="2.409"/>
-  <testcase name="canNavigateToSignup5" classname="lex.tests.creditrepair.CreditRepairOnlineTests" time="2.438"/>
-  <testcase name="canNavigateToCreditSnapshot1" classname="lex.tests.creditrepair.CreditRepairBRTests" time="2.896">
-    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 34898
+  <testcase name="canClickGetStartedButtonInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="2.214"/>
+  <testcase name="canClickGetStartedButtonInImageRevealSection" classname="lex.tests.homepage.LexHomepageTests" time="2.226"/>
+  <testcase name="canClickGetStartedLinkInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="2.048"/>
+  <testcase name="canClickSeeMyCreditButton" classname="lex.tests.homepage.LexHomepageTests" time="2.029"/>
+  <testcase name="canClickSignupCreditCostLink" classname="lex.tests.homepage.LexHomepageTests" time="2.182"/>
+  <testcase name="canClickSignupLinkInClientReviewsSection" classname="lex.tests.homepage.LexHomepageTests" time="2.428"/>
+  <testcase name="canClickSignupLinkInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="1.901"/>
+  <testcase name="canNavigateToCreditHelp" classname="lex.tests.homepage.LexHomepageTests" time="5.062"/>
+  <testcase name="canNavigateToCreditRepair" classname="lex.tests.homepage.LexHomepageTests" time="4.042"/>
+  <testcase name="canNavigateToOurFirm" classname="lex.tests.homepage.LexHomepageTests" time="4.439"/>
+  <testcase name="canNavigateToSignUp" classname="lex.tests.homepage.LexHomepageTests" time="4.156"/>
+  <testcase name="isAtHomepage" classname="lex.tests.homepage.LexHomepageTests" time="1.361"/>
+  <testcase name="canClickGetStartedHero" classname="lex.tests.homepage.CRHomepageTests" time="5.837">
+    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 17060
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1598636334.779][WARNING]: FromSockAddr failed on netmask
+[1598996641.347][WARNING]: FromSockAddr failed on netmask
 ChromeDriver was started successfully.
-Aug 28, 2020 11:38:55 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 01, 2020 3:44:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="canNavigateToCreditSnapshot2" classname="lex.tests.creditrepair.CreditRepairBRTests" time="2.109"/>
-  <testcase name="canNavigateToCreditSnapshot3" classname="lex.tests.creditrepair.CreditRepairBRTests" time="2.18"/>
-  <testcase name="canNavigateToCreditSnapshot4" classname="lex.tests.creditrepair.CreditRepairBRTests" time="2.023"/>
-  <testcase name="canNavigateToCreditSnapshot5" classname="lex.tests.creditrepair.CreditRepairBRTests" time="2.019"/>
-  <testcase name="canNavigateToCreditSnapshot6" classname="lex.tests.creditrepair.CreditRepairBRTests" time="1.991"/>
-  <testcase name="canNavigateToSignup1" classname="lex.tests.creditrepair.CreditRepairBRTests" time="2.362"/>
-  <testcase name="canNavigateToSignup2" classname="lex.tests.creditrepair.CreditRepairBRTests" time="2.216"/>
-  <testcase name="canNavigateToSignup3" classname="lex.tests.creditrepair.CreditRepairBRTests" time="2.167"/>
-  <testcase name="canNavigateToSignup4" classname="lex.tests.creditrepair.CreditRepairBRTests" time="2.214"/>
-  <testcase name="canNavigateToSignup5" classname="lex.tests.creditrepair.CreditRepairBRTests" time="2.123"/>
-  <testcase name="canNavigateToCreditSnapshot1" classname="lex.tests.creditrepair.CreditRepairNBRTests" time="4.189">
-    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 48482
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1598636360.405][WARNING]: FromSockAddr failed on netmask
-ChromeDriver was started successfully.
-Aug 28, 2020 11:39:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="canNavigateToCreditSnapshot2" classname="lex.tests.creditrepair.CreditRepairNBRTests" time="2.022"/>
-  <testcase name="canNavigateToCreditSnapshot3" classname="lex.tests.creditrepair.CreditRepairNBRTests" time="2.033"/>
-  <testcase name="canNavigateToCreditSnapshot4" classname="lex.tests.creditrepair.CreditRepairNBRTests" time="2.002"/>
-  <testcase name="canNavigateToCreditSnapshot5" classname="lex.tests.creditrepair.CreditRepairNBRTests" time="2.019"/>
-  <testcase name="canNavigateToCreditSnapshot6" classname="lex.tests.creditrepair.CreditRepairNBRTests" time="2.024"/>
-  <testcase name="canNavigateToSignup1" classname="lex.tests.creditrepair.CreditRepairNBRTests" time="1.882"/>
-  <testcase name="canNavigateToSignup2" classname="lex.tests.creditrepair.CreditRepairNBRTests" time="2.248"/>
-  <testcase name="canNavigateToSignup3" classname="lex.tests.creditrepair.CreditRepairNBRTests" time="2.194"/>
-  <testcase name="canNavigateToSignup4" classname="lex.tests.creditrepair.CreditRepairNBRTests" time="2.319"/>
-  <testcase name="canNavigateToSignup5" classname="lex.tests.creditrepair.CreditRepairNBRTests" time="2.377"/>
-  <testcase name="canNavigateToCreditSnapshot1" classname="lex.tests.creditrepair.CreditRepairTests" time="4.987">
-    <system-err><![CDATA[Starting ChromeDriver 85.[105.491886336387..81797 ]([cWAdR6713NeIbNfG92]:f aF1rcoamcSco0cf1a59k8df280093Aafd0dcr5 df7a-irleefds /obnr annecthm-ahseka
-ds/4183@{#1689}) on port 5713
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Aug 28, 2020 11:39:48 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="canNavigateToCreditSnapshot2" classname="lex.tests.creditrepair.CreditRepairTests" time="2.057"/>
-  <testcase name="canNavigateToCreditSnapshot3" classname="lex.tests.creditrepair.CreditRepairTests" time="2.008"/>
-  <testcase name="canNavigateToCreditSnapshot4" classname="lex.tests.creditrepair.CreditRepairTests" time="2.564"/>
-  <testcase name="canNavigateToCreditSnapshot5" classname="lex.tests.creditrepair.CreditRepairTests" time="2.058"/>
-  <testcase name="canNavigateToCreditSnapshot6" classname="lex.tests.creditrepair.CreditRepairTests" time="2.036"/>
-  <testcase name="canNavigateToSignup1" classname="lex.tests.creditrepair.CreditRepairTests" time="2.331"/>
-  <testcase name="canNavigateToSignup2" classname="lex.tests.creditrepair.CreditRepairTests" time="1.959"/>
-  <testcase name="canNavigateToSignup3" classname="lex.tests.creditrepair.CreditRepairTests" time="2.264"/>
-  <testcase name="canNavigateToSignup4" classname="lex.tests.creditrepair.CreditRepairTests" time="2.208"/>
-  <testcase name="canNavigateToSignup5" classname="lex.tests.creditrepair.CreditRepairTests" time="2.156"/>
-  <testcase name="canClickGetStartedButtonInClientReviewsSection" classname="lex.tests.homepage.LexHomepageTests" time="2.683">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at lex.tests.homepage.LexHomepageTests.canClickGetStartedButtonInClientReviewsSection(LexHomepageTests.java:202)
-]]></failure>
-    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 43487
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1598636415.524][WARNING]: FromSockAddr failed on netmask
-ChromeDriver was started successfully.
-Aug 28, 2020 11:40:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="canClickGetStartedButtonInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="1.464">
-    <failure message="element click intercepted: Element &lt;a class=&quot;lex-cta-number call-now-cta&quot; data-unique=&quot;hero-phone-cta&quot; href=&quot;/credit-snapshot/pi&quot;&gt;...&lt;/a&gt; is not clickable at point (289, 25). Other element would receive the click: &lt;a href=&quot;/credit-help&quot; class=&quot;active&quot;&gt;...&lt;/a&gt;&#10;  (Session info: chrome=85.0.4183.83)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;pgx180189mac.local&apos;, ip: &apos;2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <a class="lex-cta-number call-now-cta" data-unique="hero-phone-cta" href="/credit-snapshot/pi">...</a> is not clickable at point (289, 25). Other element would receive the click: <a href="/credit-help" class="active">...</a>
-  (Session info: chrome=85.0.4183.83)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
-	at lex.tests.homepage.LexHomepageTests.canClickGetStartedButtonInHeroSection(LexHomepageTests.java:94)
-]]></failure>
-  </testcase>
-  <testcase name="canClickGetStartedButtonInImageRevealSection" classname="lex.tests.homepage.LexHomepageTests" time="1.394">
-    <failure message="element click intercepted: Element &lt;a href=&quot;/credit-snapshot/pi&quot; class=&quot;call-now-cta&quot; data-unique=&quot;image-find-out-now&quot; id=&quot;image-slider-button&quot;&gt;...&lt;/a&gt; is not clickable at point (599, 28). Other element would receive the click: &lt;li class=&quot;login&quot;&gt;...&lt;/li&gt;&#10;  (Session info: chrome=85.0.4183.83)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;pgx180189mac.local&apos;, ip: &apos;2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <a href="/credit-snapshot/pi" class="call-now-cta" data-unique="image-find-out-now" id="image-slider-button">...</a> is not clickable at point (599, 28). Other element would receive the click: <li class="login">...</li>
-  (Session info: chrome=85.0.4183.83)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
-	at lex.tests.homepage.LexHomepageTests.canClickGetStartedButtonInImageRevealSection(LexHomepageTests.java:169)
-]]></failure>
-  </testcase>
-  <testcase name="canClickGetStartedLinkInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="1.383">
-    <failure message="element click intercepted: Element &lt;a href=&quot;/credit-snapshot/pi&quot;&gt;...&lt;/a&gt; is not clickable at point (179, 13). Other element would receive the click: &lt;a href=&quot;/credit-repair-services&quot; class=&quot;active&quot;&gt;...&lt;/a&gt;&#10;  (Session info: chrome=85.0.4183.83)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;pgx180189mac.local&apos;, ip: &apos;2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <a href="/credit-snapshot/pi">...</a> is not clickable at point (179, 13). Other element would receive the click: <a href="/credit-repair-services" class="active">...</a>
-  (Session info: chrome=85.0.4183.83)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
-	at lex.tests.homepage.LexHomepageTests.canClickGetStartedLinkInHeroSection(LexHomepageTests.java:124)
-]]></failure>
-  </testcase>
-  <testcase name="canClickSeeMyCreditButton" classname="lex.tests.homepage.LexHomepageTests" time="1.407">
-    <failure message="element click intercepted: Element &lt;a class=&quot;lex-cta-number call-now-cta&quot; data-unique=&quot;graph-content-lex-cta&quot; href=&quot;https://www.lexingtonlaw.com/credit-snapshot&quot;&gt;...&lt;/a&gt; is not clickable at point (599, 28). Other element would receive the click: &lt;li class=&quot;login&quot;&gt;...&lt;/li&gt;&#10;  (Session info: chrome=85.0.4183.83)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;pgx180189mac.local&apos;, ip: &apos;2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <a class="lex-cta-number call-now-cta" data-unique="graph-content-lex-cta" href="https://www.lexingtonlaw.com/credit-snapshot">...</a> is not clickable at point (599, 28). Other element would receive the click: <li class="login">...</li>
-  (Session info: chrome=85.0.4183.83)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
-	at lex.tests.homepage.LexHomepageTests.canClickSeeMyCreditButton(LexHomepageTests.java:139)
-]]></failure>
-  </testcase>
-  <testcase name="canClickSignupCreditCostLink" classname="lex.tests.homepage.LexHomepageTests" time="1.478">
-    <failure message="element click intercepted: Element &lt;a class=&quot;sign-up-cta&quot; data-unique=&quot;graph-content-signup-btn&quot; href=&quot;/signup&quot;&gt;...&lt;/a&gt; is not clickable at point (600, 11). Other element would receive the click: &lt;li class=&quot;login&quot;&gt;...&lt;/li&gt;&#10;  (Session info: chrome=85.0.4183.83)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;pgx180189mac.local&apos;, ip: &apos;2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <a class="sign-up-cta" data-unique="graph-content-signup-btn" href="/signup">...</a> is not clickable at point (600, 11). Other element would receive the click: <li class="login">...</li>
-  (Session info: chrome=85.0.4183.83)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
-	at lex.tests.homepage.LexHomepageTests.canClickSignupCreditCostLink(LexHomepageTests.java:154)
-]]></failure>
-  </testcase>
-  <testcase name="canClickSignupLinkInClientReviewsSection" classname="lex.tests.homepage.LexHomepageTests" time="0.513">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at lex.tests.homepage.LexHomepageTests.canClickSignupLinkInClientReviewsSection(LexHomepageTests.java:217)
-]]></failure>
-  </testcase>
-  <testcase name="canClickSignupLinkInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="0.404">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at lex.tests.homepage.LexHomepageTests.canClickSignupLinkInHeroSection(LexHomepageTests.java:112)
-]]></failure>
-  </testcase>
-  <testcase name="canClickSignupLinkInImageRevealSection" classname="lex.tests.homepage.LexHomepageTests" time="5.809">
+  <testcase name="canClickGetStartedInCostSection" classname="lex.tests.homepage.CRHomepageTests" time="4.352"/>
+  <testcase name="canClickGetStartedInHardWorkSection" classname="lex.tests.homepage.CRHomepageTests" time="4.312"/>
+  <testcase name="canClickGetStartedInHowCreditRepairWorksSection" classname="lex.tests.homepage.CRHomepageTests" time="7.404"/>
+  <testcase name="canClickGetStartedInModal" classname="lex.tests.homepage.CRHomepageTests" time="4.882"/>
+  <testcase name="canClickLoginButton" classname="lex.tests.homepage.CRHomepageTests" time="6.542"/>
+  <testcase name="canClickSignupHero" classname="lex.tests.homepage.CRHomepageTests" time="4.262"/>
+  <testcase name="canClickSignupInCostSection" classname="lex.tests.homepage.CRHomepageTests" time="4.043"/>
+  <testcase name="canClickSignupInHardWorkSection" classname="lex.tests.homepage.CRHomepageTests" time="4.185"/>
+  <testcase name="canClickSignupInHowCreditRepairWorksSection" classname="lex.tests.homepage.CRHomepageTests" time="4.237"/>
+  <testcase name="canClickSignupInModal" classname="lex.tests.homepage.CRHomepageTests" time="3.943"/>
+  <testcase name="canClickSignupInTopNav" classname="lex.tests.homepage.CRHomepageTests" time="4.007"/>
+  <testcase name="canSubmitForm" classname="lex.tests.homepage.CRHomepageTests" time="14.647">
     <failure message="Timed out after 5 seconds. Unable to locate the element" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element
-	at lex.tests.homepage.LexHomepageTests.canClickSignupLinkInImageRevealSection(LexHomepageTests.java:184)
+	at lex.tests.homepage.CRHomepageTests.canSubmitForm(CRHomepageTests.java:121)
 Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"div.image-reveal-cta a.sign-up-cta"}
+no such element: Unable to locate element: {"method":"css selector","selector":"div.slider-app-wrapper"}
   (Session info: chrome=85.0.4183.83)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:8d9b:656c:cb73:4327%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
-*** Element info: {Using=css selector, value=div.image-reveal-cta a.sign-up-cta}
-	at lex.tests.homepage.LexHomepageTests.canClickSignupLinkInImageRevealSection(LexHomepageTests.java:184)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:49887}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0a12f8ecc2cd099c43c7add1f4917a87
+*** Element info: {Using=css selector, value=div.slider-app-wrapper}
+	at lex.tests.homepage.CRHomepageTests.canSubmitForm(CRHomepageTests.java:121)
 ]]></failure>
   </testcase>
-  <testcase name="canNavigateToCreditHelp" classname="lex.tests.homepage.LexHomepageTests" time="3.53"/>
-  <testcase name="canNavigateToCreditRepair" classname="lex.tests.homepage.LexHomepageTests" time="3.202"/>
-  <testcase name="canNavigateToOurFirm" classname="lex.tests.homepage.LexHomepageTests" time="2.812"/>
-  <testcase name="canNavigateToSignUp" classname="lex.tests.homepage.LexHomepageTests" time="2.705"/>
-  <testcase name="isAtHomepage" classname="lex.tests.homepage.LexHomepageTests" time="0.382"/>
-  <testcase name="canNotContinueWithInvalidEmail" classname="lex.tests.signup.LexSignupTests" time="4.518">
-    <failure message="element not interactable&#10;  (Session info: chrome=85.0.4183.83)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;pgx180189mac.local&apos;, ip: &apos;2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 71a9c28d4e1ea3dc77b665d1348ef31d" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=85.0.4183.83)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 71a9c28d4e1ea3dc77b665d1348ef31d
-	at lex.tests.signup.LexSignupTests.canNotContinueWithInvalidEmail(LexSignupTests.java:89)
-]]></failure>
-    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 16847
+  <testcase name="canClickCheckYourCreditNowCTA" classname="lex.tests.snapshot.LexSnapshotTests" time="5.844">
+    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 33255
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1598636446.487][WARNING]: FromSockAddr failed on netmask
+[1598996716.000][WARNING]: FromSockAddr failed on netmask
 ChromeDriver was started successfully.
-Aug 28, 2020 11:40:47 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 01, 2020 3:45:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="canNotContinueWithInvalidPhone" classname="lex.tests.signup.LexSignupTests" time="5.974"/>
-  <testcase name="canNotContinueWithInvalidZip" classname="lex.tests.signup.LexSignupTests" time="5.914"/>
-  <testcase name="canNotContinueWithInvalidZip2" classname="lex.tests.signup.LexSignupTests" time="5.896"/>
-  <testcase name="canNotContinueWithNoAddress" classname="lex.tests.signup.LexSignupTests" time="5.989"/>
-  <testcase name="canNotContinueWithNoEmail" classname="lex.tests.signup.LexSignupTests" time="5.873"/>
-  <testcase name="canNotContinueWithNoFirstName" classname="lex.tests.signup.LexSignupTests" time="5.913"/>
-  <testcase name="canNotContinueWithNoLastName" classname="lex.tests.signup.LexSignupTests" time="5.902"/>
-  <testcase name="canNotContinueWithNoPhone" classname="lex.tests.signup.LexSignupTests" time="5.845"/>
-  <testcase name="canNotContinueWithNoZip" classname="lex.tests.signup.LexSignupTests" time="5.735"/>
-  <testcase name="constructorLoadsSignupPage" classname="lex.tests.signup.LexSignupTests" time="1.107"/>
+  <testcase name="canClickCheckYourCreditNowInModal" classname="lex.tests.snapshot.LexSnapshotTests" time="4.216"/>
+  <testcase name="canClickGetStartedInKnowYourCreditScore" classname="lex.tests.snapshot.LexSnapshotTests" time="4.13"/>
+  <testcase name="canClickGetStartedNowInHowItWorks" classname="lex.tests.snapshot.LexSnapshotTests" time="4.211"/>
+  <testcase name="canClickLoginButton" classname="lex.tests.snapshot.LexSnapshotTests" time="4.601"/>
+  <testcase name="canClickSeeYourCreditNowInFAQ" classname="lex.tests.snapshot.LexSnapshotTests" time="4.117"/>
+  <testcase name="canClickSignupCTA" classname="lex.tests.snapshot.LexSnapshotTests" time="4.239"/>
+  <testcase name="canClickSignupInFAQ" classname="lex.tests.snapshot.LexSnapshotTests" time="4.24"/>
+  <testcase name="canClickSignupInHeroImage" classname="lex.tests.snapshot.LexSnapshotTests" time="4.281"/>
+  <testcase name="canClickSignupInHowItWorks" classname="lex.tests.snapshot.LexSnapshotTests" time="4.255"/>
+  <testcase name="canClickSignupInKnowYourCreditScore" classname="lex.tests.snapshot.LexSnapshotTests" time="4.01"/>
+  <testcase name="canClickSignupInModal" classname="lex.tests.snapshot.LexSnapshotTests" time="4.2"/>
+  <testcase name="canClickStartNowInHeader" classname="lex.tests.snapshot.LexSnapshotTests" time="4.055"/>
+  <testcase name="canClickStartNowInHeroImage" classname="lex.tests.snapshot.LexSnapshotTests" time="4.315"/>
+  <testcase name="canSubmitForm" classname="lex.tests.snapshot.LexSnapshotTests" time="8.486"/>
+  <testcase name="canClickCheckYourCreditNowInHeroImage" classname="lex.tests.snapshot.CRSnapshotTests" time="6.247">
+    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 24439
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1598996786.804][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully.
+Sep 01, 2020 3:46:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="canClickGetStartedCTA" classname="lex.tests.snapshot.CRSnapshotTests" time="4.313"/>
+  <testcase name="canClickGetStartedInKnowYourCreditScore" classname="lex.tests.snapshot.CRSnapshotTests" time="4.342"/>
+  <testcase name="canClickGetStartedInModal" classname="lex.tests.snapshot.CRSnapshotTests" time="4.315"/>
+  <testcase name="canClickGetStartedNowInClientReviews" classname="lex.tests.snapshot.CRSnapshotTests" time="4.463"/>
+  <testcase name="canClickLoginButton" classname="lex.tests.snapshot.CRSnapshotTests" time="6.048"/>
+  <testcase name="canClickSignupCTA" classname="lex.tests.snapshot.CRSnapshotTests" time="4.269"/>
+  <testcase name="canClickSignupInClientReviews" classname="lex.tests.snapshot.CRSnapshotTests" time="4.062"/>
+  <testcase name="canClickSignupInHeroImage" classname="lex.tests.snapshot.CRSnapshotTests" time="4.563"/>
+  <testcase name="canClickSignupInKnowYourCreditScore" classname="lex.tests.snapshot.CRSnapshotTests" time="4.118"/>
+  <testcase name="canClickSignupInModal" classname="lex.tests.snapshot.CRSnapshotTests" time="4.066"/>
+  <testcase name="canClickStartNowInHeader" classname="lex.tests.snapshot.CRSnapshotTests" time="4.355"/>
+  <testcase name="canSubmitForm" classname="lex.tests.snapshot.CRSnapshotTests" time="8.015">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.snapshot.CRSnapshotTests.canSubmitForm(CRSnapshotTests.java:216)
+]]></failure>
+  </testcase>
 </testsuite>

@@ -70,22 +70,6 @@ public class CRHomepageTests extends BaseTest {
     }
 
     @Test
-    public void canClickStimulusSignupButon() throws InterruptedException {
-        // arrange
-        CRHomepage myPage = new CRHomepage(getDriver());
-
-        // act
-        myPage.clickModalCloseButton();
-        myPage.clickStimulusSignupButton();
-
-        // assert
-        Assert.assertTrue(myPage.isAtSignup());
-
-        // clean up
-        myPage.goHome();
-    }
-
-    @Test
     public void canClickGetStartedHero() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
@@ -126,7 +110,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.clickModalCloseButton();
         myPage.sendFirstName("asdf");
         myPage.sendLastName("asdf");
-        myPage.sendEmail("jonathanpilling77+selenium@gmail.com");
+        myPage.sendEmail("jonathanpilling77+selenium2@gmail.com");
         myPage.sendPhone("1234567899");
         myPage.sendStreetAddress("123 R");
         myPage.sendZipCode("84103");

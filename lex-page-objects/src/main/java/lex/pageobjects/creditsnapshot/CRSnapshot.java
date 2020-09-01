@@ -8,7 +8,7 @@ import org.openqa.selenium.support.How;
 
 public class CRSnapshot extends BasePage {
 
-    private static String URL = "www.creditrepair.com/b/credit-snapshot";
+    private static String URL = "https://www.creditrepair.com/b/credit-snapshot";
 
     /* locators */
     @FindBy(how= How.CSS, using="button.close")
@@ -23,7 +23,7 @@ public class CRSnapshot extends BasePage {
     @FindBy(how= How.CSS, using="a.login")
     private WebElement loginButton;
 
-    @FindBy(how= How.CSS, using="div.header-cta a.call-btn")
+    @FindBy(how= How.CSS, using="div.header-cta a.call_btn")
     private WebElement startNowHeaderButton;
 
     @FindBy(how= How.CSS, using="div.hero-wrapper a.btn-new")
@@ -71,9 +71,10 @@ public class CRSnapshot extends BasePage {
     @FindBy(how= How.CSS, using=".cta-section a.text-link")
     private WebElement signupCtaLink;
 
-    public CRSnapshot(WebDriver driver) {
+    public CRSnapshot(WebDriver driver) throws InterruptedException {
         super(driver);
         driver.get(URL);
+        Thread.sleep(3000);
     }
 
     public void clickCloseModalButton() {
@@ -160,6 +161,26 @@ public class CRSnapshot extends BasePage {
 
     public void clickSignupCtaLink() {
         signupCtaLink.click();
+    }
+
+    public boolean isAtSnapshot() {
+        return driver.getCurrentUrl().startsWith("https://www.creditrepair.com/credit-snapshots/pi");
+    }
+
+    public boolean isAtSignup() {
+        return driver.getCurrentUrl().startsWith("https://www.creditrepair.com/signup");
+    }
+
+    public boolean isAtLogin() {
+        return driver.getCurrentUrl().startsWith("https://members.creditrepair.com/login");
+    }
+
+    public boolean isAtReportPull() {
+        return driver.getCurrentUrl().startsWith("https://www.creditrepair.com/credit-snapshot/rp");
+    }
+
+    public void goHome() {
+        driver.get(URL);
     }
 
 }

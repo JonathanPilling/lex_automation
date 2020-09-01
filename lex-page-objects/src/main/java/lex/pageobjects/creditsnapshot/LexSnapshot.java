@@ -8,7 +8,7 @@ import org.openqa.selenium.support.How;
 
 public class LexSnapshot extends BasePage {
 
-    private static String URL = "www.lexingtonlaw.com/l/credit-snapshot";
+    private static String URL = "https://www.lexingtonlaw.com/l/credit-snapshot";
 
     /* Locators */
     @FindBy(how= How.CSS, using = "button.close")
@@ -62,7 +62,7 @@ public class LexSnapshot extends BasePage {
     @FindBy(how= How.CSS, using = "#faqs a.call-now-cta")
     private WebElement seeYourCreditNowFaqButton;
 
-    @FindBy(how= How.CSS, using = "#faqs a.call-now-cta")
+    @FindBy(how= How.CSS, using = "#faqs a.lex-online-signup")
     private WebElement signupFaqLink;
 
     @FindBy(how= How.CSS, using = "#know-score a.call-now-cta")
@@ -74,12 +74,13 @@ public class LexSnapshot extends BasePage {
     @FindBy(how= How.CSS, using = ".lex-cta-box a.call-now-cta")
     private WebElement checkCreditNowLexCtaButton;
 
-    @FindBy(how= How.CSS, using = ".lex-cta-box a.call-now-cta")
+    @FindBy(how= How.CSS, using = ".lex-cta-box a.lex-online-signup")
     private WebElement signupLexCtaLink;
 
-    public LexSnapshot(WebDriver driver) {
+    public LexSnapshot(WebDriver driver) throws InterruptedException {
         super(driver);
         driver.get(URL);
+        Thread.sleep(3000);
     }
 
     public void clickModalCloseButton() {
@@ -174,5 +175,25 @@ public class LexSnapshot extends BasePage {
 
     public void clickSignupLexCtaLink() {
         signupLexCtaLink.click();
+    }
+
+    public boolean isAtSnapshot() {
+        return driver.getCurrentUrl().startsWith("https://www.lexingtonlaw.com/credit-snapshot/pi");
+    }
+
+    public boolean isAtSignup() {
+        return driver.getCurrentUrl().startsWith("https://www.lexingtonlaw.com/signup");
+    }
+
+    public boolean isAtLogin() {
+        return driver.getCurrentUrl().startsWith("https://clients.lexingtonlaw.com/login");
+    }
+
+    public boolean isAtReportPull() {
+        return driver.getCurrentUrl().startsWith("https://www.lexingtonlaw.com/credit-snapshot/rp");
+    }
+
+    public void goHome() {
+        driver.get(URL);
     }
 }

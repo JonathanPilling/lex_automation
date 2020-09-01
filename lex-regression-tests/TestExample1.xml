@@ -9,6 +9,8 @@
             <class name="lex.tests.signup.LexSignupTests"/> -->
             <class name="lex.tests.homepage.LexHomepageTests"/>
             <class name ="lex.tests.homepage.CRHomepageTests"/>
+            <class name="lex.tests.snapshot.LexSnapshotTests"/>
+            <class name="lex.tests.snapshot.CRSnapshotTests"/>
         </classes>
     </test>
 </suite>

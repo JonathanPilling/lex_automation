@@ -1,97 +1,23 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 65, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 197.013 s <<< FAILURE! - in TestSuite
-lex.tests.homepage.LexHomepageTests.canClickGetStartedButtonInClientReviewsSection  Time elapsed: 2.683 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at lex.tests.homepage.LexHomepageTests.canClickGetStartedButtonInClientReviewsSection(LexHomepageTests.java:202)
-
-lex.tests.homepage.LexHomepageTests.canClickGetStartedButtonInHeroSection  Time elapsed: 1.464 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <a class="lex-cta-number call-now-cta" data-unique="hero-phone-cta" href="/credit-snapshot/pi">...</a> is not clickable at point (289, 25). Other element would receive the click: <a href="/credit-help" class="active">...</a>
-  (Session info: chrome=85.0.4183.83)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
-	at lex.tests.homepage.LexHomepageTests.canClickGetStartedButtonInHeroSection(LexHomepageTests.java:94)
-
-lex.tests.homepage.LexHomepageTests.canClickGetStartedButtonInImageRevealSection  Time elapsed: 1.394 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <a href="/credit-snapshot/pi" class="call-now-cta" data-unique="image-find-out-now" id="image-slider-button">...</a> is not clickable at point (599, 28). Other element would receive the click: <li class="login">...</li>
-  (Session info: chrome=85.0.4183.83)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
-	at lex.tests.homepage.LexHomepageTests.canClickGetStartedButtonInImageRevealSection(LexHomepageTests.java:169)
-
-lex.tests.homepage.LexHomepageTests.canClickGetStartedLinkInHeroSection  Time elapsed: 1.383 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <a href="/credit-snapshot/pi">...</a> is not clickable at point (179, 13). Other element would receive the click: <a href="/credit-repair-services" class="active">...</a>
-  (Session info: chrome=85.0.4183.83)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
-	at lex.tests.homepage.LexHomepageTests.canClickGetStartedLinkInHeroSection(LexHomepageTests.java:124)
-
-lex.tests.homepage.LexHomepageTests.canClickSeeMyCreditButton  Time elapsed: 1.407 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <a class="lex-cta-number call-now-cta" data-unique="graph-content-lex-cta" href="https://www.lexingtonlaw.com/credit-snapshot">...</a> is not clickable at point (599, 28). Other element would receive the click: <li class="login">...</li>
-  (Session info: chrome=85.0.4183.83)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
-	at lex.tests.homepage.LexHomepageTests.canClickSeeMyCreditButton(LexHomepageTests.java:139)
-
-lex.tests.homepage.LexHomepageTests.canClickSignupCreditCostLink  Time elapsed: 1.478 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <a class="sign-up-cta" data-unique="graph-content-signup-btn" href="/signup">...</a> is not clickable at point (600, 11). Other element would receive the click: <li class="login">...</li>
-  (Session info: chrome=85.0.4183.83)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
-	at lex.tests.homepage.LexHomepageTests.canClickSignupCreditCostLink(LexHomepageTests.java:154)
-
-lex.tests.homepage.LexHomepageTests.canClickSignupLinkInClientReviewsSection  Time elapsed: 0.513 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at lex.tests.homepage.LexHomepageTests.canClickSignupLinkInClientReviewsSection(LexHomepageTests.java:217)
-
-lex.tests.homepage.LexHomepageTests.canClickSignupLinkInHeroSection  Time elapsed: 0.404 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at lex.tests.homepage.LexHomepageTests.canClickSignupLinkInHeroSection(LexHomepageTests.java:112)
-
-lex.tests.homepage.LexHomepageTests.canClickSignupLinkInImageRevealSection  Time elapsed: 5.809 s  <<< FAILURE!
+Tests run: 54, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 251.595 s <<< FAILURE! - in TestSuite
+lex.tests.homepage.CRHomepageTests.canSubmitForm  Time elapsed: 14.647 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element
-	at lex.tests.homepage.LexHomepageTests.canClickSignupLinkInImageRevealSection(LexHomepageTests.java:184)
+	at lex.tests.homepage.CRHomepageTests.canSubmitForm(CRHomepageTests.java:121)
 Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"div.image-reveal-cta a.sign-up-cta"}
+no such element: Unable to locate element: {"method":"css selector","selector":"div.slider-app-wrapper"}
   (Session info: chrome=85.0.4183.83)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:8d9b:656c:cb73:4327%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 62cd65f1e9c99b3ec7e7010f0375e94f
-*** Element info: {Using=css selector, value=div.image-reveal-cta a.sign-up-cta}
-	at lex.tests.homepage.LexHomepageTests.canClickSignupLinkInImageRevealSection(LexHomepageTests.java:184)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:49887}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0a12f8ecc2cd099c43c7add1f4917a87
+*** Element info: {Using=css selector, value=div.slider-app-wrapper}
+	at lex.tests.homepage.CRHomepageTests.canSubmitForm(CRHomepageTests.java:121)
 
-lex.tests.signup.LexSignupTests.canNotContinueWithInvalidEmail  Time elapsed: 4.518 s  <<< FAILURE!
-org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=85.0.4183.83)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:d492:5ab2:2bc0:efb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:53557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 71a9c28d4e1ea3dc77b665d1348ef31d
-	at lex.tests.signup.LexSignupTests.canNotContinueWithInvalidEmail(LexSignupTests.java:89)
+lex.tests.snapshot.CRSnapshotTests.canSubmitForm  Time elapsed: 8.015 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.snapshot.CRSnapshotTests.canSubmitForm(CRSnapshotTests.java:216)
 
