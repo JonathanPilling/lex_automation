@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CRHomepageTests extends BaseTest {
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedInModal() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
@@ -21,7 +21,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupInModal() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
@@ -36,7 +36,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickLoginButton() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
@@ -53,7 +53,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupInTopNav() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
@@ -69,7 +69,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedHero() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
@@ -85,7 +85,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupHero() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
@@ -101,7 +101,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canSubmitForm() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
@@ -124,7 +124,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedInHardWorkSection() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
@@ -140,7 +140,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupInHardWorkSection() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
@@ -156,7 +156,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedInHowCreditRepairWorksSection() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
@@ -172,7 +172,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupInHowCreditRepairWorksSection() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
@@ -188,7 +188,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedInCostSection() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
@@ -204,7 +204,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupInCostSection() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());

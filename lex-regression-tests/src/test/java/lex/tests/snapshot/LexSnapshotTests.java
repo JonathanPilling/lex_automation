@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LexSnapshotTests extends BaseTest {
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickCheckYourCreditNowInModal() throws InterruptedException {
         // arrange
         LexSnapshot myPage = new LexSnapshot(getDriver());
@@ -21,7 +21,7 @@ public class LexSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupInModal() throws InterruptedException {
         // arrange
         LexSnapshot myPage = new LexSnapshot(getDriver());
@@ -36,7 +36,7 @@ public class LexSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickLoginButton() throws InterruptedException {
         // arrange
         LexSnapshot myPage = new LexSnapshot(getDriver());
@@ -52,7 +52,7 @@ public class LexSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickStartNowInHeader() throws InterruptedException {
         // arrange
         LexSnapshot myPage = new LexSnapshot(getDriver());
@@ -68,7 +68,7 @@ public class LexSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickStartNowInHeroImage() throws InterruptedException {
         // arrange
         LexSnapshot myPage = new LexSnapshot(getDriver());
@@ -84,7 +84,7 @@ public class LexSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupInHeroImage() throws InterruptedException {
         // arrange
         LexSnapshot myPage = new LexSnapshot(getDriver());
@@ -100,7 +100,7 @@ public class LexSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedNowInHowItWorks() throws InterruptedException {
         // arrange
         LexSnapshot myPage = new LexSnapshot(getDriver());
@@ -116,7 +116,7 @@ public class LexSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupInHowItWorks() throws InterruptedException {
         // arrange
         LexSnapshot myPage = new LexSnapshot(getDriver());
@@ -132,7 +132,7 @@ public class LexSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedInKnowYourCreditScore() throws InterruptedException {
         // arrange
         LexSnapshot myPage = new LexSnapshot(getDriver());
@@ -148,7 +148,7 @@ public class LexSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupInKnowYourCreditScore() throws InterruptedException {
         // arrange
         LexSnapshot myPage = new LexSnapshot(getDriver());
@@ -164,7 +164,7 @@ public class LexSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSeeYourCreditNowInFAQ() throws InterruptedException {
         // arrange
         LexSnapshot myPage = new LexSnapshot(getDriver());
@@ -180,7 +180,7 @@ public class LexSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupInFAQ() throws InterruptedException {
         // arrange
         LexSnapshot myPage = new LexSnapshot(getDriver());
@@ -196,7 +196,7 @@ public class LexSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickCheckYourCreditNowCTA() throws InterruptedException {
         // arrange
         LexSnapshot myPage = new LexSnapshot(getDriver());
@@ -212,7 +212,7 @@ public class LexSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupCTA() throws InterruptedException {
         // arrange
         LexSnapshot myPage = new LexSnapshot(getDriver());
@@ -228,7 +228,7 @@ public class LexSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canSubmitForm() throws InterruptedException {
         // arrange
         LexSnapshot myPage = new LexSnapshot(getDriver());

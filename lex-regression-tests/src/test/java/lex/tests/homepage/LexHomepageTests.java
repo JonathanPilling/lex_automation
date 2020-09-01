@@ -11,13 +11,13 @@ import lex.pageobjects.ourfirm.LexOurFirm;
 
 public class LexHomepageTests extends BaseTest {
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void isAtHomepage() throws InterruptedException {
         LexHomepage myPage = new LexHomepage(getDriver());
         Assert.assertTrue(myPage.isHome());
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canNavigateToSignUp() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
@@ -34,7 +34,7 @@ public class LexHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canNavigateToCreditRepair() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
@@ -51,7 +51,7 @@ public class LexHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canNavigateToCreditHelp() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
@@ -68,7 +68,7 @@ public class LexHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canNavigateToOurFirm() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
@@ -85,7 +85,7 @@ public class LexHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedButtonInHeroSection() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
@@ -100,7 +100,7 @@ public class LexHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupLinkInHeroSection() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
@@ -115,7 +115,7 @@ public class LexHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedLinkInHeroSection() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
@@ -130,7 +130,7 @@ public class LexHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSeeMyCreditButton() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
@@ -145,7 +145,7 @@ public class LexHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupCreditCostLink() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
@@ -160,7 +160,7 @@ public class LexHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedButtonInImageRevealSection() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
@@ -175,7 +175,7 @@ public class LexHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    /* WIP TEST @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupLinkInImageRevealSection() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
@@ -189,9 +189,9 @@ public class LexHomepageTests extends BaseTest {
 
         // clean up
         myPage.goHome();
-    }*/
+    }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedButtonInClientReviewsSection() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
@@ -206,7 +206,7 @@ public class LexHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupLinkInClientReviewsSection() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());

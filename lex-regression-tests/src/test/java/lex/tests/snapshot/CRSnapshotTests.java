@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CRSnapshotTests extends BaseTest {
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedInModal() throws InterruptedException {
         // arrange
         CRSnapshot myPage = new CRSnapshot(getDriver());
@@ -21,7 +21,7 @@ public class CRSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupInModal() throws InterruptedException {
         // arrange
         CRSnapshot myPage = new CRSnapshot(getDriver());
@@ -36,7 +36,7 @@ public class CRSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickLoginButton() throws InterruptedException {
         // arrange
         CRSnapshot myPage = new CRSnapshot(getDriver());
@@ -52,7 +52,7 @@ public class CRSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickStartNowInHeader() throws InterruptedException {
         // arrange
         CRSnapshot myPage = new CRSnapshot(getDriver());
@@ -68,7 +68,7 @@ public class CRSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickCheckYourCreditNowInHeroImage() throws InterruptedException {
         // arrange
         CRSnapshot myPage = new CRSnapshot(getDriver());
@@ -84,7 +84,7 @@ public class CRSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupInHeroImage() throws InterruptedException {
         // arrange
         CRSnapshot myPage = new CRSnapshot(getDriver());
@@ -100,7 +100,7 @@ public class CRSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedNowInClientReviews() throws InterruptedException {
         // arrange
         CRSnapshot myPage = new CRSnapshot(getDriver());
@@ -116,7 +116,7 @@ public class CRSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupInClientReviews() throws InterruptedException {
         // arrange
         CRSnapshot myPage = new CRSnapshot(getDriver());
@@ -132,7 +132,7 @@ public class CRSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedInKnowYourCreditScore() throws InterruptedException {
         // arrange
         CRSnapshot myPage = new CRSnapshot(getDriver());
@@ -148,7 +148,7 @@ public class CRSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupInKnowYourCreditScore() throws InterruptedException {
         // arrange
         CRSnapshot myPage = new CRSnapshot(getDriver());
@@ -164,7 +164,7 @@ public class CRSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedCTA() throws InterruptedException {
         // arrange
         CRSnapshot myPage = new CRSnapshot(getDriver());
@@ -180,7 +180,7 @@ public class CRSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickSignupCTA() throws InterruptedException {
         // arrange
         CRSnapshot myPage = new CRSnapshot(getDriver());
@@ -196,7 +196,7 @@ public class CRSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canSubmitForm() throws InterruptedException {
         // arrange
         CRSnapshot myPage = new CRSnapshot(getDriver());
