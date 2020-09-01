@@ -110,7 +110,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.clickModalCloseButton();
         myPage.sendFirstName("asdf");
         myPage.sendLastName("asdf");
-        myPage.sendEmail("jonathanpilling77+selenium2@gmail.com");
+        myPage.sendEmail("jon.pilling@comcast.net");
         myPage.sendPhone("1234567899");
         myPage.sendStreetAddress("123 R");
         myPage.sendZipCode("84103");

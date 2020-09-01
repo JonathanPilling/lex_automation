@@ -83,7 +83,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!-- TestNG suite XML files -->
-                        <suiteXmlFile>TestExample1.xml</suiteXmlFile>
+                        <suiteXmlFile>homing-pages-and-landing-pages.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
