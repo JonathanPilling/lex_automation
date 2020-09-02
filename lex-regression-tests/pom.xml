@@ -85,6 +85,8 @@
                         <!-- TestNG suite XML files -->
                         <suiteXmlFile>homing-pages-and-landing-pages.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <reuseForks>false</reuseForks>
+                    <forkCount>1</forkCount>
                 </configuration>
             </plugin>
         </plugins>

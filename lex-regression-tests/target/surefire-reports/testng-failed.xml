@@ -21,7 +21,6 @@
         <methods>
           <include name="canSubmitForm"/>
           <include name="beforeSuite"/>
-          <include name="canClickGetStartedHero"/>
           <include name="afterSuite"/>
         </methods>
       </class> <!-- lex.tests.homepage.CRHomepageTests -->

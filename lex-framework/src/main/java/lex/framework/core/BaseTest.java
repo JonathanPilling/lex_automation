@@ -13,7 +13,7 @@ public class BaseTest {
 
     @BeforeClass
     public void beforeSuite() {
-        System.setProperty("headless", "false"); // You can set this property elsewhere
+        System.setProperty("headless", "true"); // You can set this property elsewhere
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         String headless = System.getProperty("headless");
 
@@ -21,6 +21,9 @@ public class BaseTest {
         if("true".equals(headless)) {
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--headless");
+            chromeOptions.addArguments("--disable-gpu");
+            chromeOptions.addArguments("--window-size=1920,1080");
+
             driver = new ChromeDriver(chromeOptions);
         } else {
             driver = new ChromeDriver();
