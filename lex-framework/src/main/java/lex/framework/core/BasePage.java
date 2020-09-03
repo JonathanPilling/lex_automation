@@ -7,6 +7,9 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class BasePage {
 
     private static final int TIMEOUT = 5;
@@ -31,5 +34,12 @@ public class BasePage {
 
     protected void waitForTextToDisappear(By locator, String text) {
         wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(locator, text)));
+    }
+
+    public String generateUniqueEmail() {
+        SimpleDateFormat formatter = new SimpleDateFormat("ddMMyyyy_HHmm");
+        Date date = new Date();
+        String returnString = "jonathanpilling77+" + formatter.format(date) + "@gmail.com";
+        return returnString;
     }
 }

@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class LexHomepage extends BasePage {
 
     private static String URL = "https://www.lexingtonlaw.com";
@@ -78,6 +81,12 @@ public class LexHomepage extends BasePage {
     public void clickCreditHelp() { creditHelpButton.click(); }
 
     public void clickOurFirm() { ourFirmButton.click(); }
+
+    public String generateUniqueEmail() {
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy_HH:mm");
+        Date date = new Date();
+        return "jonathanpilling77+" + formatter.format(date) + "gmail.com";
+    }
 
     public boolean isHome() {
         return getPageTitle().getAttribute("text").contains("Lexington Law Firm " +

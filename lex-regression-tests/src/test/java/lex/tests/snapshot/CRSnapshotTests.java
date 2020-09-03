@@ -205,7 +205,7 @@ public class CRSnapshotTests extends BaseTest {
         myPage.clickCloseModalButton();
         myPage.sendFirstName("JBones");
         myPage.sendLastName("JBones");
-        myPage.sendEmail("jon.pilling@comcast.net");
+        myPage.sendEmail(myPage.generateUniqueEmail());
         myPage.sendPhone("8016576293");
         myPage.sendStreetAddress("50 R");
         myPage.sendZipCode("84103");
