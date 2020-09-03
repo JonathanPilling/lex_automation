@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 64, Failures: 2, Errors: 0, Skipped: 9, Time elapsed: 472.56 s <<< FAILURE! - in TestSuite
-lex.tests.homepage.CRHomepageTests.canSubmitForm  Time elapsed: 15.406 s  <<< FAILURE!
+Tests run: 92, Failures: 9, Errors: 0, Skipped: 37, Time elapsed: 624.805 s <<< FAILURE! - in TestSuite
+lex.tests.homepage.CRHomepageTests.canSubmitForm  Time elapsed: 14.97 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element
 	at lex.tests.homepage.CRHomepageTests.canSubmitForm(CRHomepageTests.java:121)
 Caused by: org.openqa.selenium.NoSuchElementException: 
@@ -10,14 +10,42 @@ no such element: Unable to locate element: {"method":"css selector","selector":"
   (Session info: headless chrome=85.0.4183.83)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:cc76:2bc6:aeaf:55bf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:8859:a441:8ebb:6da1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:49655}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 50b64e3dd21f479423fe29d6171ed7d7
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:51736}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9991e72fd3dcafa45fd60819409700c3
 *** Element info: {Using=css selector, value=div.slider-app-wrapper}
 	at lex.tests.homepage.CRHomepageTests.canSubmitForm(CRHomepageTests.java:121)
 
-lex.tests.snapshot.CRSnapshotTests.canSubmitForm  Time elapsed: 7.714 s  <<< FAILURE!
+lex.tests.snapshot.LexSnapshotTests.canSubmitForm  Time elapsed: 7.879 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.snapshot.LexSnapshotTests.canSubmitForm(LexSnapshotTests.java:248)
+
+lex.tests.snapshot.CRSnapshotTests.canClickCheckYourCreditNowInHeroImage  Time elapsed: 4.714 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.snapshot.CRSnapshotTests.canClickCheckYourCreditNowInHeroImage(CRSnapshotTests.java:81)
+
+lex.tests.snapshot.CRSnapshotTests.canClickGetStartedCTA  Time elapsed: 4.886 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.snapshot.CRSnapshotTests.canClickGetStartedCTA(CRSnapshotTests.java:177)
+
+lex.tests.snapshot.CRSnapshotTests.canClickGetStartedInKnowYourCreditScore  Time elapsed: 4.604 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.snapshot.CRSnapshotTests.canClickGetStartedInKnowYourCreditScore(CRSnapshotTests.java:145)
+
+lex.tests.snapshot.CRSnapshotTests.canClickGetStartedInModal  Time elapsed: 4.66 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.snapshot.CRSnapshotTests.canClickGetStartedInModal(CRSnapshotTests.java:18)
+
+lex.tests.snapshot.CRSnapshotTests.canClickGetStartedNowInClientReviews  Time elapsed: 4.602 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.snapshot.CRSnapshotTests.canClickGetStartedNowInClientReviews(CRSnapshotTests.java:113)
+
+lex.tests.snapshot.CRSnapshotTests.canClickStartNowInHeader  Time elapsed: 5.119 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.snapshot.CRSnapshotTests.canClickStartNowInHeader(CRSnapshotTests.java:65)
+
+lex.tests.snapshot.CRSnapshotTests.canSubmitForm  Time elapsed: 8.463 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at lex.tests.snapshot.CRSnapshotTests.canSubmitForm(CRSnapshotTests.java:216)
 

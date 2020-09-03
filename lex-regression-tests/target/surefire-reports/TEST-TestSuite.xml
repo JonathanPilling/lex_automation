@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="472.56" tests="64" errors="0" skipped="9" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="624.805" tests="92" errors="0" skipped="37" failures="9">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib"/>
-    <property name="sun.java.command" value="/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/surefire/surefirebooter4345908267688123644.jar /Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/surefire 2020-09-02T16-18-08_172-jvmRun1 surefire3763636208933014412tmp surefire_0141333554842177252tmp"/>
+    <property name="sun.java.command" value="/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/surefire/surefirebooter3100573413123580691.jar /Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/surefire 2020-09-03T11-34-44_003-jvmRun1 surefire4055776441143368535tmp surefire_08144611521130080757tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="surefire.test.class.path" value="/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/test-classes:/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/classes:/Users/184973/Documents/automation/lex_automation/lex-framework/target/classes:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/Users/184973/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/184973/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/184973/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/184973/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/184973/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/184973/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/184973/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/184973/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/184973/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/184973/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/184973/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/184973/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/184973/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/Users/184973/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-server/3.14.0/selenium-server-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/Users/184973/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/Users/184973/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar:/Users/184973/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/184973/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.30/htmlunit-2.30.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.28/htmlunit-core-js-2.28.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit-cssparser/1.0.0/htmlunit-cssparser-1.0.0.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.30/neko-htmlunit-2.30.jar:/Users/184973/.m2/repository/org/apache/httpcomponents/httpmime/4.5.5/httpmime-4.5.5.jar:/Users/184973/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.8.v20180619/jetty-repacked-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-client/9.4.8.v20180619/jetty-client-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-http/9.4.8.v20180619/jetty-http-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-io/9.4.8.v20180619/jetty-io-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-util/9.4.8.v20180619/jetty-util-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.8.v20180619/jetty-xml-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.30.0/htmlunit-driver-2.30.0.jar:/Users/184973/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.8.v20180619/websocket-api-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.8.v20180619/websocket-client-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.8.v20180619/websocket-common-9.4.8.v20180619.jar:/Users/184973/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/184973/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/184973/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/184973/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/184973/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/Users/184973/.m2/repository/io/github/bonigarcia/webdrivermanager/3.6.0/webdrivermanager-3.6.0.jar:/Users/184973/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/184973/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/184973/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/184973/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/184973/Documents/automation/lex_automation/lex-page-objects/target/classes:/Users/184973/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/184973/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/184973/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/184973/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/184973/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/Users/184973/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/surefire/surefirebooter4345908267688123644.jar"/>
+    <property name="surefire.real.class.path" value="/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/surefire/surefirebooter3100573413123580691.jar"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
@@ -63,53 +63,53 @@
     <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="canClickGetStartedButtonInClientReviewsSection" classname="lex.tests.homepage.LexHomepageTests" time="8.848">
-    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 21154
-Only local[ c1o5n9n9e0c8t5i0o8n9s. 3a22r]e[ WaAlRlNoIwNeGd].:
- PFlromeSoacskeA ddrs efea ihltetdp osn: /n/ecthmraosmke
-driver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+  <testcase name="canClickGetStartedButtonInClientReviewsSection" classname="lex.tests.homepage.LexHomepageTests" time="5.527">
+    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 4742
+Only[ 1l5o9c91a5l44 8c5o.n1n0e8c]t[iWAoRnNsI NarG]e:  aFlrolmSoocwkeAdd.d
+rP lfeaailesde  osnee  nhtettpmsa:s/k/
+chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Sep 02, 2020 4:18:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 03, 2020 11:34:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="canClickGetStartedButtonInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="3.166"/>
-  <testcase name="canClickGetStartedButtonInImageRevealSection" classname="lex.tests.homepage.LexHomepageTests" time="2.998"/>
-  <testcase name="canClickGetStartedLinkInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="3.279"/>
-  <testcase name="canClickSeeMyCreditButton" classname="lex.tests.homepage.LexHomepageTests" time="3.114"/>
-  <testcase name="canClickSignupCreditCostLink" classname="lex.tests.homepage.LexHomepageTests" time="4.995"/>
-  <testcase name="canClickSignupLinkInClientReviewsSection" classname="lex.tests.homepage.LexHomepageTests" time="3.455"/>
-  <testcase name="canClickSignupLinkInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="3.421"/>
+  <testcase name="canClickGetStartedButtonInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="3.094"/>
+  <testcase name="canClickGetStartedButtonInImageRevealSection" classname="lex.tests.homepage.LexHomepageTests" time="2.899"/>
+  <testcase name="canClickGetStartedLinkInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="2.947"/>
+  <testcase name="canClickSeeMyCreditButton" classname="lex.tests.homepage.LexHomepageTests" time="3.291"/>
+  <testcase name="canClickSignupCreditCostLink" classname="lex.tests.homepage.LexHomepageTests" time="4.408"/>
+  <testcase name="canClickSignupLinkInClientReviewsSection" classname="lex.tests.homepage.LexHomepageTests" time="3.798"/>
+  <testcase name="canClickSignupLinkInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="4.018"/>
   <testcase name="canClickSignupLinkInImageRevealSection" classname="lex.tests.homepage.LexHomepageTests" time="0">
     <skipped message="expected [true] but found [false]"/>
   </testcase>
-  <testcase name="canClickSignupLinkInImageRevealSection" classname="lex.tests.homepage.LexHomepageTests" time="3.901"/>
-  <testcase name="canNavigateToCreditHelp" classname="lex.tests.homepage.LexHomepageTests" time="6.108"/>
-  <testcase name="canNavigateToCreditRepair" classname="lex.tests.homepage.LexHomepageTests" time="4.655"/>
-  <testcase name="canNavigateToOurFirm" classname="lex.tests.homepage.LexHomepageTests" time="5.801"/>
-  <testcase name="canNavigateToSignUp" classname="lex.tests.homepage.LexHomepageTests" time="5.218"/>
-  <testcase name="isAtHomepage" classname="lex.tests.homepage.LexHomepageTests" time="1.764"/>
-  <testcase name="canClickGetStartedHero" classname="lex.tests.homepage.CRHomepageTests" time="12.153">
-    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 44083
+  <testcase name="canClickSignupLinkInImageRevealSection" classname="lex.tests.homepage.LexHomepageTests" time="4.253"/>
+  <testcase name="canNavigateToCreditHelp" classname="lex.tests.homepage.LexHomepageTests" time="6.117"/>
+  <testcase name="canNavigateToCreditRepair" classname="lex.tests.homepage.LexHomepageTests" time="4.701"/>
+  <testcase name="canNavigateToOurFirm" classname="lex.tests.homepage.LexHomepageTests" time="4.877"/>
+  <testcase name="canNavigateToSignUp" classname="lex.tests.homepage.LexHomepageTests" time="5.679"/>
+  <testcase name="isAtHomepage" classname="lex.tests.homepage.LexHomepageTests" time="1.511"/>
+  <testcase name="canClickGetStartedHero" classname="lex.tests.homepage.CRHomepageTests" time="14.275">
+    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 44519
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1599085152.313][WARNING]: FromSockAddr failed on netmask
+[1599154544.455][WARNING]: FromSockAddr failed on netmask
 ChromeDriver was started successfully.
-Sep 02, 2020 4:19:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 03, 2020 11:35:44 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="canClickGetStartedInCostSection" classname="lex.tests.homepage.CRHomepageTests" time="8.678"/>
-  <testcase name="canClickGetStartedInHardWorkSection" classname="lex.tests.homepage.CRHomepageTests" time="9.165"/>
-  <testcase name="canClickGetStartedInHowCreditRepairWorksSection" classname="lex.tests.homepage.CRHomepageTests" time="7.904"/>
-  <testcase name="canClickGetStartedInModal" classname="lex.tests.homepage.CRHomepageTests" time="8.729"/>
-  <testcase name="canClickLoginButton" classname="lex.tests.homepage.CRHomepageTests" time="9.22"/>
-  <testcase name="canClickSignupHero" classname="lex.tests.homepage.CRHomepageTests" time="5.942"/>
-  <testcase name="canClickSignupInCostSection" classname="lex.tests.homepage.CRHomepageTests" time="10.875"/>
-  <testcase name="canClickSignupInHardWorkSection" classname="lex.tests.homepage.CRHomepageTests" time="6.122"/>
-  <testcase name="canClickSignupInHowCreditRepairWorksSection" classname="lex.tests.homepage.CRHomepageTests" time="7.509"/>
-  <testcase name="canClickSignupInModal" classname="lex.tests.homepage.CRHomepageTests" time="5.775"/>
-  <testcase name="canClickSignupInTopNav" classname="lex.tests.homepage.CRHomepageTests" time="5.762"/>
+  <testcase name="canClickGetStartedInCostSection" classname="lex.tests.homepage.CRHomepageTests" time="7.953"/>
+  <testcase name="canClickGetStartedInHardWorkSection" classname="lex.tests.homepage.CRHomepageTests" time="6.999"/>
+  <testcase name="canClickGetStartedInHowCreditRepairWorksSection" classname="lex.tests.homepage.CRHomepageTests" time="6.676"/>
+  <testcase name="canClickGetStartedInModal" classname="lex.tests.homepage.CRHomepageTests" time="6.8"/>
+  <testcase name="canClickLoginButton" classname="lex.tests.homepage.CRHomepageTests" time="7.002"/>
+  <testcase name="canClickSignupHero" classname="lex.tests.homepage.CRHomepageTests" time="7.48"/>
+  <testcase name="canClickSignupInCostSection" classname="lex.tests.homepage.CRHomepageTests" time="6.458"/>
+  <testcase name="canClickSignupInHardWorkSection" classname="lex.tests.homepage.CRHomepageTests" time="6.011"/>
+  <testcase name="canClickSignupInHowCreditRepairWorksSection" classname="lex.tests.homepage.CRHomepageTests" time="7.922"/>
+  <testcase name="canClickSignupInModal" classname="lex.tests.homepage.CRHomepageTests" time="5.938"/>
+  <testcase name="canClickSignupInTopNav" classname="lex.tests.homepage.CRHomepageTests" time="6.205"/>
   <testcase name="canSubmitForm" classname="lex.tests.homepage.CRHomepageTests" time="0">
     <skipped message="Timed out after 5 seconds. Unable to locate the element"/>
   </testcase>
@@ -122,7 +122,7 @@ INFO: Detected dialect: W3C
   <testcase name="canSubmitForm" classname="lex.tests.homepage.CRHomepageTests" time="0">
     <skipped message="Timed out after 5 seconds. Unable to locate the element"/>
   </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.homepage.CRHomepageTests" time="15.406">
+  <testcase name="canSubmitForm" classname="lex.tests.homepage.CRHomepageTests" time="14.97">
     <failure message="Timed out after 5 seconds. Unable to locate the element" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element
 	at lex.tests.homepage.CRHomepageTests.canSubmitForm(CRHomepageTests.java:121)
 Caused by: org.openqa.selenium.NoSuchElementException: 
@@ -130,61 +130,169 @@ no such element: Unable to locate element: {"method":"css selector","selector":"
   (Session info: headless chrome=85.0.4183.83)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:cc76:2bc6:aeaf:55bf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+System info: host: 'pgx180189mac.local', ip: '2601:681:527f:1b40:8859:a441:8ebb:6da1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:49655}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 50b64e3dd21f479423fe29d6171ed7d7
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/2r/2bvglkkd41b...}, goog:chromeOptions: {debuggerAddress: localhost:51736}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9991e72fd3dcafa45fd60819409700c3
 *** Element info: {Using=css selector, value=div.slider-app-wrapper}
 	at lex.tests.homepage.CRHomepageTests.canSubmitForm(CRHomepageTests.java:121)
 ]]></failure>
   </testcase>
-  <testcase name="canClickCheckYourCreditNowCTA" classname="lex.tests.snapshot.LexSnapshotTests" time="10.367">
-    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 4851
+  <testcase name="canClickCheckYourCreditNowCTA" classname="lex.tests.snapshot.LexSnapshotTests" time="10.022">
+    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 5324
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1599085326.189][WARNING]: FromSockAddr failed on netmask
+[1599154711.543][WARNING]: FromSockAddr failed on netmask
 ChromeDriver was started successfully.
-Sep 02, 2020 4:22:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 03, 2020 11:38:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="canClickCheckYourCreditNowInModal" classname="lex.tests.snapshot.LexSnapshotTests" time="6.44"/>
-  <testcase name="canClickGetStartedInKnowYourCreditScore" classname="lex.tests.snapshot.LexSnapshotTests" time="6.547"/>
-  <testcase name="canClickGetStartedNowInHowItWorks" classname="lex.tests.snapshot.LexSnapshotTests" time="8.697"/>
-  <testcase name="canClickLoginButton" classname="lex.tests.snapshot.LexSnapshotTests" time="7.613"/>
-  <testcase name="canClickSeeYourCreditNowInFAQ" classname="lex.tests.snapshot.LexSnapshotTests" time="7.241"/>
-  <testcase name="canClickSignupCTA" classname="lex.tests.snapshot.LexSnapshotTests" time="9.114"/>
-  <testcase name="canClickSignupInFAQ" classname="lex.tests.snapshot.LexSnapshotTests" time="5.957"/>
-  <testcase name="canClickSignupInHeroImage" classname="lex.tests.snapshot.LexSnapshotTests" time="6.976"/>
-  <testcase name="canClickSignupInHowItWorks" classname="lex.tests.snapshot.LexSnapshotTests" time="6.764"/>
-  <testcase name="canClickSignupInKnowYourCreditScore" classname="lex.tests.snapshot.LexSnapshotTests" time="6.437"/>
-  <testcase name="canClickSignupInModal" classname="lex.tests.snapshot.LexSnapshotTests" time="6.823"/>
-  <testcase name="canClickStartNowInHeader" classname="lex.tests.snapshot.LexSnapshotTests" time="8.014"/>
-  <testcase name="canClickStartNowInHeroImage" classname="lex.tests.snapshot.LexSnapshotTests" time="6.645"/>
-  <testcase name="canSubmitForm" classname="lex.tests.snapshot.LexSnapshotTests" time="9.954"/>
-  <testcase name="canClickCheckYourCreditNowInHeroImage" classname="lex.tests.snapshot.CRSnapshotTests" time="10.614">
-    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 43986
+  <testcase name="canClickCheckYourCreditNowInModal" classname="lex.tests.snapshot.LexSnapshotTests" time="7.012"/>
+  <testcase name="canClickGetStartedInKnowYourCreditScore" classname="lex.tests.snapshot.LexSnapshotTests" time="7.393"/>
+  <testcase name="canClickGetStartedNowInHowItWorks" classname="lex.tests.snapshot.LexSnapshotTests" time="6.886"/>
+  <testcase name="canClickLoginButton" classname="lex.tests.snapshot.LexSnapshotTests" time="7.632"/>
+  <testcase name="canClickSeeYourCreditNowInFAQ" classname="lex.tests.snapshot.LexSnapshotTests" time="8.687"/>
+  <testcase name="canClickSignupCTA" classname="lex.tests.snapshot.LexSnapshotTests" time="6.902"/>
+  <testcase name="canClickSignupInFAQ" classname="lex.tests.snapshot.LexSnapshotTests" time="7.567"/>
+  <testcase name="canClickSignupInHeroImage" classname="lex.tests.snapshot.LexSnapshotTests" time="7.774"/>
+  <testcase name="canClickSignupInHowItWorks" classname="lex.tests.snapshot.LexSnapshotTests" time="9.419"/>
+  <testcase name="canClickSignupInKnowYourCreditScore" classname="lex.tests.snapshot.LexSnapshotTests" time="7.674"/>
+  <testcase name="canClickSignupInModal" classname="lex.tests.snapshot.LexSnapshotTests" time="7.834"/>
+  <testcase name="canClickStartNowInHeader" classname="lex.tests.snapshot.LexSnapshotTests" time="7.746"/>
+  <testcase name="canClickStartNowInHeroImage" classname="lex.tests.snapshot.LexSnapshotTests" time="6.362"/>
+  <testcase name="canSubmitForm" classname="lex.tests.snapshot.LexSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canSubmitForm" classname="lex.tests.snapshot.LexSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canSubmitForm" classname="lex.tests.snapshot.LexSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canSubmitForm" classname="lex.tests.snapshot.LexSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canSubmitForm" classname="lex.tests.snapshot.LexSnapshotTests" time="7.879">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.snapshot.LexSnapshotTests.canSubmitForm(LexSnapshotTests.java:248)
+]]></failure>
+  </testcase>
+  <testcase name="canClickCheckYourCreditNowInHeroImage" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 31844
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1599085440.980][WARNING]: FromSockAddr failed on netmask
+[1599154863.395][WARNING]: FromSockAddr failed on netmask
 ChromeDriver was started successfully.
-Sep 02, 2020 4:24:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 03, 2020 11:41:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="canClickGetStartedCTA" classname="lex.tests.snapshot.CRSnapshotTests" time="6.622"/>
-  <testcase name="canClickGetStartedInKnowYourCreditScore" classname="lex.tests.snapshot.CRSnapshotTests" time="7.134"/>
-  <testcase name="canClickGetStartedInModal" classname="lex.tests.snapshot.CRSnapshotTests" time="7.407"/>
-  <testcase name="canClickGetStartedNowInClientReviews" classname="lex.tests.snapshot.CRSnapshotTests" time="6.458"/>
-  <testcase name="canClickLoginButton" classname="lex.tests.snapshot.CRSnapshotTests" time="6.775"/>
-  <testcase name="canClickSignupCTA" classname="lex.tests.snapshot.CRSnapshotTests" time="5.458"/>
-  <testcase name="canClickSignupInClientReviews" classname="lex.tests.snapshot.CRSnapshotTests" time="5.37"/>
-  <testcase name="canClickSignupInHeroImage" classname="lex.tests.snapshot.CRSnapshotTests" time="5.835"/>
-  <testcase name="canClickSignupInKnowYourCreditScore" classname="lex.tests.snapshot.CRSnapshotTests" time="5.301"/>
-  <testcase name="canClickSignupInModal" classname="lex.tests.snapshot.CRSnapshotTests" time="5.502"/>
-  <testcase name="canClickStartNowInHeader" classname="lex.tests.snapshot.CRSnapshotTests" time="7.914"/>
-  <testcase name="canSubmitForm" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+  <testcase name="canClickCheckYourCreditNowInHeroImage" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
     <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickCheckYourCreditNowInHeroImage" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickCheckYourCreditNowInHeroImage" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickCheckYourCreditNowInHeroImage" classname="lex.tests.snapshot.CRSnapshotTests" time="4.714">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.snapshot.CRSnapshotTests.canClickCheckYourCreditNowInHeroImage(CRSnapshotTests.java:81)
+]]></failure>
+  </testcase>
+  <testcase name="canClickGetStartedCTA" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickGetStartedCTA" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickGetStartedCTA" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickGetStartedCTA" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickGetStartedCTA" classname="lex.tests.snapshot.CRSnapshotTests" time="4.886">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.snapshot.CRSnapshotTests.canClickGetStartedCTA(CRSnapshotTests.java:177)
+]]></failure>
+  </testcase>
+  <testcase name="canClickGetStartedInKnowYourCreditScore" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickGetStartedInKnowYourCreditScore" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickGetStartedInKnowYourCreditScore" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickGetStartedInKnowYourCreditScore" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickGetStartedInKnowYourCreditScore" classname="lex.tests.snapshot.CRSnapshotTests" time="4.604">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.snapshot.CRSnapshotTests.canClickGetStartedInKnowYourCreditScore(CRSnapshotTests.java:145)
+]]></failure>
+  </testcase>
+  <testcase name="canClickGetStartedInModal" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickGetStartedInModal" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickGetStartedInModal" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickGetStartedInModal" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickGetStartedInModal" classname="lex.tests.snapshot.CRSnapshotTests" time="4.66">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.snapshot.CRSnapshotTests.canClickGetStartedInModal(CRSnapshotTests.java:18)
+]]></failure>
+  </testcase>
+  <testcase name="canClickGetStartedNowInClientReviews" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickGetStartedNowInClientReviews" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickGetStartedNowInClientReviews" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickGetStartedNowInClientReviews" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickGetStartedNowInClientReviews" classname="lex.tests.snapshot.CRSnapshotTests" time="4.602">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.snapshot.CRSnapshotTests.canClickGetStartedNowInClientReviews(CRSnapshotTests.java:113)
+]]></failure>
+  </testcase>
+  <testcase name="canClickLoginButton" classname="lex.tests.snapshot.CRSnapshotTests" time="6.756"/>
+  <testcase name="canClickSignupCTA" classname="lex.tests.snapshot.CRSnapshotTests" time="5.728"/>
+  <testcase name="canClickSignupInClientReviews" classname="lex.tests.snapshot.CRSnapshotTests" time="7.049"/>
+  <testcase name="canClickSignupInHeroImage" classname="lex.tests.snapshot.CRSnapshotTests" time="5.805"/>
+  <testcase name="canClickSignupInKnowYourCreditScore" classname="lex.tests.snapshot.CRSnapshotTests" time="6.716"/>
+  <testcase name="canClickSignupInModal" classname="lex.tests.snapshot.CRSnapshotTests" time="6.807"/>
+  <testcase name="canClickStartNowInHeader" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickStartNowInHeader" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickStartNowInHeader" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickStartNowInHeader" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canClickStartNowInHeader" classname="lex.tests.snapshot.CRSnapshotTests" time="5.119">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.snapshot.CRSnapshotTests.canClickStartNowInHeader(CRSnapshotTests.java:65)
+]]></failure>
   </testcase>
   <testcase name="canSubmitForm" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
     <skipped message="expected [true] but found [false]"/>
@@ -195,7 +303,10 @@ INFO: Detected dialect: W3C
   <testcase name="canSubmitForm" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
     <skipped message="expected [true] but found [false]"/>
   </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.snapshot.CRSnapshotTests" time="7.714">
+  <testcase name="canSubmitForm" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
+    <skipped message="expected [true] but found [false]"/>
+  </testcase>
+  <testcase name="canSubmitForm" classname="lex.tests.snapshot.CRSnapshotTests" time="8.463">
     <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
 	at lex.tests.snapshot.CRSnapshotTests.canSubmitForm(CRSnapshotTests.java:216)
 ]]></failure>

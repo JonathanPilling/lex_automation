@@ -164,7 +164,7 @@ public class CRSnapshot extends BasePage {
     }
 
     public boolean isAtSnapshot() {
-        return driver.getCurrentUrl().startsWith("https://www.creditrepair.com/credit-snapshots/pi");
+        return driver.getCurrentUrl().startsWith("https://www.creditrepair.com/credit-snapshot/pi");
     }
 
     public boolean isAtSignup() {

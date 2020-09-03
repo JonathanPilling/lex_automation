@@ -6,8 +6,14 @@
       <class name="lex.tests.snapshot.CRSnapshotTests">
         <methods>
           <include name="beforeSuite"/>
+          <include name="canClickCheckYourCreditNowInHeroImage"/>
+          <include name="canClickGetStartedCTA"/>
+          <include name="canClickStartNowInHeader"/>
           <include name="canSubmitForm"/>
+          <include name="canClickGetStartedInModal"/>
           <include name="afterSuite"/>
+          <include name="canClickGetStartedInKnowYourCreditScore"/>
+          <include name="canClickGetStartedNowInClientReviews"/>
         </methods>
       </class> <!-- lex.tests.snapshot.CRSnapshotTests -->
       <class name="lex.tests.homepage.LexHomepageTests">
@@ -24,6 +30,13 @@
           <include name="afterSuite"/>
         </methods>
       </class> <!-- lex.tests.homepage.CRHomepageTests -->
+      <class name="lex.tests.snapshot.LexSnapshotTests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="canSubmitForm"/>
+        </methods>
+      </class> <!-- lex.tests.snapshot.LexSnapshotTests -->
     </classes>
   </test> <!-- Simple Test(failed) -->
 </suite> <!-- Failed suite [Example test run] -->

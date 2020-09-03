@@ -174,7 +174,7 @@ public class CRHomepage extends BasePage {
     }
 
     public boolean isAtCreditSnapshot() {
-        return driver.getCurrentUrl().startsWith("https://www.creditrepair.com/credit-snapshots/pi");
+        return driver.getCurrentUrl().startsWith("https://www.creditrepair.com/credit-snapshot/pi");
     }
 
     public boolean isAtSignup() {
