@@ -35,24 +35,6 @@ public class LexSnapshot extends BasePage {
     @FindBy(css = "div.hero-wrapper a.lex-online-signup")
     private WebElement signupHeroLink;
 
-    @FindBy(id = "FirstName")
-    private WebElement firstName;
-
-    @FindBy(id = "LastName")
-    private WebElement lastName;
-
-    @FindBy(id = "Email")
-    private WebElement email;
-
-    @FindBy(id = "Phone")
-    private WebElement phone;
-
-    @FindBy(id = "Address")
-    private WebElement streetAddress;
-
-    @FindBy(id = "Zip")
-    private WebElement zipCode;
-
     @FindBy(css = "button[type='submit']")
     private WebElement submitButton;
 
@@ -112,36 +94,6 @@ public class LexSnapshot extends BasePage {
 
     public void clickSignupHeroLink() {
         signupHeroLink.click();
-    }
-
-    public void sendFirstName(String input) {
-        firstName.clear();
-        firstName.sendKeys(input);
-    }
-
-    public void sendLastName(String input) {
-        lastName.clear();
-        lastName.sendKeys(input);
-    }
-
-    public void sendEmail(String input) {
-        email.clear();
-        email.sendKeys(input);
-    }
-
-    public void sendPhone(String input) {
-        phone.clear();
-        phone.sendKeys(input);
-    }
-
-    public void sendStreetAddress(String input) {
-        streetAddress.clear();
-        streetAddress.sendKeys(input);
-    }
-
-    public void sendZipCode(String input) {
-        zipCode.clear();
-        zipCode.sendKeys(input);
     }
 
     public void clickSubmitButton() {

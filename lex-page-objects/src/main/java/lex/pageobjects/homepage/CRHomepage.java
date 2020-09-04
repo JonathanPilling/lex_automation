@@ -5,8 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.List;
-
 public class CRHomepage extends BasePage {
 
     private static String URL = "https://www.creditrepair.com";
@@ -40,24 +38,6 @@ public class CRHomepage extends BasePage {
     @FindBy(css = "div.hero-container a.signup-online")
     private WebElement heroSignupLink;
 
-    @FindBy(id = "FirstName")
-    private WebElement firstName;
-
-    @FindBy(id = "LastName")
-    private WebElement lastName;
-
-    @FindBy(id = "Email")
-    private WebElement email;
-
-    @FindBy(id = "Phone")
-    private WebElement phone;
-
-    @FindBy(id = "Address")
-    private WebElement streetAddress;
-
-    @FindBy(id = "Zip")
-    private WebElement zipCode;
-
     @FindBy(css = "button[type='submit']")
     private WebElement submitButton;
 
@@ -81,9 +61,6 @@ public class CRHomepage extends BasePage {
 
     @FindBy(css = "div.slider-app-wrapper")
     private WebElement sliderApp;
-
-    @FindBy(css = "img[src='https://seal.godaddy.com/images/3/en/siteseal_gd_3_h_l_m.gif']")
-    private List<WebElement> goDaddySeal;
 
     public CRHomepage(WebDriver driver) throws InterruptedException {
         super(driver);
@@ -121,36 +98,6 @@ public class CRHomepage extends BasePage {
 
     public void clickHeroSignupLink() {
         heroSignupLink.click();
-    }
-
-    public void sendFirstName(String fname) {
-        firstName.clear();
-        firstName.sendKeys(fname);
-    }
-
-    public void sendLastName(String lname) {
-        lastName.clear();
-        lastName.sendKeys(lname);
-    }
-
-    public void sendEmail(String input) {
-        email.clear();
-        email.sendKeys(input);
-    }
-
-    public void sendPhone(String input) {
-        phone.clear();
-        phone.sendKeys(input);
-    }
-
-    public void sendStreetAddress(String input) {
-        streetAddress.clear();
-        streetAddress.sendKeys(input);
-    }
-
-    public void sendZipCode(String input) {
-        zipCode.clear();
-        zipCode.sendKeys(input);
     }
 
     public void clickSubmitButton() {
@@ -199,10 +146,6 @@ public class CRHomepage extends BasePage {
 
     public boolean sliderAppOpened() {
         return sliderApp.getAttribute("style") == "display: block;";
-    }
-
-    public boolean goDaddyIsVisible() {
-        return goDaddySeal.size() != 0;
     }
 
     public void goHome() {
