@@ -114,10 +114,10 @@ public class CRHomepageTests extends BaseTest {
         myPage.sendStreetAddress("123 R");
         myPage.sendZipCode("84103");
         myPage.clickSubmitButton();
-        Thread.sleep(5000);
+        myPage.waitForURLToContain(myPage.getReportPullURL());
 
         // assert
-        Assert.assertTrue(myPage.isAtReportPull() || myPage.sliderAppOpened()); // two possibilities?
+        Assert.assertTrue(myPage.isAtReportPull()); // Sometimes we won't go to report pull? Probably target
 
         // clean up
         myPage.goHome();

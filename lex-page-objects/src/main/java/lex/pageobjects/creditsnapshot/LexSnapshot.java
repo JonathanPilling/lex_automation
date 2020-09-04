@@ -199,4 +199,8 @@ public class LexSnapshot extends BasePage {
     public void goHome() {
         driver.get(URL);
     }
+
+    public String getReportPullURL() {
+        return reportPullURL;
+    }
 }

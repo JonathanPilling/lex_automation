@@ -209,4 +209,8 @@ public class CRHomepage extends BasePage {
         driver.get(URL);
     }
 
+    public String getReportPullURL() {
+        return reportPullURL;
+    }
+
 }

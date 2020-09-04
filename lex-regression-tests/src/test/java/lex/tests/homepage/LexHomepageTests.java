@@ -1,11 +1,7 @@
 package lex.tests.homepage;
 
 import lex.framework.core.BaseTest;
-import lex.pageobjects.credithelp.LexCreditHelp;
-import lex.pageobjects.creditrepair.LexCreditRepair;
 import lex.pageobjects.homepage.LexHomepage;
-import lex.pageobjects.ourfirm.LexOurFirm;
-import lex.pageobjects.signup.LexSignup;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -21,13 +17,12 @@ public class LexHomepageTests extends BaseTest {
     public void canNavigateToSignUp() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
-        LexSignup signUpObj = new LexSignup(getDriver(), true);
 
         // act
         myPage.clickSignUp();
 
         // assert
-        Assert.assertTrue(signUpObj.isHome());
+        Assert.assertTrue(myPage.isAtSignup());
 
         // cleanup
         myPage.goHome();
@@ -37,13 +32,13 @@ public class LexHomepageTests extends BaseTest {
     public void canNavigateToCreditRepair() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
-        LexCreditRepair creditRepairObj = new LexCreditRepair(getDriver());
 
         // act
         myPage.clickCreditRepair();
+        myPage.waitForURLToContain(myPage.getCreditRepairURL());
 
         // assert
-        Assert.assertTrue(creditRepairObj.isHome());
+        Assert.assertTrue(myPage.isAtCreditRepair());
 
         // cleanup
         myPage.goHome();
@@ -53,13 +48,13 @@ public class LexHomepageTests extends BaseTest {
     public void canNavigateToCreditHelp() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
-        LexCreditHelp creditHelpObj = new LexCreditHelp(getDriver());
 
         // act
         myPage.clickCreditHelp();
+        myPage.waitForURLToContain(myPage.getCreditHelpURL());
 
         // assert
-        Assert.assertTrue(creditHelpObj.isHome());
+        Assert.assertTrue(myPage.isAtCreditHelp());
 
         // cleanup
         myPage.goHome();
@@ -69,13 +64,13 @@ public class LexHomepageTests extends BaseTest {
     public void canNavigateToOurFirm() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
-        LexOurFirm ourFirmObj = new LexOurFirm(getDriver());
 
         // act
         myPage.clickOurFirm();
+        myPage.waitForURLToContain(myPage.getOurFirmURL());
 
         // assert
-        Assert.assertTrue(ourFirmObj.isHome());
+        Assert.assertTrue(myPage.isAtOurFirm());
 
         // cleanup
         myPage.goHome();

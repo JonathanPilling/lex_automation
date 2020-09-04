@@ -10,8 +10,9 @@ public class LexHomepage extends BasePage {
     private static String URL = "https://www.lexingtonlaw.com";
     private String snapshotURL = "https://www.lexingtonlaw.com/credit-snapshot/pi";
     private String signupURL = "https://www.lexingtonlaw.com/signup";
-    private String loginURL = "https://clients.lexingtonlaw.com/login";
-    private String reportPullURL = "https://www.lexingtonlaw.com/credit-snapshot/rp";
+    private String creditRepairURL = "https://www.lexingtonlaw.com/credit-repair-services";
+    private String creditHelpURL = "https://www.lexingtonlaw.com/credit-help";
+    private String ourFirmURL = "https://www.lexingtonlaw.com/our-firm";
 
     /* Locators */
     @FindBy(css = "title")
@@ -93,6 +94,14 @@ public class LexHomepage extends BasePage {
         return driver.getCurrentUrl().startsWith(signupURL);
     }
 
+    public boolean isAtCreditRepair() {
+        System.out.println(driver.getCurrentUrl());
+        return driver.getCurrentUrl().startsWith(creditRepairURL); }
+
+    public boolean isAtCreditHelp() { return driver.getCurrentUrl().startsWith(creditHelpURL); }
+
+    public boolean isAtOurFirm() { return driver.getCurrentUrl().startsWith(ourFirmURL); }
+
     public void clickGetStartedHeroButton() {
         getStartedHeroButton.click();
     }
@@ -128,4 +137,18 @@ public class LexHomepage extends BasePage {
     public void clickSignupClientReviewsLink() {
         signupClientReviewsLink.click();
     }
+
+    public String getCreditRepairURL() {
+        return creditRepairURL;
+    }
+
+    public String getCreditHelpURL() {
+        return creditHelpURL;
+    }
+
+    public String getOurFirmURL() {
+        return ourFirmURL;
+    }
+
+
 }
