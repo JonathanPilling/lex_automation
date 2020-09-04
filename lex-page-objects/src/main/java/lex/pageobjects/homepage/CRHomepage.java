@@ -4,83 +4,91 @@ import lex.framework.core.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
+
+import java.util.List;
 
 public class CRHomepage extends BasePage {
 
     private static String URL = "https://www.creditrepair.com";
+    private String snapshotURL = "https://www.creditrepair.com/credit-snapshot/pi";
+    private String signupURL = "https://www.creditrepair.com/signup";
+    private String loginURL = "https://members.creditrepair.com/login";
+    private String reportPullURL = "https://www.creditrepair.com/credit-snapshot/rp";
 
     /* locators */
-    @FindBy(how=How.CLASS_NAME, using="closeBtn")
+    @FindBy(className = "closeBtn")
     private WebElement modalCloseButton;
 
-    @FindBy(how=How.CSS, using="a.call-now-btn")
+    @FindBy(css = "a.call-now-btn")
     private WebElement modalGetStartedButton;
 
-    @FindBy(how=How.CSS, using="a.sign-up")
+    @FindBy(css = "a.sign-up")
     private WebElement modalSignupButton;
 
-    @FindBy(how=How.CSS, using="a.top_nav_member_login")
+    @FindBy(css = "a.top_nav_member_login")
     private WebElement loginButton;
 
-    @FindBy(how=How.CSS, using="a.top_nav_sign_up")
+    @FindBy(css = "a.top_nav_sign_up")
     private WebElement topNavSignupButton;
 
-    @FindBy(how=How.CSS, using="a.stimulus-cta-button")
+    @FindBy(css = "a.stimulus-cta-button")
     private WebElement stimulusSignupButton;
 
-    @FindBy(how=How.CSS, using="div.hero-container a.call_btn")
+    @FindBy(css = "div.hero-container a.call_btn")
     private WebElement heroGetStartedButton;
 
-    @FindBy(how=How.CSS, using="div.hero-container a.signup-online")
+    @FindBy(css = "div.hero-container a.signup-online")
     private WebElement heroSignupLink;
 
-    @FindBy(how=How.ID, using="FirstName")
+    @FindBy(id = "FirstName")
     private WebElement firstName;
 
-    @FindBy(how=How.ID, using="LastName")
+    @FindBy(id = "LastName")
     private WebElement lastName;
 
-    @FindBy(how=How.ID, using="Email")
+    @FindBy(id = "Email")
     private WebElement email;
 
-    @FindBy(how=How.ID, using="Phone")
+    @FindBy(id = "Phone")
     private WebElement phone;
 
-    @FindBy(how=How.ID, using="Address")
+    @FindBy(id = "Address")
     private WebElement streetAddress;
 
-    @FindBy(how=How.ID, using="Zip")
+    @FindBy(id = "Zip")
     private WebElement zipCode;
 
-    @FindBy(how=How.CSS, using="button[type='submit']")
+    @FindBy(css = "button[type='submit']")
     private WebElement submitButton;
 
-    @FindBy(how=How.CSS, using="div.hard-work a.btn-new")
+    @FindBy(css = "div.hard-work a.btn-new")
     private WebElement hardWorkGetStartedButton;
 
-    @FindBy(how=How.CSS, using="div.hard-work a.text-link")
+    @FindBy(css = "div.hard-work a.text-link")
     private WebElement hardWorkSignupLink;
 
-    @FindBy(how=How.CSS, using="div.how-works-new-container a.btn-new")
+    @FindBy(css = "div.how-works-new-container a.btn-new")
     private WebElement howWorksGetStartedButton;
 
-    @FindBy(how=How.CSS, using="div.how-works-new-container a.text-link")
+    @FindBy(css = "div.how-works-new-container a.text-link")
     private WebElement howWorksSignupText;
 
-    @FindBy(how=How.CSS, using="div.cost-new-container a.btn-new")
+    @FindBy(css = "div.cost-new-container a.btn-new")
     private WebElement costGetStartedButton;
 
-    @FindBy(how=How.CSS, using="div.cost-new-container a.text-link")
+    @FindBy(css = "div.cost-new-container a.text-link")
     private WebElement costSignupText;
 
-    @FindBy(how=How.CSS, using="div.slider-app-wrapper")
+    @FindBy(css = "div.slider-app-wrapper")
     private WebElement sliderApp;
+
+    @FindBy(css = "img[src='https://seal.godaddy.com/images/3/en/siteseal_gd_3_h_l_m.gif']")
+    private List<WebElement> goDaddySeal;
 
     public CRHomepage(WebDriver driver) throws InterruptedException {
         super(driver);
         driver.get(URL);
-        Thread.sleep(3000);
+        waitForElementToBeClickable(modalCloseButton);
     }
 
     public void clickModalCloseButton() {
@@ -174,25 +182,28 @@ public class CRHomepage extends BasePage {
     }
 
     public boolean isAtCreditSnapshot() {
-        return driver.getCurrentUrl().startsWith("https://www.creditrepair.com/credit-snapshot/pi");
+        return driver.getCurrentUrl().startsWith(snapshotURL);
     }
 
     public boolean isAtSignup() {
-        return driver.getCurrentUrl().startsWith("https://www.creditrepair.com/signup");
+        return driver.getCurrentUrl().startsWith(signupURL);
     }
 
     public boolean isAtLogin() {
-        return driver.getCurrentUrl().startsWith("https://members.creditrepair.com/login");
+        return driver.getCurrentUrl().startsWith(loginURL);
     }
 
     public boolean isAtReportPull() {
-        return driver.getCurrentUrl().startsWith("https://www.creditrepair.com/credit-snapshot/rp");
+        return driver.getCurrentUrl().startsWith(reportPullURL);
     }
 
     public boolean sliderAppOpened() {
         return sliderApp.getAttribute("style") == "display: block;";
     }
 
+    public boolean goDaddyIsVisible() {
+        return goDaddySeal.size() != 0;
+    }
 
     public void goHome() {
         driver.get(URL);

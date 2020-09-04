@@ -44,7 +44,6 @@ public class CRHomepageTests extends BaseTest {
         // act
         myPage.clickModalCloseButton();
         myPage.clickLoginButton();
-        Thread.sleep(1000);
 
         // assert
         Assert.assertTrue(myPage.isAtLogin());
@@ -215,6 +214,18 @@ public class CRHomepageTests extends BaseTest {
 
         // assert
         Assert.assertTrue(myPage.isAtSignup());
+
+        // clean up
+        myPage.goHome();
+    }
+
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
+    public void canSeeGoDaddySeal() throws InterruptedException {
+        // arrange
+        CRHomepage myPage = new CRHomepage(getDriver());
+
+        // act/assert
+        Assert.assertTrue(myPage.goDaddyIsVisible());
 
         // clean up
         myPage.goHome();

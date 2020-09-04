@@ -210,7 +210,7 @@ public class CRSnapshotTests extends BaseTest {
         myPage.sendStreetAddress("50 R");
         myPage.sendZipCode("84103");
         myPage.clickSubmitButton();
-        Thread.sleep(3000);
+        myPage.waitForURLToContain(myPage.getReportPullURL());
 
         // assert
         Assert.assertTrue(myPage.isAtReportPull());

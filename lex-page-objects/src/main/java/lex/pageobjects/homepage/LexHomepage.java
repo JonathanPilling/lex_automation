@@ -1,71 +1,69 @@
 package lex.pageobjects.homepage;
 
-import org.openqa.selenium.WebDriver;
 import lex.framework.core.BasePage;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class LexHomepage extends BasePage {
 
     private static String URL = "https://www.lexingtonlaw.com";
+    private String snapshotURL = "https://www.lexingtonlaw.com/credit-snapshot/pi";
+    private String signupURL = "https://www.lexingtonlaw.com/signup";
+    private String loginURL = "https://clients.lexingtonlaw.com/login";
+    private String reportPullURL = "https://www.lexingtonlaw.com/credit-snapshot/rp";
+
+    /* Locators */
+    @FindBy(css = "title")
+    private WebElement pageTitle;
+
+    @FindBy(xpath = "//span[text()='Login']")
+    private WebElement loginButton;
+
+    @FindBy(css = "a[class='site_nav_sign_up_desktop']")
+    private WebElement signupButton;
+
+    @FindBy(css = ".desktop_site_nav_left a[href='/credit-repair-services']")
+    private WebElement creditRepairButton;
+
+    @FindBy(css = ".desktop_site_nav_left a[href='/credit-help']")
+    private WebElement creditHelpButton;
+
+    @FindBy(css = ".desktop_site_nav_left a[href='/our-firm']")
+    private WebElement ourFirmButton;
+
+    @FindBy(css = "div.hero-content a.lex-cta-number")
+    private WebElement getStartedHeroButton;
+
+    @FindBy(css = "div.hero-content a.lex-online-signup")
+    private WebElement signupHeroLink;
+
+    @FindBy(css = ".hero-cta a")
+    private WebElement getStartedHeroLink;
+
+    @FindBy(css = "#credit-costing-you a.lex-cta-number")
+    private WebElement seeMyCreditButton;
+
+    @FindBy(css = "#credit-costing-you a.sign-up-cta")
+    private WebElement signupCostLink;
+
+    @FindBy(css = "div.image-reveal-cta a.call-now-cta")
+    private WebElement getStartedImageRevealButton;
+
+    @FindBy(css = "div.image-reveal-cta a.sign-up-cta")
+    private WebElement signupImageRevealLink;
+
+    @FindBy(css = "#client-reviews a.call-now-cta")
+    private WebElement getStartedClientReviewsButton;
+
+    @FindBy(css = "#client-reviews a.sign-up-cta")
+    private WebElement signupClientReviewsLink;
 
     public LexHomepage(WebDriver driver) throws InterruptedException {
         super(driver);
         driver.get(URL);
-        Thread.sleep(1000);
     }
 
-    /* Locators */
-    @FindBy(how = How.CSS, using = "title")
-    private WebElement pageTitle;
-
-    @FindBy(how = How.XPATH, using = "//span[text()='Login']")
-    private WebElement loginButton;
-
-    @FindBy(how = How.CSS, using = "a[class='site_nav_sign_up_desktop']")
-    private WebElement signupButton;
-
-    @FindBy(how = How.CSS, using = ".desktop_site_nav_left a[href='/credit-repair-services']")
-    private WebElement creditRepairButton;
-
-    @FindBy(how = How.CSS, using = ".desktop_site_nav_left a[href='/credit-help']")
-    private WebElement creditHelpButton;
-
-    @FindBy(how = How.CSS, using = ".desktop_site_nav_left a[href='/our-firm']")
-    private WebElement ourFirmButton;
-
-    @FindBy(how = How.CSS, using = "div.hero-content a.lex-cta-number")
-    private WebElement getStartedHeroButton;
-
-    @FindBy(how=How.CSS, using = "div.hero-content a.lex-online-signup")
-    private WebElement signupHeroLink;
-
-    @FindBy(how=How.CSS, using = ".hero-cta a")
-    private WebElement getStartedHeroLink;
-
-    @FindBy(how=How.CSS, using = "#credit-costing-you a.lex-cta-number")
-    private WebElement seeMyCreditButton;
-
-    @FindBy(how=How.CSS, using = "#credit-costing-you a.sign-up-cta")
-    private WebElement signupCostLink;
-
-    @FindBy(how=How.CSS, using = "div.image-reveal-cta a.call-now-cta")
-    private WebElement getStartedImageRevealButton;
-
-    @FindBy(how=How.CSS, using = "div.image-reveal-cta a.sign-up-cta")
-    private WebElement signupImageRevealLink;
-
-    @FindBy(how=How.CSS, using = "#client-reviews a.call-now-cta")
-    private WebElement getStartedClientReviewsButton;
-
-    @FindBy(how=How.CSS, using = "#client-reviews a.sign-up-cta")
-    private WebElement signupClientReviewsLink;
-
-    /* Methods */
     public WebElement getPageTitle() {
         return pageTitle;
     }
@@ -82,23 +80,17 @@ public class LexHomepage extends BasePage {
 
     public void clickOurFirm() { ourFirmButton.click(); }
 
-    public String generateUniqueEmail() {
-        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy_HH:mm");
-        Date date = new Date();
-        return "jonathanpilling77+" + formatter.format(date) + "gmail.com";
-    }
-
     public boolean isHome() {
         return getPageTitle().getAttribute("text").contains("Lexington Law Firm " +
                 "| Trusted Attorneys Helping to Fix Your Credit");
     }
 
     public boolean isAtCreditSnapshot() {
-        return driver.getCurrentUrl().startsWith("https://www.lexingtonlaw.com/credit-snapshot/pi");
+        return driver.getCurrentUrl().startsWith(snapshotURL);
     }
 
     public boolean isAtSignup() {
-        return driver.getCurrentUrl().startsWith("https://www.lexingtonlaw.com/signup");
+        return driver.getCurrentUrl().startsWith(signupURL);
     }
 
     public void clickGetStartedHeroButton() {

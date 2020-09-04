@@ -1,13 +1,13 @@
 package lex.tests.homepage;
 
-import org.testng.annotations.Test;
-import org.testng.Assert;
 import lex.framework.core.BaseTest;
-import lex.pageobjects.homepage.LexHomepage;
-import lex.pageobjects.signup.LexSignup;
 import lex.pageobjects.credithelp.LexCreditHelp;
 import lex.pageobjects.creditrepair.LexCreditRepair;
+import lex.pageobjects.homepage.LexHomepage;
 import lex.pageobjects.ourfirm.LexOurFirm;
+import lex.pageobjects.signup.LexSignup;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class LexHomepageTests extends BaseTest {
 
@@ -25,7 +25,6 @@ public class LexHomepageTests extends BaseTest {
 
         // act
         myPage.clickSignUp();
-        Thread.sleep(2000);
 
         // assert
         Assert.assertTrue(signUpObj.isHome());
@@ -42,7 +41,6 @@ public class LexHomepageTests extends BaseTest {
 
         // act
         myPage.clickCreditRepair();
-        Thread.sleep(2000);
 
         // assert
         Assert.assertTrue(creditRepairObj.isHome());
@@ -59,7 +57,6 @@ public class LexHomepageTests extends BaseTest {
 
         // act
         myPage.clickCreditHelp();
-        Thread.sleep(2000);
 
         // assert
         Assert.assertTrue(creditHelpObj.isHome());
@@ -76,7 +73,6 @@ public class LexHomepageTests extends BaseTest {
 
         // act
         myPage.clickOurFirm();
-        Thread.sleep(2000);
 
         // assert
         Assert.assertTrue(ourFirmObj.isHome());
@@ -220,8 +216,6 @@ public class LexHomepageTests extends BaseTest {
         // clean up
         myPage.goHome();
     }
-
-
 
 }
 

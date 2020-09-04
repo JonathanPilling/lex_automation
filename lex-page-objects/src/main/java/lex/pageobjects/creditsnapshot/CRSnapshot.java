@@ -4,77 +4,80 @@ import lex.framework.core.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 
 public class CRSnapshot extends BasePage {
 
     private static String URL = "https://www.creditrepair.com/b/credit-snapshot";
+    private String snapshotURL = "https://www.creditrepair.com/credit-snapshot/pi";
+    private String signupURL = "https://www.creditrepair.com/signup";
+    private String loginURL = "https://members.creditrepair.com/login";
+    private String reportPullURL = "https://www.creditrepair.com/credit-snapshot/rp";
 
     /* locators */
-    @FindBy(how= How.CSS, using="button.close")
+    @FindBy(css = "button.close")
     private WebElement closeModalButton;
 
-    @FindBy(how= How.CSS, using="div.modal-cta a.btn-new")
+    @FindBy(css = "div.modal-cta a.btn-new")
     private WebElement getStartedModalButton;
 
-    @FindBy(how= How.CSS, using="div.modal-cta a.text-link")
+    @FindBy(css = "div.modal-cta a.text-link")
     private WebElement signupModalLink;
 
-    @FindBy(how= How.CSS, using="a.login")
+    @FindBy(css = "a.login")
     private WebElement loginButton;
 
-    @FindBy(how= How.CSS, using="div.header-cta a.call_btn")
+    @FindBy(css = "div.header-cta a.call_btn")
     private WebElement startNowHeaderButton;
 
-    @FindBy(how= How.CSS, using="div.hero-wrapper a.btn-new")
+    @FindBy(css = "div.hero-wrapper a.btn-new")
     private WebElement checkYourCreditNowHeroButton;
 
-    @FindBy(how= How.CSS, using="div.hero-wrapper a.text-link")
+    @FindBy(css = "div.hero-wrapper a.text-link")
     private WebElement signupHeroLink;
 
-    @FindBy(how= How.ID, using="FirstName")
+    @FindBy(id = "FirstName")
     private WebElement firstName;
 
-    @FindBy(how= How.ID, using="LastName")
+    @FindBy(id = "LastName")
     private WebElement lastName;
 
-    @FindBy(how= How.ID, using="Email")
+    @FindBy(id = "Email")
     private WebElement email;
 
-    @FindBy(how= How.ID, using="Phone")
+    @FindBy(id = "Phone")
     private WebElement phone;
 
-    @FindBy(how= How.ID, using="Address")
+    @FindBy(id = "Address")
     private WebElement streetAddress;
 
-    @FindBy(how= How.ID, using="Zip")
+    @FindBy(id = "Zip")
     private WebElement zipCode;
 
-    @FindBy(how= How.CSS, using="button.submit-info")
+    @FindBy(css = "button.submit-info")
     private WebElement submitButton;
 
-    @FindBy(how= How.CSS, using=".client-reviews a.btn-new")
+    @FindBy(css = ".client-reviews a.btn-new")
     private WebElement getStartedClientReviewsButton;
 
-    @FindBy(how= How.CSS, using=".client-reviews a.text-link")
+    @FindBy(css = ".client-reviews a.text-link")
     private WebElement signupClientReviewsLink;
 
-    @FindBy(how= How.CSS, using="#know-score a.btn-new")
+    @FindBy(css = "#know-score a.btn-new")
     private WebElement getStartedKnowScoreButton;
 
-    @FindBy(how= How.CSS, using="#know-score a.text-link")
+    @FindBy(css = "#know-score a.text-link")
     private WebElement signupKnowScoreLink;
 
-    @FindBy(how= How.CSS, using=".cta-section a.btn-new")
+    @FindBy(css = ".cta-section a.btn-new")
     private WebElement getStartedCtaButton;
 
-    @FindBy(how= How.CSS, using=".cta-section a.text-link")
+    @FindBy(css = ".cta-section a.text-link")
     private WebElement signupCtaLink;
 
     public CRSnapshot(WebDriver driver) throws InterruptedException {
         super(driver);
         driver.get(URL);
-        Thread.sleep(3000);
+        waitForElementToBeClickable(closeModalButton);
     }
 
     public void clickCloseModalButton() {
@@ -164,23 +167,27 @@ public class CRSnapshot extends BasePage {
     }
 
     public boolean isAtSnapshot() {
-        return driver.getCurrentUrl().startsWith("https://www.creditrepair.com/credit-snapshot/pi");
+        return driver.getCurrentUrl().startsWith(snapshotURL);
     }
 
     public boolean isAtSignup() {
-        return driver.getCurrentUrl().startsWith("https://www.creditrepair.com/signup");
+        return driver.getCurrentUrl().startsWith(signupURL);
     }
 
     public boolean isAtLogin() {
-        return driver.getCurrentUrl().startsWith("https://members.creditrepair.com/login");
+        return driver.getCurrentUrl().startsWith(loginURL);
     }
 
     public boolean isAtReportPull() {
-        return driver.getCurrentUrl().startsWith("https://www.creditrepair.com/credit-snapshot/rp");
+        return driver.getCurrentUrl().startsWith(reportPullURL);
     }
 
     public void goHome() {
         driver.get(URL);
+    }
+
+    public String getReportPullURL() {
+        return reportPullURL;
     }
 
 }

@@ -2,6 +2,7 @@ package lex.framework.core;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -24,16 +25,28 @@ public class BasePage {
         PageFactory.initElements(new AjaxElementLocatorFactory(driver, TIMEOUT), this);
     }
 
-    protected void waitForElementToAppear(By locator) {
+    public void waitForElementToAppear(By locator) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    protected void waitForElementToDisappear(By locator) {
+    public void waitForElementToDisappear(By locator) {
         wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
 
-    protected void waitForTextToDisappear(By locator, String text) {
+    public void waitForElementToBeClickable(By locator) {
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+
+    public void waitForElementToBeClickable(WebElement elem) {
+        wait.until(ExpectedConditions.elementToBeClickable(elem));
+    }
+
+    public void waitForTextToDisappear(By locator, String text) {
         wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(locator, text)));
+    }
+
+    public void waitForURLToContain(String url) {
+        wait.until(ExpectedConditions.urlContains(url));
     }
 
     public String generateUniqueEmail() {
