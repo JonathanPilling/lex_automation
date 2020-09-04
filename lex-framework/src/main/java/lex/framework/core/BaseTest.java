@@ -13,12 +13,10 @@ public class BaseTest {
 
     @BeforeClass
     public void beforeSuite() {
-        System.setProperty("headless", "true"); // You can set this property elsewhere
+        boolean headless = true; // change for headless vs normal browser
         System.setProperty("webdriver.chrome.driver", "chromedriver");
-        String headless = System.getProperty("headless");
-
         ChromeDriverManager.chromedriver();
-        if("true".equals(headless)) {
+        if(headless) {
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--headless");
             chromeOptions.addArguments("--disable-gpu");
@@ -33,7 +31,7 @@ public class BaseTest {
 
     @AfterClass
     public void afterSuite() {
-        if(null != driver) {
+        if(driver != null) {
             driver.close();
             driver.quit();
         }

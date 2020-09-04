@@ -219,4 +219,16 @@ public class CRSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
+    public void canSeeGoDaddySeal() throws InterruptedException {
+        // arrange
+        CRSnapshot myPage = new CRSnapshot(getDriver());
+
+        // act/assert
+        Assert.assertTrue(myPage.goDaddyIsVisible());
+
+        // clean up
+        myPage.goHome();
+    }
+
 }

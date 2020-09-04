@@ -251,4 +251,16 @@ public class LexSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
+    public void canSeeGoDaddySeal() throws InterruptedException {
+        // arrange
+        LexSnapshot myPage = new LexSnapshot(getDriver());
+
+        // act/assert
+        Assert.assertTrue(myPage.goDaddyIsVisible());
+
+        // clean up
+        myPage.goHome();
+    }
+
 }
