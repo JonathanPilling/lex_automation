@@ -11,6 +11,7 @@
             <class name ="lex.tests.homepage.CRHomepageTests"/>
             <class name="lex.tests.snapshot.LexSnapshotTests"/>
             <class name="lex.tests.snapshot.CRSnapshotTests"/>
+            <class name="lex.tests.http.HttpTests"/>
         </classes>
     </test>
 </suite>
