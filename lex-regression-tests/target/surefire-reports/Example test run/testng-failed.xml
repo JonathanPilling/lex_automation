@@ -3,23 +3,11 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Example test run]">
   <test thread-count="5" verbose="0" name="Simple Test(failed)">
     <classes>
-      <class name="lex.tests.snapshot.CRSnapshotTests">
-        <methods>
-          <include name="beforeSuite"/>
-          <include name="canClickCheckYourCreditNowInHeroImage"/>
-          <include name="canClickGetStartedCTA"/>
-          <include name="canClickStartNowInHeader"/>
-          <include name="canSubmitForm"/>
-          <include name="canClickGetStartedInModal"/>
-          <include name="afterSuite"/>
-          <include name="canClickGetStartedInKnowYourCreditScore"/>
-          <include name="canClickGetStartedNowInClientReviews"/>
-        </methods>
-      </class> <!-- lex.tests.snapshot.CRSnapshotTests -->
       <class name="lex.tests.homepage.LexHomepageTests">
         <methods>
           <include name="beforeSuite"/>
           <include name="canClickSignupLinkInImageRevealSection"/>
+          <include name="canSeeGoDaddySeal"/>
           <include name="afterSuite"/>
         </methods>
       </class> <!-- lex.tests.homepage.LexHomepageTests -->
@@ -27,12 +15,22 @@
         <methods>
           <include name="canSubmitForm"/>
           <include name="beforeSuite"/>
+          <include name="canSeeGoDaddySeal"/>
           <include name="afterSuite"/>
         </methods>
       </class> <!-- lex.tests.homepage.CRHomepageTests -->
+      <class name="lex.tests.snapshot.CRSnapshotTests">
+        <methods>
+          <include name="canSeeGoDaddySeal"/>
+          <include name="beforeSuite"/>
+          <include name="canSubmitForm"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- lex.tests.snapshot.CRSnapshotTests -->
       <class name="lex.tests.snapshot.LexSnapshotTests">
         <methods>
           <include name="beforeSuite"/>
+          <include name="canSeeGoDaddySeal"/>
           <include name="afterSuite"/>
           <include name="canSubmitForm"/>
         </methods>

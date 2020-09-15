@@ -7,4 +7,5 @@ lex/tests/snapshot/LexSnapshotTests.class
 lex/tests/creditrepair/CreditRepairTests.class
 lex/tests/RetryAnalyzer.class
 lex/tests/creditrepair/CreditRepairOnlineTests.class
+lex/tests/http/HttpTests.class
 lex/tests/creditrepair/CreditRepairBRTests.class
