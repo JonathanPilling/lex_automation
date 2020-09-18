@@ -14,7 +14,12 @@ public class BaseTest {
     @BeforeClass
     public void beforeSuite() {
         boolean headless = true; // change for headless vs normal browser
-        System.setProperty("webdriver.chrome.driver", "chromedriver");
+        if (System.getProperty("os.name").contains("Mac OS X")) {
+            System.setProperty("webdriver.chrome.driver", "drivers/chromedriver_mac");
+        }
+        else {
+            System.setProperty("webdriver.chrome.driver", "drivers/chromedriver_linux");
+        }
         ChromeDriverManager.chromedriver();
         if(headless) {
             ChromeOptions chromeOptions = new ChromeOptions();
