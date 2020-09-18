@@ -1,50 +1,50 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 96, Failures: 7, Errors: 0, Skipped: 29, Time elapsed: 316.63 s <<< FAILURE! - in TestSuite
-lex.tests.homepage.LexHomepageTests.canSeeGoDaddySeal  Time elapsed: 5.465 s  <<< FAILURE!
+Tests run: 96, Failures: 7, Errors: 0, Skipped: 29, Time elapsed: 329.07 s <<< FAILURE! - in TestSuite
+lex.tests.homepage.LexHomepageTests.canSeeGoDaddySeal  Time elapsed: 5.456 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at lex.tests.homepage.LexHomepageTests.canSeeGoDaddySeal(LexHomepageTests.java:221)
 
-lex.tests.homepage.CRHomepageTests.canSeeGoDaddySeal  Time elapsed: 6.093 s  <<< FAILURE!
+lex.tests.homepage.CRHomepageTests.canSeeGoDaddySeal  Time elapsed: 6.019 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at lex.tests.homepage.CRHomepageTests.canSeeGoDaddySeal(CRHomepageTests.java:228)
 
-lex.tests.homepage.CRHomepageTests.canSubmitForm  Time elapsed: 7.047 s  <<< FAILURE!
+lex.tests.homepage.CRHomepageTests.canSubmitForm  Time elapsed: 7.072 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
 Expected condition failed: waiting for url to contain "https://www.creditrepair.com/credit-snapshot/rp". Current url: "https://www.creditrepair.com/" (tried for 5 second(s) with 100 milliseconds interval)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'martech-d01.vwsl.pgx.local', ip: '10.40.30.83', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1127.el7.x86_64', java.version: '1.8.0_262'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.HNXlE8}, goog:chromeOptions: {debuggerAddress: localhost:38668}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 05fbb0ee5d1ef06c10094a3bb2aa99cc
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.ndAobL}, goog:chromeOptions: {debuggerAddress: localhost:43355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b9176c332569584fe8b19c2ad7b25c04
 	at lex.tests.homepage.CRHomepageTests.canSubmitForm(CRHomepageTests.java:117)
 
-lex.tests.snapshot.LexSnapshotTests.canSeeGoDaddySeal  Time elapsed: 5.979 s  <<< FAILURE!
+lex.tests.snapshot.LexSnapshotTests.canSeeGoDaddySeal  Time elapsed: 6.087 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at lex.tests.snapshot.LexSnapshotTests.canSeeGoDaddySeal(LexSnapshotTests.java:260)
 
-lex.tests.snapshot.LexSnapshotTests.canSubmitForm  Time elapsed: 6.856 s  <<< FAILURE!
+lex.tests.snapshot.LexSnapshotTests.canSubmitForm  Time elapsed: 6.829 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
 Expected condition failed: waiting for url to contain "https://www.lexingtonlaw.com/credit-snapshot/rp". Current url: "https://www.lexingtonlaw.com/l/credit-snapshot" (tried for 5 second(s) with 100 milliseconds interval)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'martech-d01.vwsl.pgx.local', ip: '10.40.30.83', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1127.el7.x86_64', java.version: '1.8.0_262'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.0RqjJ7}, goog:chromeOptions: {debuggerAddress: localhost:46103}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 6c0ce4bfed205413d056d4ce45030d9f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.86ERb0}, goog:chromeOptions: {debuggerAddress: localhost:38456}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 721ff7d1cc48fb7feee05629981291a1
 	at lex.tests.snapshot.LexSnapshotTests.canSubmitForm(LexSnapshotTests.java:245)
 
-lex.tests.snapshot.CRSnapshotTests.canSeeGoDaddySeal  Time elapsed: 5.881 s  <<< FAILURE!
+lex.tests.snapshot.CRSnapshotTests.canSeeGoDaddySeal  Time elapsed: 6 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at lex.tests.snapshot.CRSnapshotTests.canSeeGoDaddySeal(CRSnapshotTests.java:228)
 
-lex.tests.snapshot.CRSnapshotTests.canSubmitForm  Time elapsed: 6.699 s  <<< FAILURE!
+lex.tests.snapshot.CRSnapshotTests.canSubmitForm  Time elapsed: 6.804 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
 Expected condition failed: waiting for url to contain "https://www.creditrepair.com/credit-snapshot/rp". Current url: "https://www.creditrepair.com/b/credit-snapshot" (tried for 5 second(s) with 100 milliseconds interval)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'martech-d01.vwsl.pgx.local', ip: '10.40.30.83', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1127.el7.x86_64', java.version: '1.8.0_262'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.oV1iq7}, goog:chromeOptions: {debuggerAddress: localhost:37364}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 1d5fb636fdc120de68e00fbb28e8ccdb
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.X5aDPd}, goog:chromeOptions: {debuggerAddress: localhost:34798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 37d967e63fe1726e2ee3b5a40ffbc376
 	at lex.tests.snapshot.CRSnapshotTests.canSubmitForm(CRSnapshotTests.java:213)
 

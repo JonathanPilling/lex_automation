@@ -230,5 +230,4 @@ public class CRHomepageTests extends BaseTest {
         // clean up
         myPage.goHome();
     }
-
-}
+}        

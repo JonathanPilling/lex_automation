@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: lex.tests.homepage.CRHomepageTests
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 33.541 s <<< FAILURE! - in lex.tests.homepage.CRHomepageTests
+lex.tests.homepage.CRHomepageTests.canSeeGoDaddySeal  Time elapsed: 6.251 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at lex.tests.homepage.CRHomepageTests.canSeeGoDaddySeal(CRHomepageTests.java:228)
+

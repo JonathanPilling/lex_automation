@@ -19,10 +19,8 @@ public class BaseTest {
         if(headless) {
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--headless");
-            chromeOptions.addArguments("--disable-gpu");
             chromeOptions.addArguments("--no-sandbox");
             chromeOptions.addArguments("--window-size=1920,1080");
-            chromeOptions.addArguments("--allow-insecure-localhost");
             driver = new ChromeDriver(chromeOptions);
         } else {
             driver = new ChromeDriver();
