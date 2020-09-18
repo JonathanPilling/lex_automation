@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
-  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Example test run]">
+  <test thread-count="5" verbose="0" name="Simple Test(failed)">
     <classes>
-      <class name="lex.tests.homepage.CRHomepageTests">
+      <class name="lex.tests.homepage.LexHomepageTests">
         <methods>
           <include name="beforeSuite"/>
-          <include name="canSeeGoDaddySeal"/>
+          <include name="canClickSignupLinkInImageRevealSection"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- lex.tests.homepage.CRHomepageTests -->
+      </class> <!-- lex.tests.homepage.LexHomepageTests -->
     </classes>
-  </test> <!-- Surefire test(failed) -->
-</suite> <!-- Failed suite [Surefire suite] -->
+  </test> <!-- Simple Test(failed) -->
+</suite> <!-- Failed suite [Example test run] -->

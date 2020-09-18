@@ -7,34 +7,9 @@
         <methods>
           <include name="beforeSuite"/>
           <include name="canClickSignupLinkInImageRevealSection"/>
-          <include name="canSeeGoDaddySeal"/>
           <include name="afterSuite"/>
         </methods>
       </class> <!-- lex.tests.homepage.LexHomepageTests -->
-      <class name="lex.tests.homepage.CRHomepageTests">
-        <methods>
-          <include name="canSubmitForm"/>
-          <include name="beforeSuite"/>
-          <include name="canSeeGoDaddySeal"/>
-          <include name="afterSuite"/>
-        </methods>
-      </class> <!-- lex.tests.homepage.CRHomepageTests -->
-      <class name="lex.tests.snapshot.CRSnapshotTests">
-        <methods>
-          <include name="canSeeGoDaddySeal"/>
-          <include name="beforeSuite"/>
-          <include name="canSubmitForm"/>
-          <include name="afterSuite"/>
-        </methods>
-      </class> <!-- lex.tests.snapshot.CRSnapshotTests -->
-      <class name="lex.tests.snapshot.LexSnapshotTests">
-        <methods>
-          <include name="beforeSuite"/>
-          <include name="canSeeGoDaddySeal"/>
-          <include name="afterSuite"/>
-          <include name="canSubmitForm"/>
-        </methods>
-      </class> <!-- lex.tests.snapshot.LexSnapshotTests -->
     </classes>
   </test> <!-- Simple Test(failed) -->
 </suite> <!-- Failed suite [Example test run] -->

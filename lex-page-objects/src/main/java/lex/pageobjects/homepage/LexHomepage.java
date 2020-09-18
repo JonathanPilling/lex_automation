@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class LexHomepage extends BasePage {
 
     private static String URL = "https://www.lexingtonlaw.com";
@@ -59,6 +61,9 @@ public class LexHomepage extends BasePage {
 
     @FindBy(css = "#client-reviews a.sign-up-cta")
     private WebElement signupClientReviewsLink;
+
+    @FindBy(css = "img[src='https://seal.godaddy.com/images/3/en/siteseal_gd_3_h_l_m.gif']")
+    private List<WebElement> goDaddyTest;
 
     public LexHomepage(WebDriver driver) throws InterruptedException {
         super(driver);
@@ -150,5 +155,7 @@ public class LexHomepage extends BasePage {
         return ourFirmURL;
     }
 
-
+    public boolean testGoDaddySeal() {
+        return goDaddyTest.size() != 0;
+    }
 }

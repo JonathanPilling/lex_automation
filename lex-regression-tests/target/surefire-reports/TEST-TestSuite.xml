@@ -1,296 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="329.07" tests="96" errors="0" skipped="29" failures="7">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="201.512" tests="68" errors="0" skipped="1" failures="0">
   <properties>
-    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="webdriver.chrome.driver" value="chromedriver"/>
+    <property name="webdriver.chrome.driver" value="drivers/chromedriver_mac"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/184973/lex_automation/lex-regression-tests/target/test-classes:/home/184973/lex_automation/lex-regression-tests/target/classes:/home/184973/lex_automation/lex-framework/target/classes:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/home/184973/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/184973/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/184973/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/home/184973/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/184973/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/184973/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/184973/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/184973/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/184973/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/184973/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/184973/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/home/184973/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/home/184973/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/home/184973/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-server/3.14.0/selenium-server-3.14.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/home/184973/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/184973/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar:/home/184973/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/home/184973/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar:/home/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.30/htmlunit-2.30.jar:/home/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.28/htmlunit-core-js-2.28.jar:/home/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit-cssparser/1.0.0/htmlunit-cssparser-1.0.0.jar:/home/184973/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.30/neko-htmlunit-2.30.jar:/home/184973/.m2/repository/org/apache/httpcomponents/httpmime/4.5.5/httpmime-4.5.5.jar:/home/184973/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.8.v20180619/jetty-repacked-9.4.8.v20180619.jar:/home/184973/.m2/repository/org/eclipse/jetty/jetty-client/9.4.8.v20180619/jetty-client-9.4.8.v20180619.jar:/home/184973/.m2/repository/org/eclipse/jetty/jetty-http/9.4.8.v20180619/jetty-http-9.4.8.v20180619.jar:/home/184973/.m2/repository/org/eclipse/jetty/jetty-io/9.4.8.v20180619/jetty-io-9.4.8.v20180619.jar:/home/184973/.m2/repository/org/eclipse/jetty/jetty-util/9.4.8.v20180619/jetty-util-9.4.8.v20180619.jar:/home/184973/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.8.v20180619/jetty-xml-9.4.8.v20180619.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.30.0/htmlunit-driver-2.30.0.jar:/home/184973/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.8.v20180619/websocket-api-9.4.8.v20180619.jar:/home/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.8.v20180619/websocket-client-9.4.8.v20180619.jar:/home/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.8.v20180619/websocket-common-9.4.8.v20180619.jar:/home/184973/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/home/184973/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/home/184973/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/home/184973/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/home/184973/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/home/184973/.m2/repository/io/github/bonigarcia/webdrivermanager/3.6.0/webdrivermanager-3.6.0.jar:/home/184973/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/home/184973/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/home/184973/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/home/184973/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/home/184973/lex_automation/lex-page-objects/target/classes:/home/184973/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/home/184973/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/home/184973/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/home/184973/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/home/184973/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/home/184973/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="java.class.path" value="/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/test-classes:/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/classes:/Users/184973/Documents/automation/lex_automation/lex-framework/target/classes:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/Users/184973/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/184973/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/184973/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/184973/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/184973/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/184973/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/184973/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/184973/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/184973/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/184973/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/184973/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/184973/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/184973/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/Users/184973/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-server/3.14.0/selenium-server-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/Users/184973/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/Users/184973/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar:/Users/184973/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/184973/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.30/htmlunit-2.30.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.28/htmlunit-core-js-2.28.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit-cssparser/1.0.0/htmlunit-cssparser-1.0.0.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.30/neko-htmlunit-2.30.jar:/Users/184973/.m2/repository/org/apache/httpcomponents/httpmime/4.5.5/httpmime-4.5.5.jar:/Users/184973/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.8.v20180619/jetty-repacked-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-client/9.4.8.v20180619/jetty-client-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-http/9.4.8.v20180619/jetty-http-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-io/9.4.8.v20180619/jetty-io-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-util/9.4.8.v20180619/jetty-util-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.8.v20180619/jetty-xml-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.30.0/htmlunit-driver-2.30.0.jar:/Users/184973/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.8.v20180619/websocket-api-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.8.v20180619/websocket-client-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.8.v20180619/websocket-common-9.4.8.v20180619.jar:/Users/184973/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/184973/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/184973/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/184973/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/184973/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/Users/184973/.m2/repository/io/github/bonigarcia/webdrivermanager/3.6.0/webdrivermanager-3.6.0.jar:/Users/184973/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/184973/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/184973/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/184973/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/184973/Documents/automation/lex_automation/lex-page-objects/target/classes:/Users/184973/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/184973/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/184973/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/184973/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/184973/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/Users/184973/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="user.timezone" value="America/Denver"/>
     <property name="java.vm.specification.version" value="1.8"/>
-    <property name="os.name" value="Linux"/>
+    <property name="os.name" value="Mac OS X"/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el7_8.x86_64/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home/184973/lex_automation/lex-regression-tests/target/surefire/surefirebooter6353022849466820429.jar /home/184973/lex_automation/lex-regression-tests/target/surefire 2020-09-16T12-31-20_222-jvmRun1 surefire3090904246385324513tmp surefire_05337131249200168909tmp"/>
-    <property name="surefire.test.class.path" value="/home/184973/lex_automation/lex-regression-tests/target/test-classes:/home/184973/lex_automation/lex-regression-tests/target/classes:/home/184973/lex_automation/lex-framework/target/classes:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/home/184973/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/184973/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/184973/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/home/184973/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/184973/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/184973/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/184973/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/184973/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/184973/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/184973/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/184973/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/home/184973/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/home/184973/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/home/184973/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-server/3.14.0/selenium-server-3.14.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/home/184973/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/home/184973/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar:/home/184973/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/home/184973/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar:/home/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.30/htmlunit-2.30.jar:/home/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.28/htmlunit-core-js-2.28.jar:/home/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit-cssparser/1.0.0/htmlunit-cssparser-1.0.0.jar:/home/184973/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.30/neko-htmlunit-2.30.jar:/home/184973/.m2/repository/org/apache/httpcomponents/httpmime/4.5.5/httpmime-4.5.5.jar:/home/184973/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.8.v20180619/jetty-repacked-9.4.8.v20180619.jar:/home/184973/.m2/repository/org/eclipse/jetty/jetty-client/9.4.8.v20180619/jetty-client-9.4.8.v20180619.jar:/home/184973/.m2/repository/org/eclipse/jetty/jetty-http/9.4.8.v20180619/jetty-http-9.4.8.v20180619.jar:/home/184973/.m2/repository/org/eclipse/jetty/jetty-io/9.4.8.v20180619/jetty-io-9.4.8.v20180619.jar:/home/184973/.m2/repository/org/eclipse/jetty/jetty-util/9.4.8.v20180619/jetty-util-9.4.8.v20180619.jar:/home/184973/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.8.v20180619/jetty-xml-9.4.8.v20180619.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.30.0/htmlunit-driver-2.30.0.jar:/home/184973/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.8.v20180619/websocket-api-9.4.8.v20180619.jar:/home/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.8.v20180619/websocket-client-9.4.8.v20180619.jar:/home/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.8.v20180619/websocket-common-9.4.8.v20180619.jar:/home/184973/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/home/184973/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/home/184973/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/home/184973/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/home/184973/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/home/184973/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/home/184973/.m2/repository/io/github/bonigarcia/webdrivermanager/3.6.0/webdrivermanager-3.6.0.jar:/home/184973/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/home/184973/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/home/184973/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/home/184973/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/home/184973/lex_automation/lex-page-objects/target/classes:/home/184973/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/home/184973/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/home/184973/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/home/184973/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/home/184973/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/home/184973/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/surefire/surefirebooter21075317615597528.jar /Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/surefire 2020-09-18T17-29-05_990-jvmRun1 surefire6119771135686218219tmp surefire_02900315035982394882tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/test-classes:/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/classes:/Users/184973/Documents/automation/lex_automation/lex-framework/target/classes:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/Users/184973/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/184973/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/184973/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/184973/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/184973/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/184973/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/184973/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/184973/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/184973/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/184973/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/184973/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/184973/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/184973/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/Users/184973/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-server/3.14.0/selenium-server-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/Users/184973/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/Users/184973/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar:/Users/184973/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/184973/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.30/htmlunit-2.30.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.28/htmlunit-core-js-2.28.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/htmlunit-cssparser/1.0.0/htmlunit-cssparser-1.0.0.jar:/Users/184973/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.30/neko-htmlunit-2.30.jar:/Users/184973/.m2/repository/org/apache/httpcomponents/httpmime/4.5.5/httpmime-4.5.5.jar:/Users/184973/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.8.v20180619/jetty-repacked-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-client/9.4.8.v20180619/jetty-client-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-http/9.4.8.v20180619/jetty-http-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-io/9.4.8.v20180619/jetty-io-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-util/9.4.8.v20180619/jetty-util-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.8.v20180619/jetty-xml-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.30.0/htmlunit-driver-2.30.0.jar:/Users/184973/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.8.v20180619/websocket-api-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.8.v20180619/websocket-client-9.4.8.v20180619.jar:/Users/184973/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.8.v20180619/websocket-common-9.4.8.v20180619.jar:/Users/184973/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/184973/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/184973/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/184973/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/184973/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Users/184973/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/Users/184973/.m2/repository/io/github/bonigarcia/webdrivermanager/3.6.0/webdrivermanager-3.6.0.jar:/Users/184973/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/184973/.m2/repository/org/rauschig/jarchivelib/1.0.0/jarchivelib-1.0.0.jar:/Users/184973/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/184973/.m2/repository/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar:/Users/184973/Documents/automation/lex_automation/lex-page-objects/target/classes:/Users/184973/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/184973/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/184973/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/184973/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/184973/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/Users/184973/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/home/184973"/>
+    <property name="user.home" value="/Users/184973"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.home" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el7_8.x86_64/jre"/>
-    <property name="basedir" value="/home/184973/lex_automation/lex-regression-tests"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/184973/Documents/automation/lex_automation/lex-regression-tests"/>
     <property name="file.separator" value="/"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/184973/lex_automation/lex-regression-tests/target/surefire/surefirebooter6353022849466820429.jar"/>
-    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el7_8.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el7_8.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el7_8.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el7_8.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el7_8.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el7_8.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el7_8.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el7_8.x86_64/jre/classes"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/184973/Documents/automation/lex_automation/lex-regression-tests/target/surefire/surefirebooter21075317615597528.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="1.8.0_262-b10"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_261-b12"/>
     <property name="user.name" value="184973"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="3.10.0-1127.el7.x86_64"/>
-    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el7_8.x86_64/jre/lib/endorsed"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="os.version" value="10.15.6"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="localRepository" value="/home/184973/.m2/repository"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/184973/.m2/repository"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="/tmp"/>
-    <property name="java.version" value="1.8.0_262"/>
-    <property name="user.dir" value="/home/184973/lex_automation/lex-regression-tests"/>
-    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/var/folders/2r/2bvglkkd41bghhc_kv80zccrb09gdy/T/"/>
+    <property name="java.version" value="1.8.0_261"/>
+    <property name="user.dir" value="/Users/184973/Documents/automation/lex_automation/lex-regression-tests"/>
+    <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
     <property name="sun.os.patch.level" value="unknown"/>
-    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.library.path" value="/Users/184973/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="25.262-b10"/>
-    <property name="java.ext.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el7_8.x86_64/jre/lib/ext:/usr/java/packages/lib/ext"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.vm.version" value="25.261-b12"/>
+    <property name="java.ext.dirs" value="/Users/184973/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_261.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="canClickGetStartedButtonInClientReviewsSection" classname="lex.tests.homepage.LexHomepageTests" time="2.234">
-    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 16573
+  <testcase name="canClickGetStartedButtonInClientReviewsSection" classname="lex.tests.homepage.LexHomepageTests" time="4.587">
+    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 17177
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1600471747.233][WARNING]: FromSockAddr failed on netmask
 ChromeDriver was started successfully.
-Sep 16, 2020 12:31:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 18, 2020 5:29:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="canClickGetStartedButtonInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="0.889"/>
-  <testcase name="canClickGetStartedButtonInImageRevealSection" classname="lex.tests.homepage.LexHomepageTests" time="0.834"/>
-  <testcase name="canClickGetStartedLinkInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="0.834"/>
-  <testcase name="canClickSeeMyCreditButton" classname="lex.tests.homepage.LexHomepageTests" time="0.89"/>
-  <testcase name="canClickSignupCreditCostLink" classname="lex.tests.homepage.LexHomepageTests" time="1.218"/>
-  <testcase name="canClickSignupLinkInClientReviewsSection" classname="lex.tests.homepage.LexHomepageTests" time="0.909"/>
-  <testcase name="canClickSignupLinkInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="0.92"/>
+  <testcase name="canClickGetStartedButtonInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="1.223"/>
+  <testcase name="canClickGetStartedButtonInImageRevealSection" classname="lex.tests.homepage.LexHomepageTests" time="2.117"/>
+  <testcase name="canClickGetStartedLinkInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="1.78"/>
+  <testcase name="canClickSeeMyCreditButton" classname="lex.tests.homepage.LexHomepageTests" time="1.528"/>
+  <testcase name="canClickSignupCreditCostLink" classname="lex.tests.homepage.LexHomepageTests" time="3.322"/>
+  <testcase name="canClickSignupLinkInClientReviewsSection" classname="lex.tests.homepage.LexHomepageTests" time="3.078"/>
+  <testcase name="canClickSignupLinkInHeroSection" classname="lex.tests.homepage.LexHomepageTests" time="1.881"/>
   <testcase name="canClickSignupLinkInImageRevealSection" classname="lex.tests.homepage.LexHomepageTests" time="0">
     <skipped message="expected [true] but found [false]"/>
   </testcase>
-  <testcase name="canClickSignupLinkInImageRevealSection" classname="lex.tests.homepage.LexHomepageTests" time="1.009"/>
-  <testcase name="canNavigateToCreditHelp" classname="lex.tests.homepage.LexHomepageTests" time="1.891"/>
-  <testcase name="canNavigateToCreditRepair" classname="lex.tests.homepage.LexHomepageTests" time="0.691">
+  <testcase name="canClickSignupLinkInImageRevealSection" classname="lex.tests.homepage.LexHomepageTests" time="1.987"/>
+  <testcase name="canNavigateToCreditHelp" classname="lex.tests.homepage.LexHomepageTests" time="3.087"/>
+  <testcase name="canNavigateToCreditRepair" classname="lex.tests.homepage.LexHomepageTests" time="1.573">
     <system-out><![CDATA[https://www.lexingtonlaw.com/credit-repair-services
 ]]></system-out>
   </testcase>
-  <testcase name="canNavigateToOurFirm" classname="lex.tests.homepage.LexHomepageTests" time="1.056"/>
-  <testcase name="canNavigateToSignUp" classname="lex.tests.homepage.LexHomepageTests" time="0.943"/>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.homepage.LexHomepageTests" time="0">
-    <skipped message="expected [true] but found [false]"/>
-  </testcase>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.homepage.LexHomepageTests" time="0">
-    <skipped message="expected [true] but found [false]"/>
-  </testcase>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.homepage.LexHomepageTests" time="0">
-    <skipped message="expected [true] but found [false]"/>
-  </testcase>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.homepage.LexHomepageTests" time="0">
-    <skipped message="expected [true] but found [false]"/>
-  </testcase>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.homepage.LexHomepageTests" time="5.456">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at lex.tests.homepage.LexHomepageTests.canSeeGoDaddySeal(LexHomepageTests.java:221)
-]]></failure>
-  </testcase>
-  <testcase name="isAtHomepage" classname="lex.tests.homepage.LexHomepageTests" time="0.231"/>
-  <testcase name="canClickGetStartedHero" classname="lex.tests.homepage.CRHomepageTests" time="4.779">
-    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 2162
+  <testcase name="canNavigateToOurFirm" classname="lex.tests.homepage.LexHomepageTests" time="1.936"/>
+  <testcase name="canNavigateToSignUp" classname="lex.tests.homepage.LexHomepageTests" time="1.965"/>
+  <testcase name="canSeeGoDaddySeal" classname="lex.tests.homepage.LexHomepageTests" time="1.453"/>
+  <testcase name="isAtHomepage" classname="lex.tests.homepage.LexHomepageTests" time="0.475"/>
+  <testcase name="canClickGetStartedHero" classname="lex.tests.homepage.CRHomepageTests" time="7.565">
+    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 32051
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1600471780.863][WARNING]: FromSockAddr failed on netmask
 ChromeDriver was started successfully.
-Sep 16, 2020 12:32:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 18, 2020 5:29:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="canClickGetStartedInCostSection" classname="lex.tests.homepage.CRHomepageTests" time="2.79"/>
-  <testcase name="canClickGetStartedInHardWorkSection" classname="lex.tests.homepage.CRHomepageTests" time="2.443"/>
-  <testcase name="canClickGetStartedInHowCreditRepairWorksSection" classname="lex.tests.homepage.CRHomepageTests" time="3.082"/>
-  <testcase name="canClickGetStartedInModal" classname="lex.tests.homepage.CRHomepageTests" time="2.243"/>
-  <testcase name="canClickLoginButton" classname="lex.tests.homepage.CRHomepageTests" time="3.026"/>
-  <testcase name="canClickSignupHero" classname="lex.tests.homepage.CRHomepageTests" time="2.27"/>
-  <testcase name="canClickSignupInCostSection" classname="lex.tests.homepage.CRHomepageTests" time="1.881"/>
-  <testcase name="canClickSignupInHardWorkSection" classname="lex.tests.homepage.CRHomepageTests" time="2.424"/>
-  <testcase name="canClickSignupInHowCreditRepairWorksSection" classname="lex.tests.homepage.CRHomepageTests" time="2.044"/>
-  <testcase name="canClickSignupInModal" classname="lex.tests.homepage.CRHomepageTests" time="1.838"/>
-  <testcase name="canClickSignupInTopNav" classname="lex.tests.homepage.CRHomepageTests" time="1.961"/>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.homepage.CRHomepageTests" time="0">
-    <skipped message="expected [true] but found [false]"/>
-  </testcase>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.homepage.CRHomepageTests" time="0">
-    <skipped message="expected [true] but found [false]"/>
-  </testcase>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.homepage.CRHomepageTests" time="0">
-    <skipped message="expected [true] but found [false]"/>
-  </testcase>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.homepage.CRHomepageTests" time="0">
-    <skipped message="expected [true] but found [false]"/>
-  </testcase>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.homepage.CRHomepageTests" time="6.019">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at lex.tests.homepage.CRHomepageTests.canSeeGoDaddySeal(CRHomepageTests.java:228)
-]]></failure>
-  </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.homepage.CRHomepageTests" time="0">
-    <skipped message="Expected condition failed: waiting for url to contain &quot;https://www.creditrepair.com/credit-snapshot/rp&quot;. Current url: &quot;https://www.creditrepair.com/&quot; (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;martech-d01.vwsl.pgx.local&apos;, ip: &apos;10.40.30.83&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.10.0-1127.el7.x86_64&apos;, java.version: &apos;1.8.0_262&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.ndAobL}, goog:chromeOptions: {debuggerAddress: localhost:43355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: b9176c332569584fe8b19c2ad7b25c04"/>
-  </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.homepage.CRHomepageTests" time="0">
-    <skipped message="Expected condition failed: waiting for url to contain &quot;https://www.creditrepair.com/credit-snapshot/rp&quot;. Current url: &quot;https://www.creditrepair.com/&quot; (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;martech-d01.vwsl.pgx.local&apos;, ip: &apos;10.40.30.83&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.10.0-1127.el7.x86_64&apos;, java.version: &apos;1.8.0_262&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.ndAobL}, goog:chromeOptions: {debuggerAddress: localhost:43355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: b9176c332569584fe8b19c2ad7b25c04"/>
-  </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.homepage.CRHomepageTests" time="0">
-    <skipped message="Expected condition failed: waiting for url to contain &quot;https://www.creditrepair.com/credit-snapshot/rp&quot;. Current url: &quot;https://www.creditrepair.com/&quot; (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;martech-d01.vwsl.pgx.local&apos;, ip: &apos;10.40.30.83&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.10.0-1127.el7.x86_64&apos;, java.version: &apos;1.8.0_262&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.ndAobL}, goog:chromeOptions: {debuggerAddress: localhost:43355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: b9176c332569584fe8b19c2ad7b25c04"/>
-  </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.homepage.CRHomepageTests" time="0">
-    <skipped message="Expected condition failed: waiting for url to contain &quot;https://www.creditrepair.com/credit-snapshot/rp&quot;. Current url: &quot;https://www.creditrepair.com/&quot; (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;martech-d01.vwsl.pgx.local&apos;, ip: &apos;10.40.30.83&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.10.0-1127.el7.x86_64&apos;, java.version: &apos;1.8.0_262&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.ndAobL}, goog:chromeOptions: {debuggerAddress: localhost:43355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: b9176c332569584fe8b19c2ad7b25c04"/>
-  </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.homepage.CRHomepageTests" time="7.072">
-    <failure message="Expected condition failed: waiting for url to contain &quot;https://www.creditrepair.com/credit-snapshot/rp&quot;. Current url: &quot;https://www.creditrepair.com/&quot; (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;martech-d01.vwsl.pgx.local&apos;, ip: &apos;10.40.30.83&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.10.0-1127.el7.x86_64&apos;, java.version: &apos;1.8.0_262&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.ndAobL}, goog:chromeOptions: {debuggerAddress: localhost:43355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: b9176c332569584fe8b19c2ad7b25c04" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for url to contain "https://www.creditrepair.com/credit-snapshot/rp". Current url: "https://www.creditrepair.com/" (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'martech-d01.vwsl.pgx.local', ip: '10.40.30.83', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1127.el7.x86_64', java.version: '1.8.0_262'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.ndAobL}, goog:chromeOptions: {debuggerAddress: localhost:43355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b9176c332569584fe8b19c2ad7b25c04
-	at lex.tests.homepage.CRHomepageTests.canSubmitForm(CRHomepageTests.java:117)
-]]></failure>
-  </testcase>
-  <testcase name="canClickCheckYourCreditNowCTA" classname="lex.tests.snapshot.LexSnapshotTests" time="3.048">
-    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 21340
+  <testcase name="canClickGetStartedInCostSection" classname="lex.tests.homepage.CRHomepageTests" time="3.061"/>
+  <testcase name="canClickGetStartedInHardWorkSection" classname="lex.tests.homepage.CRHomepageTests" time="2.752"/>
+  <testcase name="canClickGetStartedInHowCreditRepairWorksSection" classname="lex.tests.homepage.CRHomepageTests" time="2.996"/>
+  <testcase name="canClickGetStartedInModal" classname="lex.tests.homepage.CRHomepageTests" time="5.174"/>
+  <testcase name="canClickLoginButton" classname="lex.tests.homepage.CRHomepageTests" time="3.816"/>
+  <testcase name="canClickSignupHero" classname="lex.tests.homepage.CRHomepageTests" time="2.718"/>
+  <testcase name="canClickSignupInCostSection" classname="lex.tests.homepage.CRHomepageTests" time="3.197"/>
+  <testcase name="canClickSignupInHardWorkSection" classname="lex.tests.homepage.CRHomepageTests" time="2.42"/>
+  <testcase name="canClickSignupInHowCreditRepairWorksSection" classname="lex.tests.homepage.CRHomepageTests" time="2.95"/>
+  <testcase name="canClickSignupInModal" classname="lex.tests.homepage.CRHomepageTests" time="2.523"/>
+  <testcase name="canClickSignupInTopNav" classname="lex.tests.homepage.CRHomepageTests" time="2.526"/>
+  <testcase name="canSeeGoDaddySeal" classname="lex.tests.homepage.CRHomepageTests" time="1.682"/>
+  <testcase name="canSubmitForm" classname="lex.tests.homepage.CRHomepageTests" time="6.147"/>
+  <testcase name="canClickCheckYourCreditNowCTA" classname="lex.tests.snapshot.LexSnapshotTests" time="4.579">
+    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 26461
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1600471830.998][WARNING]: FromSockAddr failed on netmask
 ChromeDriver was started successfully.
-Sep 16, 2020 12:33:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 18, 2020 5:30:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="canClickCheckYourCreditNowInModal" classname="lex.tests.snapshot.LexSnapshotTests" time="1.834"/>
-  <testcase name="canClickGetStartedInKnowYourCreditScore" classname="lex.tests.snapshot.LexSnapshotTests" time="2.011"/>
-  <testcase name="canClickGetStartedNowInHowItWorks" classname="lex.tests.snapshot.LexSnapshotTests" time="1.868"/>
-  <testcase name="canClickLoginButton" classname="lex.tests.snapshot.LexSnapshotTests" time="1.942"/>
-  <testcase name="canClickSeeYourCreditNowInFAQ" classname="lex.tests.snapshot.LexSnapshotTests" time="2.094"/>
-  <testcase name="canClickSignupCTA" classname="lex.tests.snapshot.LexSnapshotTests" time="1.97"/>
-  <testcase name="canClickSignupInFAQ" classname="lex.tests.snapshot.LexSnapshotTests" time="1.933"/>
-  <testcase name="canClickSignupInHeroImage" classname="lex.tests.snapshot.LexSnapshotTests" time="1.905"/>
-  <testcase name="canClickSignupInHowItWorks" classname="lex.tests.snapshot.LexSnapshotTests" time="1.958"/>
-  <testcase name="canClickSignupInKnowYourCreditScore" classname="lex.tests.snapshot.LexSnapshotTests" time="1.876"/>
-  <testcase name="canClickSignupInModal" classname="lex.tests.snapshot.LexSnapshotTests" time="1.901"/>
-  <testcase name="canClickStartNowInHeader" classname="lex.tests.snapshot.LexSnapshotTests" time="1.83"/>
-  <testcase name="canClickStartNowInHeroImage" classname="lex.tests.snapshot.LexSnapshotTests" time="1.801"/>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.snapshot.LexSnapshotTests" time="0">
-    <skipped message="expected [true] but found [false]"/>
-  </testcase>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.snapshot.LexSnapshotTests" time="0">
-    <skipped message="expected [true] but found [false]"/>
-  </testcase>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.snapshot.LexSnapshotTests" time="0">
-    <skipped message="expected [true] but found [false]"/>
-  </testcase>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.snapshot.LexSnapshotTests" time="0">
-    <skipped message="expected [true] but found [false]"/>
-  </testcase>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.snapshot.LexSnapshotTests" time="6.087">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at lex.tests.snapshot.LexSnapshotTests.canSeeGoDaddySeal(LexSnapshotTests.java:260)
-]]></failure>
-  </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.snapshot.LexSnapshotTests" time="0">
-    <skipped message="Expected condition failed: waiting for url to contain &quot;https://www.lexingtonlaw.com/credit-snapshot/rp&quot;. Current url: &quot;https://www.lexingtonlaw.com/l/credit-snapshot&quot; (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;martech-d01.vwsl.pgx.local&apos;, ip: &apos;10.40.30.83&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.10.0-1127.el7.x86_64&apos;, java.version: &apos;1.8.0_262&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.86ERb0}, goog:chromeOptions: {debuggerAddress: localhost:38456}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 721ff7d1cc48fb7feee05629981291a1"/>
-  </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.snapshot.LexSnapshotTests" time="0">
-    <skipped message="Expected condition failed: waiting for url to contain &quot;https://www.lexingtonlaw.com/credit-snapshot/rp&quot;. Current url: &quot;https://www.lexingtonlaw.com/l/credit-snapshot&quot; (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;martech-d01.vwsl.pgx.local&apos;, ip: &apos;10.40.30.83&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.10.0-1127.el7.x86_64&apos;, java.version: &apos;1.8.0_262&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.86ERb0}, goog:chromeOptions: {debuggerAddress: localhost:38456}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 721ff7d1cc48fb7feee05629981291a1"/>
-  </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.snapshot.LexSnapshotTests" time="0">
-    <skipped message="Expected condition failed: waiting for url to contain &quot;https://www.lexingtonlaw.com/credit-snapshot/rp&quot;. Current url: &quot;https://www.lexingtonlaw.com/l/credit-snapshot&quot; (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;martech-d01.vwsl.pgx.local&apos;, ip: &apos;10.40.30.83&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.10.0-1127.el7.x86_64&apos;, java.version: &apos;1.8.0_262&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.86ERb0}, goog:chromeOptions: {debuggerAddress: localhost:38456}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 721ff7d1cc48fb7feee05629981291a1"/>
-  </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.snapshot.LexSnapshotTests" time="0">
-    <skipped message="Expected condition failed: waiting for url to contain &quot;https://www.lexingtonlaw.com/credit-snapshot/rp&quot;. Current url: &quot;https://www.lexingtonlaw.com/l/credit-snapshot&quot; (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;martech-d01.vwsl.pgx.local&apos;, ip: &apos;10.40.30.83&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.10.0-1127.el7.x86_64&apos;, java.version: &apos;1.8.0_262&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.86ERb0}, goog:chromeOptions: {debuggerAddress: localhost:38456}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 721ff7d1cc48fb7feee05629981291a1"/>
-  </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.snapshot.LexSnapshotTests" time="6.829">
-    <failure message="Expected condition failed: waiting for url to contain &quot;https://www.lexingtonlaw.com/credit-snapshot/rp&quot;. Current url: &quot;https://www.lexingtonlaw.com/l/credit-snapshot&quot; (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;martech-d01.vwsl.pgx.local&apos;, ip: &apos;10.40.30.83&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.10.0-1127.el7.x86_64&apos;, java.version: &apos;1.8.0_262&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.86ERb0}, goog:chromeOptions: {debuggerAddress: localhost:38456}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 721ff7d1cc48fb7feee05629981291a1" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for url to contain "https://www.lexingtonlaw.com/credit-snapshot/rp". Current url: "https://www.lexingtonlaw.com/l/credit-snapshot" (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'martech-d01.vwsl.pgx.local', ip: '10.40.30.83', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1127.el7.x86_64', java.version: '1.8.0_262'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.86ERb0}, goog:chromeOptions: {debuggerAddress: localhost:38456}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 721ff7d1cc48fb7feee05629981291a1
-	at lex.tests.snapshot.LexSnapshotTests.canSubmitForm(LexSnapshotTests.java:245)
-]]></failure>
-  </testcase>
-  <testcase name="canClickCheckYourCreditNowInHeroImage" classname="lex.tests.snapshot.CRSnapshotTests" time="2.856">
-    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 17871
+  <testcase name="canClickCheckYourCreditNowInModal" classname="lex.tests.snapshot.LexSnapshotTests" time="2.919"/>
+  <testcase name="canClickGetStartedInKnowYourCreditScore" classname="lex.tests.snapshot.LexSnapshotTests" time="2.721"/>
+  <testcase name="canClickGetStartedNowInHowItWorks" classname="lex.tests.snapshot.LexSnapshotTests" time="3.345"/>
+  <testcase name="canClickLoginButton" classname="lex.tests.snapshot.LexSnapshotTests" time="2.238"/>
+  <testcase name="canClickSeeYourCreditNowInFAQ" classname="lex.tests.snapshot.LexSnapshotTests" time="3.484"/>
+  <testcase name="canClickSignupCTA" classname="lex.tests.snapshot.LexSnapshotTests" time="2.222"/>
+  <testcase name="canClickSignupInFAQ" classname="lex.tests.snapshot.LexSnapshotTests" time="5.897"/>
+  <testcase name="canClickSignupInHeroImage" classname="lex.tests.snapshot.LexSnapshotTests" time="5.298"/>
+  <testcase name="canClickSignupInHowItWorks" classname="lex.tests.snapshot.LexSnapshotTests" time="2.53"/>
+  <testcase name="canClickSignupInKnowYourCreditScore" classname="lex.tests.snapshot.LexSnapshotTests" time="5.534"/>
+  <testcase name="canClickSignupInModal" classname="lex.tests.snapshot.LexSnapshotTests" time="5.148"/>
+  <testcase name="canClickStartNowInHeader" classname="lex.tests.snapshot.LexSnapshotTests" time="3.376"/>
+  <testcase name="canClickStartNowInHeroImage" classname="lex.tests.snapshot.LexSnapshotTests" time="4.244"/>
+  <testcase name="canSeeGoDaddySeal" classname="lex.tests.snapshot.LexSnapshotTests" time="2.381"/>
+  <testcase name="canSubmitForm" classname="lex.tests.snapshot.LexSnapshotTests" time="6.404"/>
+  <testcase name="canClickCheckYourCreditNowInHeroImage" classname="lex.tests.snapshot.CRSnapshotTests" time="8.103">
+    <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 4839
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1600471893.970][WARNING]: FromSockAddr failed on netmask
 ChromeDriver was started successfully.
-Sep 16, 2020 12:35:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Sep 18, 2020 5:31:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="canClickGetStartedCTA" classname="lex.tests.snapshot.CRSnapshotTests" time="2.905"/>
-  <testcase name="canClickGetStartedInKnowYourCreditScore" classname="lex.tests.snapshot.CRSnapshotTests" time="2.191"/>
-  <testcase name="canClickGetStartedInModal" classname="lex.tests.snapshot.CRSnapshotTests" time="2.883"/>
-  <testcase name="canClickGetStartedNowInClientReviews" classname="lex.tests.snapshot.CRSnapshotTests" time="2.895"/>
-  <testcase name="canClickLoginButton" classname="lex.tests.snapshot.CRSnapshotTests" time="3.073"/>
-  <testcase name="canClickSignupCTA" classname="lex.tests.snapshot.CRSnapshotTests" time="1.871"/>
-  <testcase name="canClickSignupInClientReviews" classname="lex.tests.snapshot.CRSnapshotTests" time="1.735"/>
-  <testcase name="canClickSignupInHeroImage" classname="lex.tests.snapshot.CRSnapshotTests" time="1.487"/>
-  <testcase name="canClickSignupInKnowYourCreditScore" classname="lex.tests.snapshot.CRSnapshotTests" time="1.605"/>
-  <testcase name="canClickSignupInModal" classname="lex.tests.snapshot.CRSnapshotTests" time="1.449"/>
-  <testcase name="canClickStartNowInHeader" classname="lex.tests.snapshot.CRSnapshotTests" time="1.616"/>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
-    <skipped message="expected [true] but found [false]"/>
-  </testcase>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
-    <skipped message="expected [true] but found [false]"/>
-  </testcase>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
-    <skipped message="expected [true] but found [false]"/>
-  </testcase>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
-    <skipped message="expected [true] but found [false]"/>
-  </testcase>
-  <testcase name="canSeeGoDaddySeal" classname="lex.tests.snapshot.CRSnapshotTests" time="6">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at lex.tests.snapshot.CRSnapshotTests.canSeeGoDaddySeal(CRSnapshotTests.java:228)
-]]></failure>
-  </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
-    <skipped message="Expected condition failed: waiting for url to contain &quot;https://www.creditrepair.com/credit-snapshot/rp&quot;. Current url: &quot;https://www.creditrepair.com/b/credit-snapshot&quot; (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;martech-d01.vwsl.pgx.local&apos;, ip: &apos;10.40.30.83&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.10.0-1127.el7.x86_64&apos;, java.version: &apos;1.8.0_262&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.X5aDPd}, goog:chromeOptions: {debuggerAddress: localhost:34798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 37d967e63fe1726e2ee3b5a40ffbc376"/>
-  </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
-    <skipped message="Expected condition failed: waiting for url to contain &quot;https://www.creditrepair.com/credit-snapshot/rp&quot;. Current url: &quot;https://www.creditrepair.com/b/credit-snapshot&quot; (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;martech-d01.vwsl.pgx.local&apos;, ip: &apos;10.40.30.83&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.10.0-1127.el7.x86_64&apos;, java.version: &apos;1.8.0_262&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.X5aDPd}, goog:chromeOptions: {debuggerAddress: localhost:34798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 37d967e63fe1726e2ee3b5a40ffbc376"/>
-  </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
-    <skipped message="Expected condition failed: waiting for url to contain &quot;https://www.creditrepair.com/credit-snapshot/rp&quot;. Current url: &quot;https://www.creditrepair.com/b/credit-snapshot&quot; (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;martech-d01.vwsl.pgx.local&apos;, ip: &apos;10.40.30.83&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.10.0-1127.el7.x86_64&apos;, java.version: &apos;1.8.0_262&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.X5aDPd}, goog:chromeOptions: {debuggerAddress: localhost:34798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 37d967e63fe1726e2ee3b5a40ffbc376"/>
-  </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.snapshot.CRSnapshotTests" time="0">
-    <skipped message="Expected condition failed: waiting for url to contain &quot;https://www.creditrepair.com/credit-snapshot/rp&quot;. Current url: &quot;https://www.creditrepair.com/b/credit-snapshot&quot; (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;martech-d01.vwsl.pgx.local&apos;, ip: &apos;10.40.30.83&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.10.0-1127.el7.x86_64&apos;, java.version: &apos;1.8.0_262&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.X5aDPd}, goog:chromeOptions: {debuggerAddress: localhost:34798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 37d967e63fe1726e2ee3b5a40ffbc376"/>
-  </testcase>
-  <testcase name="canSubmitForm" classname="lex.tests.snapshot.CRSnapshotTests" time="6.804">
-    <failure message="Expected condition failed: waiting for url to contain &quot;https://www.creditrepair.com/credit-snapshot/rp&quot;. Current url: &quot;https://www.creditrepair.com/b/credit-snapshot&quot; (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;martech-d01.vwsl.pgx.local&apos;, ip: &apos;10.40.30.83&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.10.0-1127.el7.x86_64&apos;, java.version: &apos;1.8.0_262&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.X5aDPd}, goog:chromeOptions: {debuggerAddress: localhost:34798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 37d967e63fe1726e2ee3b5a40ffbc376" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for url to contain "https://www.creditrepair.com/credit-snapshot/rp". Current url: "https://www.creditrepair.com/b/credit-snapshot" (tried for 5 second(s) with 100 milliseconds interval)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'martech-d01.vwsl.pgx.local', ip: '10.40.30.83', os.name: 'Linux', os.arch: 'amd64', os.version: '3.10.0-1127.el7.x86_64', java.version: '1.8.0_262'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /tmp/.com.google.Chrome.X5aDPd}, goog:chromeOptions: {debuggerAddress: localhost:34798}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 37d967e63fe1726e2ee3b5a40ffbc376
-	at lex.tests.snapshot.CRSnapshotTests.canSubmitForm(CRSnapshotTests.java:213)
-]]></failure>
-  </testcase>
-  <testcase name="creditRepairLandingPageStatusCodeIsOk" classname="lex.tests.http.HttpTests" time="0.788"/>
-  <testcase name="creditRepairSignupStatusCodeIsOk" classname="lex.tests.http.HttpTests" time="0.459"/>
-  <testcase name="creditRepairSnapshotStatusCodeIsOk" classname="lex.tests.http.HttpTests" time="0.442"/>
-  <testcase name="creditRepairStatusCodeIsOk" classname="lex.tests.http.HttpTests" time="0.497"/>
-  <testcase name="lexHomepageStatusCodeIsOk" classname="lex.tests.http.HttpTests" time="0.5"/>
-  <testcase name="lexLandingPageStatusCodeIsOk" classname="lex.tests.http.HttpTests" time="0.44"/>
-  <testcase name="lexSignupStatusCodeIsOk" classname="lex.tests.http.HttpTests" time="0.441"/>
-  <testcase name="lexSnapshotStatusCodeIsOk" classname="lex.tests.http.HttpTests" time="0.441"/>
+  <testcase name="canClickGetStartedCTA" classname="lex.tests.snapshot.CRSnapshotTests" time="2.736"/>
+  <testcase name="canClickGetStartedInKnowYourCreditScore" classname="lex.tests.snapshot.CRSnapshotTests" time="2.511"/>
+  <testcase name="canClickGetStartedInModal" classname="lex.tests.snapshot.CRSnapshotTests" time="2.441"/>
+  <testcase name="canClickGetStartedNowInClientReviews" classname="lex.tests.snapshot.CRSnapshotTests" time="2.413"/>
+  <testcase name="canClickLoginButton" classname="lex.tests.snapshot.CRSnapshotTests" time="4.395"/>
+  <testcase name="canClickSignupCTA" classname="lex.tests.snapshot.CRSnapshotTests" time="3.775"/>
+  <testcase name="canClickSignupInClientReviews" classname="lex.tests.snapshot.CRSnapshotTests" time="2.667"/>
+  <testcase name="canClickSignupInHeroImage" classname="lex.tests.snapshot.CRSnapshotTests" time="3.204"/>
+  <testcase name="canClickSignupInKnowYourCreditScore" classname="lex.tests.snapshot.CRSnapshotTests" time="2.386"/>
+  <testcase name="canClickSignupInModal" classname="lex.tests.snapshot.CRSnapshotTests" time="3.203"/>
+  <testcase name="canClickStartNowInHeader" classname="lex.tests.snapshot.CRSnapshotTests" time="4.532"/>
+  <testcase name="canSeeGoDaddySeal" classname="lex.tests.snapshot.CRSnapshotTests" time="1.626"/>
+  <testcase name="canSubmitForm" classname="lex.tests.snapshot.CRSnapshotTests" time="5.987"/>
+  <testcase name="creditRepairLandingPageStatusCodeIsOk" classname="lex.tests.http.HttpTests" time="0.863"/>
+  <testcase name="creditRepairSignupStatusCodeIsOk" classname="lex.tests.http.HttpTests" time="0.366"/>
+  <testcase name="creditRepairSnapshotStatusCodeIsOk" classname="lex.tests.http.HttpTests" time="0.434"/>
+  <testcase name="creditRepairStatusCodeIsOk" classname="lex.tests.http.HttpTests" time="0.427"/>
+  <testcase name="lexHomepageStatusCodeIsOk" classname="lex.tests.http.HttpTests" time="0.129"/>
+  <testcase name="lexLandingPageStatusCodeIsOk" classname="lex.tests.http.HttpTests" time="0.387"/>
+  <testcase name="lexSignupStatusCodeIsOk" classname="lex.tests.http.HttpTests" time="0.367"/>
+  <testcase name="lexSnapshotStatusCodeIsOk" classname="lex.tests.http.HttpTests" time="0.366"/>
 </testsuite>
