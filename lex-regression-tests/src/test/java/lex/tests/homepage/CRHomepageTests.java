@@ -106,6 +106,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
+    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canSubmitForm() throws InterruptedException, IOException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
