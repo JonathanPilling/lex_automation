@@ -115,6 +115,8 @@ public class CRHomepageTests extends BaseTest {
         myPage.sendZipCode("84103");
         myPage.clickSubmitButton();
         myPage.waitForURLToContain(myPage.getReportPullURL());
+        // Testing
+        System.out.println(getDriver().getPageSource());
 
         // assert
         Assert.assertTrue(myPage.isAtReportPull()); // Sometimes we won't go to report pull? Probably target

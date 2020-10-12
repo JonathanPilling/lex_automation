@@ -224,17 +224,5 @@ public class LexHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
-    public void canSeeGoDaddySeal2() throws InterruptedException {
-        // arrange
-        LexHomepage myPage = new LexHomepage(getDriver());
-
-        // act/assert
-        Assert.assertTrue(myPage.testGoDaddySeal());
-
-        // clean up
-        myPage.goHome();
-    }
-
 }
 
