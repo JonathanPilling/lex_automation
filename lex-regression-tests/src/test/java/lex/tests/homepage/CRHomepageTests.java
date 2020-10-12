@@ -2,8 +2,14 @@ package lex.tests.homepage;
 
 import lex.framework.core.BaseTest;
 import lex.pageobjects.homepage.CRHomepage;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.io.File;
+import java.io.IOException;
 
 public class CRHomepageTests extends BaseTest {
     @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
@@ -101,7 +107,7 @@ public class CRHomepageTests extends BaseTest {
     }
 
     @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
-    public void canSubmitForm() throws InterruptedException {
+    public void canSubmitForm() throws InterruptedException, IOException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
 
@@ -115,8 +121,13 @@ public class CRHomepageTests extends BaseTest {
         myPage.sendZipCode("84103");
         myPage.clickSubmitButton();
         myPage.waitForURLToContain(myPage.getReportPullURL());
-        // Testing
-        System.out.println(getDriver().getPageSource());
+
+        // screenshot code, new helper method?
+        TakesScreenshot ts = (TakesScreenshot)getDriver();
+        File source = ts.getScreenshotAs(OutputType.FILE);
+        String dest = "~/screenshots/test.png";
+        File destination = new File(dest);
+        FileUtils.copyFile(source, destination);
 
         // assert
         Assert.assertTrue(myPage.isAtReportPull()); // Sometimes we won't go to report pull? Probably target
