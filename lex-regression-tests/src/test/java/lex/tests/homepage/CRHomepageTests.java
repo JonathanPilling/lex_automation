@@ -2,13 +2,10 @@ package lex.tests.homepage;
 
 import lex.framework.core.BaseTest;
 import lex.pageobjects.homepage.CRHomepage;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import java.io.File;
 import java.io.IOException;
 
 public class CRHomepageTests extends BaseTest {
@@ -118,16 +115,10 @@ public class CRHomepageTests extends BaseTest {
         myPage.sendEmail(myPage.generateUniqueEmail());
         myPage.sendPhone("1234567899");
         myPage.sendStreetAddress("123 R");
-        myPage.sendZipCode("84103");
+        myPage. sendZipCode("84103");
         myPage.clickSubmitButton();
         myPage.waitForURLToContain(myPage.getReportPullURL());
-
-        // screenshot code, new helper method?
-        TakesScreenshot ts = (TakesScreenshot)getDriver();
-        File source = ts.getScreenshotAs(OutputType.FILE);
-        String dest = "~/screenshots/test.png";
-        File destination = new File(dest);
-        FileUtils.copyFile(source, destination);
+        Reporter.log(getDriver().getPageSource(), true);
 
         // assert
         Assert.assertTrue(myPage.isAtReportPull()); // Sometimes we won't go to report pull? Probably target
