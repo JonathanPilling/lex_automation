@@ -26,7 +26,6 @@ public class BaseTest {
             chromeOptions.addArguments("--headless");
             chromeOptions.addArguments("--no-sandbox");
             chromeOptions.addArguments("--window-size=1920,1080");
-            chromeOptions.addArguments("--screenshot");
             driver = new ChromeDriver(chromeOptions);
         } else {
             driver = new ChromeDriver();
