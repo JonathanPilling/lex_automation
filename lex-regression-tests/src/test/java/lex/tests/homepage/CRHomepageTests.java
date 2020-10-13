@@ -106,20 +106,32 @@ public class CRHomepageTests extends BaseTest {
     public void canSubmitForm() throws InterruptedException, IOException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
+        String firstName = "asdf";
+        String lastName = "asdf";
+        String email = myPage.generateUniqueEmail();
+        String phone = "1234567899";
+        String address = "123 R";
+        String zip = "84010";
 
         // act
         myPage.clickModalCloseButton();
-        myPage.sendFirstName("asdf");
-        myPage.sendLastName("asdf");
-        myPage.sendEmail(myPage.generateUniqueEmail());
-        myPage.sendPhone("1234567899");
-        myPage.sendStreetAddress("123 R");
-        myPage.sendZipCode("84010");
-        myPage.clickSubmitButton();
+        myPage.sendFirstName(firstName);
+        myPage.sendLastName(lastName);
+        myPage.sendEmail(email);
+        myPage.sendPhone(phone);
+        myPage.sendStreetAddress(address);
+        myPage.sendZipCode(zip);
         //myPage.waitForURLToContain(myPage.getReportPullURL());
 
         // assert
-        Assert.assertEquals("", getDriver().getPageSource());
+        Assert.assertEquals(firstName, myPage.getFirstName());
+        Assert.assertEquals(lastName, myPage.getLastName());
+        Assert.assertEquals(email, myPage.getEmail());
+        //Assert.assertEquals(phone, myPage.getPhone());
+        Assert.assertEquals(address, myPage.getAddress());
+        Assert.assertEquals(zip, myPage.getZipCode());
+        myPage.clickSubmitButton();
+        myPage.waitForURLToContain(myPage.getReportPullURL());
         Assert.assertTrue(myPage.isAtReportPull()); // Sometimes we won't go to report pull? Probably target
 
         // clean up

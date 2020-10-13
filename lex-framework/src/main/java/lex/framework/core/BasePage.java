@@ -109,6 +109,30 @@ public class BasePage {
         zipCode.sendKeys(input);
     }
 
+    public String getFirstName() {
+        return firstName.getAttribute("value");
+    }
+
+    public String getLastName() {
+        return lastName.getAttribute("value");
+    }
+
+    public String getPhone() {
+        return phone.getAttribute("value");
+    }
+
+    public String getAddress() {
+        return streetAddress.getAttribute("value");
+    }
+
+    public String getZipCode() {
+        return zipCode.getAttribute("value");
+    }
+
+    public String getEmail() {
+        return email.getAttribute("value");
+    }
+
     // check go daddy seal
     public boolean goDaddyIsVisible() {
         return goDaddySeal.size() != 0;
