@@ -116,7 +116,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.sendStreetAddress("123 R");
         myPage.sendZipCode("84010");
         myPage.clickSubmitButton();
-        myPage.waitForURLToContain(myPage.getReportPullURL());
+        //myPage.waitForURLToContain(myPage.getReportPullURL());
 
         // assert
         Assert.assertEquals("", getDriver().getPageSource());
