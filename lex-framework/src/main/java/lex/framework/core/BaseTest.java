@@ -4,6 +4,8 @@ import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -22,6 +24,12 @@ public class BaseTest {
         }
         ChromeDriverManager.chromedriver();
         if(headless) {
+
+            // Create object of DesiredCapabilities class
+            DesiredCapabilities cap=DesiredCapabilities.chrome();
+
+            // Set ACCEPT_SSL_CERTS  variable to true
+            cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--headless");
             chromeOptions.addArguments("--no-sandbox");
