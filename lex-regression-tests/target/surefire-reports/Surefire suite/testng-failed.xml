@@ -5,8 +5,8 @@
     <classes>
       <class name="lex.tests.homepage.CRHomepageTests">
         <methods>
+          <include name="canSubmitForm"/>
           <include name="beforeSuite"/>
-          <include name="canSeeGoDaddySeal"/>
           <include name="afterSuite"/>
         </methods>
       </class> <!-- lex.tests.homepage.CRHomepageTests -->

@@ -3,7 +3,6 @@ package lex.tests.homepage;
 import lex.framework.core.BaseTest;
 import lex.pageobjects.homepage.CRHomepage;
 import org.testng.Assert;
-import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -117,11 +116,9 @@ public class CRHomepageTests extends BaseTest {
         myPage.sendStreetAddress("123 R");
         myPage. sendZipCode("84103");
         myPage.clickSubmitButton();
-        myPage.waitForURLToContain(myPage.getReportPullURL());
-        Reporter.log(getDriver().getPageSource(), true);
 
         // assert
-        Assert.assertTrue(myPage.isAtReportPull()); // Sometimes we won't go to report pull? Probably target
+        Assert.assertEquals("bs", getDriver().getPageSource()); // Sometimes we won't go to report pull? Probably target
 
         // clean up
         myPage.goHome();
