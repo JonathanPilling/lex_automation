@@ -119,7 +119,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.waitForURLToContain(myPage.getReportPullURL());
 
         // assert
-        //Assert.assertEquals("", getDriver().getCurrent);
+        Assert.assertEquals("", getDriver().getPageSource());
         Assert.assertTrue(myPage.isAtReportPull()); // Sometimes we won't go to report pull? Probably target
 
         // clean up
