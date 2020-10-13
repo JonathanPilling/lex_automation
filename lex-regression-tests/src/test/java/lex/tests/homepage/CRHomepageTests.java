@@ -114,11 +114,12 @@ public class CRHomepageTests extends BaseTest {
         myPage.sendEmail(myPage.generateUniqueEmail());
         myPage.sendPhone("1234567899");
         myPage.sendStreetAddress("123 R");
-        myPage. sendZipCode("84103");
+        myPage. sendZipCode("84010");
         myPage.clickSubmitButton();
 
         // assert
-        Assert.assertEquals("bs", getDriver().getPageSource()); // Sometimes we won't go to report pull? Probably target
+        Assert.assertEquals("", getDriver().getPageSource());
+        Assert.assertTrue(myPage.isAtReportPull()); // Sometimes we won't go to report pull? Probably target
 
         // clean up
         myPage.goHome();
