@@ -196,7 +196,7 @@ public class CRSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
+    /*@Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canSubmitForm() throws InterruptedException {
         // arrange
         CRSnapshot myPage = new CRSnapshot(getDriver());
@@ -229,6 +229,6 @@ public class CRSnapshotTests extends BaseTest {
 
         // clean up
         myPage.goHome();
-    }
+    } */
 
 }

@@ -5,8 +5,6 @@ import lex.pageobjects.homepage.CRHomepage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
-
 public class CRHomepageTests extends BaseTest {
     @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedInModal() throws InterruptedException {
@@ -102,7 +100,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
+    /*@Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canSubmitForm() throws InterruptedException, IOException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
@@ -136,7 +134,7 @@ public class CRHomepageTests extends BaseTest {
 
         // clean up
         myPage.goHome();
-    }
+    }*/
 
     @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canClickGetStartedInHardWorkSection() throws InterruptedException {
@@ -234,7 +232,7 @@ public class CRHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
+    /*@Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canSeeGoDaddySeal() throws InterruptedException {
         // arrange
         CRHomepage myPage = new CRHomepage(getDriver());
@@ -244,5 +242,5 @@ public class CRHomepageTests extends BaseTest {
 
         // clean up
         myPage.goHome();
-    }
+    }*/
 }        

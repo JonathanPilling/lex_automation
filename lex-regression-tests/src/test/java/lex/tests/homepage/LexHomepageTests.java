@@ -212,7 +212,7 @@ public class LexHomepageTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
+/*    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canSeeGoDaddySeal() throws InterruptedException {
         // arrange
         LexHomepage myPage = new LexHomepage(getDriver());
@@ -222,7 +222,7 @@ public class LexHomepageTests extends BaseTest {
 
         // clean up
         myPage.goHome();
-    }
+    }*/
 
 }
 

@@ -228,7 +228,7 @@ public class LexSnapshotTests extends BaseTest {
         myPage.goHome();
     }
 
-    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
+/*    @Test(retryAnalyzer = lex.tests.RetryAnalyzer.class)
     public void canSubmitForm() throws InterruptedException {
         // arrange
         LexSnapshot myPage = new LexSnapshot(getDriver());
@@ -261,6 +261,6 @@ public class LexSnapshotTests extends BaseTest {
 
         // clean up
         myPage.goHome();
-    }
+    }*/
 
 }
