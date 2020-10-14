@@ -26,13 +26,13 @@ public class LexHomepage extends BasePage {
     @FindBy(css = "a[class='site_nav_sign_up_desktop']")
     private WebElement signupButton;
 
-    @FindBy(css = ".desktop_site_nav_left a[href='/credit-repair-services']")
+    @FindBy(css = ".desktop_site_nav_left a[href='https://www.lexingtonlaw.com/credit-repair-services']")
     private WebElement creditRepairButton;
 
-    @FindBy(css = ".desktop_site_nav_left a[href='/credit-help']")
+    @FindBy(css = ".desktop_site_nav_left a[href='https://www.lexingtonlaw.com/credit-help']")
     private WebElement creditHelpButton;
 
-    @FindBy(css = ".desktop_site_nav_left a[href='/our-firm']")
+    @FindBy(css = ".desktop_site_nav_left a[href='https://www.lexingtonlaw.com/our-firm']")
     private WebElement ourFirmButton;
 
     @FindBy(css = "div.hero-content a.lex-cta-number")
