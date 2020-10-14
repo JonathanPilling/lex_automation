@@ -9,9 +9,9 @@
    and click **Sign in**
 3. You should see the main Jenkins page with a list of projects. To run an automation suite, click on a project name. ![image](images/jenkins-dashboard.png)
 4. On the project screen, click **Build Now** on the left. ![image](images/jenkins-project-view.png)
-5. A few seconds later you'll see a flashing build icon and a progress bar under **Build History**. ![image](images/flashing-build.png)
+5. A few seconds later you will see a flashing build icon and a progress bar under **Build History**. ![image](images/flashing-build.png)
 6. The tests are running now, you can click on the **Build #** to see this page while in the build is in progress, or after it is finished. ![image](images/jenkins-build-view.png) *(You can click on Console Output for more information)*
-7. When the build finishes, you'll see a blue circle if all the tests passed and a red circle if something went wrong. (The latest build status will be displayed on the main screen)
+7. When the build finishes, you will see a blue circle if all the tests passed and a red circle if something went wrong. (The latest build status will be displayed on the main screen)
 
 # Figuring Things Out (Pass/Fail)
 
@@ -21,8 +21,8 @@
 4. Scroll through the output to the bottom, you should see something like this for a pass: ![image](images/test-pass.png)
 Or this, for a fail: ![image](images/test-fail.png)
 In these results sections you can see the number of Tests run, the number of failures, the number of errors, and the number of tests skipped. You may have a positive number under skipped if the Retry Analyzer had to retry any test cases.
-The automation suite makes use of the RetryAnalyzer class, so tests will retry up to 5 times before they are flagged as a fail. If a test is failing here, it means it failed 5 times in a row. (Test failures either mean there were website code changes that broke the test, or something is wrong with the website that caused the test to fail.) You can read the test name to get a better idea of what went wrong. Let's look at a failing test case here:![image](images/credit-repair-fail.png)
-For example, let's look at **lex.tests.homepage.LexHomepageTests.canNavigateToCreditRepair**. The important part of this is the last two phrases **LexHomepageTests** and **canNavigateToCreditRepair**. You can see this in the image next to **Run 5:**, **LexHomePageTests** is the Java class name that references we were running tests on the lexington law homepage. **canNavigateToCreditRepair** is the name of the test that failed. Reading these two, we can infer that from the Lexington Law Homepage, we were not able to navigate to Credit Repair. Let's go over to the Lexington Law homepage and see if we can figure out what went wrong.
+The automation suite makes use of the RetryAnalyzer class, so tests will retry up to 5 times before they are flagged as a fail. If a test is failing here, it means it failed 5 times in a row. (Test failures either mean there were website code changes that broke the test, or something is wrong with the website that caused the test to fail.) You can read the test name to get a better idea of what went wrong. Let us look at a failing test case here:![image](images/credit-repair-fail.png)
+For example, let us look at **lex.tests.homepage.LexHomepageTests.canNavigateToCreditRepair**. The important part of this is the last two phrases **LexHomepageTests** and **canNavigateToCreditRepair**. You can see this in the image next to **Run 5:**, **LexHomePageTests** is the Java class name that references we were running tests on the lexington law homepage. **canNavigateToCreditRepair** is the name of the test that failed. Reading these two, we can infer that from the Lexington Law Homepage, we were not able to navigate to Credit Repair. Let us go over to the Lexington Law homepage and see if we can figure out what went wrong.
 Looking at lexingtonlaw.com, I can see the Credit Repair button up in the top. ![image](images/lex-credit-repair.png)
 
 Clicking on this link worked for me, so it seems there was just a website change that broke this particular test. 
