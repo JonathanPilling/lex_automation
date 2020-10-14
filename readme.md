@@ -2,26 +2,30 @@
 
 # Running Automation
 
-1. First, navigate to **http://martech-d01.vwsl.pgx.local:8080/** This is where the jenkins server is hosted. You must navigate to this server to run the automation test suite, or individual test suites
+1. First, navigate to **http://martech-d01.vwsl.pgx.local:8080/** This is where the jenkins server is hosted. You must navigate to this server to run the automation test suite, or individual test suites.
 2. You should see a screen that says, **Welcome to Jenkins!** fill in the following fields:
    *Username*: **admin**
    *Password*: **admin**
    and click **Sign in**
-3. You should see the main Jenkins page with a list of projects. To run an automation suite, click on a project ![image](images/jenkins-dashboard.png)
-4. On the project screen, click **Build Now** on the left
-5. A few seconds later you'll see a flashing build icon and a progress bar under **Build History** ![image](images/flashing-build.png)
-6. The tests are running now, you can click on the Build # then **Console Output** for more information while it's running
-7. When the build finishes, you'll see a blue circle for success and a red circle for failures
+3. You should see the main Jenkins page with a list of projects. To run an automation suite, click on a project name. ![image](images/jenkins-dashboard.png)
+4. On the project screen, click **Build Now** on the left.
+5. A few seconds later you'll see a flashing build icon and a progress bar under **Build History**. ![image](images/flashing-build.png)
+6. The tests are running now, you can click on the **Build #** then **Console Output** for more information while it's running
+7. When the build finishes, you'll see a blue circle if all the tests passed and a red circle if something went wrong. (The latest status circle will show on the main screen)
 
 # Figuring Things Out (Pass/Fail)
 
-1. For the time being, figuring out why things failed can be tricky. Hopefully this will be made a little easier in the future. Click on a pass/failed project, indicated by a blue/red circle
+1. For the time being, figuring out why things failed can be tricky. Hopefully this will be made a little easier in the future. Sign into Jenkins and click on a project (pass/fail), indicated by a blue/red circle
 2. Click on the build you are interested in under, **Build History**
 3. Click **Console Output** on the left
 4. Scroll through the output to the bottom, you should see something like this for a pass: ![image](images/test-pass.png)
 Or this, for a fail: ![image](images/test-fail.png)
-The automation suite makes use of the RetryAnalyzer class, so tests will run 5x before they are flagged as a fail. If a test is failing here, it means it failed 5x in a row and likely something is wrong with the website or there was a change that broke the framework. You can read the test name to get a better idea of what went wrong. ![image](images/credit-repair-fail.png)
-For example, take the class/method name, LexHomepageTests.canNavigateToCreditRepair. LexHomepageTests refers to the fact we were running tests on the lexington law homepage. 'canNavigateToCreditRepair' is a test that clicks on **Credit Repair** in the LexingtonLaw header and verifies that we are at the correct URL
+In these results sections you can see the number of Tests run, the number of failures, the number of errors, and the number of skipped. You may have a positive number under skipped if the Retry Analyzer had to retry any test cases.
+The automation suite makes use of the RetryAnalyzer class, so tests will run 5x before they are flagged as a fail. If a test is failing here, it means it failed 5x in a row and likely something is wrong with the website or there was a change that broke the framework. You can read the test name to get a better idea of what went wrong. Let's look at a failing test case here:![image](images/credit-repair-fail.png)
+For example, let's look at **lex.tests.homepage.LexHomepageTests.canNavigateToCreditRepair**. The important part of this is the last two phrases **LexHomepageTests** and **canNavigateToCreditRepair** and you can see this in the image next to **Run 5:**. **LexHomePageTests** is the Java class name that references we were running tests on the lexington law homepage. **canNavigateToCreditRepair** is the name of the test that failed. Reading these two, we can infer that from the Lexington Law Homepage, we were not able to navigate to Credit Repair. Let's go over to the Lexington Law homepage and see if we can figure out what went wrong.
+Looking at lexingtonlaw.com, I can see the Credit Repair button up in the top. ![image](images/lex-credit-repair.png)
+
+Clicking on this link worked for me, so it seems there was just a website change that broke this particular test. 
 
 # Changing Email Recipients and Build Schedule
 
@@ -34,6 +38,7 @@ For example, take the class/method name, LexHomepageTests.canNavigateToCreditRep
 5. In the **Schedule** text field, enter a Cron string 
    - More information on Cron can be found here: [Cron](https://en.wikipedia.org/wiki/Cron)
    - For example, '**\* \* \* \* \***' runs every minute of every day.
+   - '**H 4, 8, 12, 16, 20, 22 \* \* \***' runs at 4a, 8a, 12p, 4p, 8p, and 10p of every day (Times are UTC)
 
 ### Changing Email Recipients
 
@@ -46,6 +51,6 @@ For example, take the class/method name, LexHomepageTests.canNavigateToCreditRep
 # Notes on Project Structure
 The Jenkins project structure is as follows: 
 - **Automation Testing** is the project that runs all automation tests when built
-- **www** projects are correspond to individual sites. If you want to run all tests for a particular website, build one of these projects
-- **HttpTests** sends request to sites and verifies that the response is an OK status code
+- **www** projects correspond to individual sites. If you want to run all current tests for a particular website, build one of these corresponding projects
+- **HttpTests** sends requests to various sites and verifies that the response is an OK status code
 </div>
